@@ -1,0 +1,45 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Lock files
+package-lock.json
+yarn.lock
+# Keep pnpm-lock.yaml 
+
+# Playwright
+playwright-report
+test-results
+playwright/.cache
+
+# Generated AI assistant widget
+public/ai-assistant-embed/widget-h5.js
+
+.codegraph
+.cursor
+docs
+.apifox
+
+# Local IDE settings (may contain secrets)
+.vscode/settings.json

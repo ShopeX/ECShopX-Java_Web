@@ -1,0 +1,956 @@
+{
+  "sections": {
+    "header": {
+      "color_mode": {
+        "type": "enum",
+        "default": "dark",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      },
+      "sticky_header_type": {
+        "type": "string",
+        "default": "none"
+      },
+      "padding_top": {
+        "type": "string",
+        "default": "xxs"
+      },
+      "menu_color_style": {
+        "type": "string",
+        "default": "pure"
+      },
+      "menu_type_desktop": {
+        "type": "string",
+        "default": "dropdown"
+      },
+      "show_line_separator": {
+        "type": "boolean",
+        "default": true
+      },
+      "menu": {
+        "type": "object",
+        "default": null
+      },
+      "color_scheme": {
+        "type": "string",
+        "default": "scheme-1"
+      },
+      "layout": {
+        "type": "string",
+        "default": "middle"
+      },
+      "margin_bottom": {
+        "type": "number",
+        "default": 0
+      },
+      "enable_country_selector": {
+        "type": "boolean",
+        "default": true
+      },
+      "mobile_logo_position": {
+        "type": "string",
+        "default": "center"
+      },
+      "menu_color_mode": {
+        "type": "enum",
+        "default": "dark",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "logo_position": {
+        "type": "string",
+        "default": "center"
+      },
+      "enable_customer_avatar": {
+        "type": "boolean",
+        "default": true
+      },
+      "padding_bottom": {
+        "type": "string",
+        "default": "xxs"
+      },
+      "menu_color_scheme": {
+        "type": "string",
+        "default": "scheme-1"
+      },
+      "enable_language_selector": {
+        "type": "boolean",
+        "default": true
+      }
+    },
+    "footer": {
+      "content_alignment": {
+        "type": "string",
+        "default": "center"
+      },
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "copyright": {
+        "type": "string",
+        "default": ""
+      },
+      "newsletter_heading": {
+        "type": "string",
+        "default": ""
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "dark",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "margin_top": {
+        "type": "number",
+        "default": 48
+      },
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      },
+      "padding_top": {
+        "type": "string",
+        "default": "m"
+      },
+      "color_scheme": {
+        "type": "string",
+        "default": "scheme-3"
+      },
+      "show_social": {
+        "type": "boolean",
+        "default": true
+      },
+      "payment_enable": {
+        "type": "boolean",
+        "default": true
+      },
+      "newsletter_enable": {
+        "type": "boolean",
+        "default": false
+      },
+      "enable_country_selector": {
+        "type": "boolean",
+        "default": true
+      },
+      "show_policy": {
+        "type": "boolean",
+        "default": true
+      },
+      "padding_bottom": {
+        "type": "string",
+        "default": "xs"
+      },
+      "enable_brand_information": {
+        "type": "boolean",
+        "default": true
+      },
+      "enable_language_selector": {
+        "type": "boolean",
+        "default": true
+      }
+    },
+    "announcement-bar": {
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      },
+      "auto_rotate": {
+        "type": "boolean",
+        "default": false
+      },
+      "enable_country_selector": {
+        "type": "boolean",
+        "default": false
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "show_line_separator": {
+        "type": "boolean",
+        "default": true
+      },
+      "change_slides_speed": {
+        "type": "number",
+        "default": 5
+      },
+      "color_scheme": {
+        "type": "string",
+        "default": "scheme-1"
+      },
+      "padding_top": {
+        "type": "string",
+        "default": "none"
+      },
+      "padding_bottom": {
+        "type": "string",
+        "default": "none"
+      },
+      "show_social": {
+        "type": "boolean",
+        "default": false
+      },
+      "enable_language_selector": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "main-carousel": {
+      "image_height": {
+        "type": "enum",
+        "default": "medium",
+        "values": [
+          "small",
+          "medium",
+          "large",
+          "adapt"
+        ]
+      },
+      "height": {
+        "type": "string",
+        "default": ""
+      },
+      "paginate_type": {
+        "type": "enum",
+        "default": "point",
+        "values": [
+          "point",
+          "counter",
+          "number"
+        ]
+      },
+      "paginate_size": {
+        "type": "enum",
+        "default": "medium",
+        "values": [
+          "small",
+          "medium",
+          "large"
+        ]
+      },
+      "enable_auto_play": {
+        "type": "boolean",
+        "default": false
+      },
+      "enable_arrow": {
+        "type": "boolean",
+        "default": true
+      },
+      "showDots": {
+        "type": "boolean",
+        "default": true
+      },
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      },
+      "interval": {
+        "type": "number",
+        "default": 5
+      },
+      "show_text_below": {
+        "type": "boolean",
+        "default": false
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "color_scheme": {
+        "type": "string",
+        "default": "scheme-1"
+      },
+      "padding_top": {
+        "type": "string",
+        "default": "m"
+      },
+      "padding_bottom": {
+        "type": "string",
+        "default": "m"
+      }
+    },
+    "image-hotspot": {
+      "pc_image": {
+        "type": "string",
+        "default": "",
+        "aliases": [
+          "imageUrl",
+          "image_url",
+          "image"
+        ]
+      },
+      "mobile_image": {
+        "type": "string",
+        "default": "",
+        "aliases": [
+          "mobileImage",
+          "mobile_image_url"
+        ]
+      },
+      "pc_hotspots": {
+        "type": "array",
+        "default": []
+      },
+      "mobile_hotspots": {
+        "type": "array",
+        "default": []
+      },
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "color_scheme": {
+        "type": "string",
+        "default": "scheme-1"
+      },
+      "padding_top": {
+        "type": "string",
+        "default": "m"
+      },
+      "padding_bottom": {
+        "type": "string",
+        "default": "m"
+      }
+    },
+    "product-shelf": {
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "displayMode": {
+        "type": "enum",
+        "default": "manual",
+        "values": [
+          "category",
+          "manual"
+        ],
+        "aliases": [
+          "sourceMode"
+        ]
+      },
+      "itemIds": {
+        "type": "string[]",
+        "default": []
+      },
+      "categoryId": {
+        "type": "string",
+        "default": ""
+      },
+      "columns": {
+        "type": "number",
+        "default": 4
+      },
+      "limit": {
+        "type": "number",
+        "default": 8
+      },
+      "showPrice": {
+        "type": "boolean",
+        "default": true
+      },
+      "showAddCart": {
+        "type": "boolean",
+        "default": true
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "color_scheme": {
+        "type": "string",
+        "default": "scheme-1"
+      },
+      "padding_top": {
+        "type": "string",
+        "default": "m"
+      },
+      "padding_bottom": {
+        "type": "string",
+        "default": "m"
+      },
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "product-tab-shelf": {
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "intro": {
+        "type": "string",
+        "default": "新品"
+      },
+      "size": {
+        "type": "enum",
+        "default": "medium",
+        "values": [
+          "xsmall",
+          "small",
+          "medium",
+          "large",
+          "xlarge"
+        ]
+      },
+      "alignment": {
+        "type": "enum",
+        "default": "center",
+        "values": [
+          "left",
+          "center",
+          "right"
+        ]
+      },
+      "columns": {
+        "type": "number",
+        "default": 4
+      },
+      "spacing": {
+        "type": "enum",
+        "default": "medium",
+        "values": [
+          "none",
+          "small",
+          "medium",
+          "large"
+        ]
+      },
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      },
+      "show_price": {
+        "type": "boolean",
+        "default": true
+      },
+      "show_add_cart": {
+        "type": "boolean",
+        "default": true
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "color_scheme": {
+        "type": "string",
+        "default": "scheme-1"
+      },
+      "padding_top": {
+        "type": "string",
+        "default": "m"
+      },
+      "padding_bottom": {
+        "type": "string",
+        "default": "m"
+      }
+    },
+    "native-product-list": {
+      "locked": {
+        "type": "boolean",
+        "default": true
+      }
+    }
+  },
+  "blocks": {
+    "announcement": {
+      "text": {
+        "type": "string",
+        "default": ""
+      }
+    },
+    "header_product_list": {
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "link": {
+        "type": "string",
+        "default": ""
+      },
+      "columns_desktop": {
+        "type": "number",
+        "default": 4
+      },
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      },
+      "show_discount": {
+        "type": "boolean",
+        "default": false
+      },
+      "image_ratio": {
+        "type": "string",
+        "default": "square"
+      },
+      "show_secondary_image": {
+        "type": "boolean",
+        "default": false
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "color_style": {
+        "type": "string",
+        "default": "pure"
+      }
+    },
+    "header_collection_product_list": {
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "link": {
+        "type": "string",
+        "default": ""
+      },
+      "columns_desktop": {
+        "type": "number",
+        "default": 4
+      },
+      "full_width": {
+        "type": "boolean",
+        "default": false
+      },
+      "show_discount": {
+        "type": "boolean",
+        "default": false
+      },
+      "image_ratio": {
+        "type": "string",
+        "default": "adapt"
+      },
+      "show_secondary_image": {
+        "type": "boolean",
+        "default": false
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "color_style": {
+        "type": "string",
+        "default": "pure"
+      }
+    },
+    "mega_menu": {
+      "mega_menu_item": {
+        "type": "string",
+        "default": ""
+      },
+      "alignment": {
+        "type": "string",
+        "default": "page"
+      },
+      "image_position": {
+        "type": "string",
+        "default": "right"
+      },
+      "image_length": {
+        "type": "string",
+        "default": "one"
+      },
+      "enable_image_1_link": {
+        "type": "boolean",
+        "default": false
+      },
+      "enable_image_2_link": {
+        "type": "boolean",
+        "default": false
+      },
+      "enable_image_3_link": {
+        "type": "boolean",
+        "default": false
+      },
+      "image_layout": {
+        "type": "string",
+        "default": "outside"
+      },
+      "image_content_alignment": {
+        "type": "string",
+        "default": "center"
+      },
+      "image_ratio": {
+        "type": "number",
+        "default": 1
+      },
+      "image_shape": {
+        "type": "string",
+        "default": "none"
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "color_style": {
+        "type": "string",
+        "default": "pure"
+      }
+    },
+    "image": {
+      "pc_image": {
+        "type": "string",
+        "default": "",
+        "aliases": [
+          "imageUrl"
+        ]
+      },
+      "mobile_image": {
+        "type": "string",
+        "default": "",
+        "aliases": [
+          "imageUrl"
+        ]
+      },
+      "link": {
+        "type": "object",
+        "default": {
+          "linkType": 0,
+          "linkUrl": "",
+          "linkPage": "",
+          "id": "",
+          "title": ""
+        }
+      },
+      "introduction": {
+        "type": "string",
+        "default": "提供背景或介绍，吸引用户注意"
+      },
+      "introduction_size": {
+        "type": "string",
+        "default": "s"
+      },
+      "heading": {
+        "type": "string",
+        "default": "关键主题或焦点，简明直接"
+      },
+      "heading_size": {
+        "type": "string",
+        "default": "m"
+      },
+      "description": {
+        "type": "string",
+        "default": "简要概述幻灯片内容，突出重点"
+      },
+      "description_size": {
+        "type": "string",
+        "default": "s"
+      },
+      "button_text": {
+        "type": "string",
+        "default": "按钮文字"
+      },
+      "button_size": {
+        "type": "string",
+        "default": "large"
+      },
+      "button_style": {
+        "type": "string",
+        "default": "primary"
+      },
+      "button_scheme": {
+        "type": "string",
+        "default": "brand"
+      },
+      "content_alignment": {
+        "type": "string",
+        "default": "left"
+      },
+      "content_layout": {
+        "type": "string",
+        "default": "top-left"
+      },
+      "image_opacity": {
+        "type": "number",
+        "default": 20
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "enable_card": {
+        "type": "boolean",
+        "default": false
+      },
+      "color_style": {
+        "type": "string",
+        "default": "pure"
+      }
+    },
+    "video": {
+      "videoUrl": {
+        "type": "string",
+        "default": ""
+      },
+      "posterUrl": {
+        "type": "string",
+        "default": ""
+      },
+      "mobileVideoUrl": {
+        "type": "string",
+        "default": ""
+      },
+      "introduction": {
+        "type": "string",
+        "default": "<div>1231231</div>"
+      },
+      "introduction_size": {
+        "type": "string",
+        "default": "l"
+      },
+      "heading": {
+        "type": "string",
+        "default": "关键主题或焦点，简明直接"
+      },
+      "heading_size": {
+        "type": "string",
+        "default": "m"
+      },
+      "description": {
+        "type": "string",
+        "default": "简要概述幻灯片内容，突出重点"
+      },
+      "description_size": {
+        "type": "string",
+        "default": "m"
+      },
+      "button_text": {
+        "type": "string",
+        "default": "按钮文字"
+      },
+      "button_size": {
+        "type": "string",
+        "default": "small"
+      },
+      "button_style": {
+        "type": "string",
+        "default": "primary"
+      },
+      "button_scheme": {
+        "type": "string",
+        "default": "brand"
+      },
+      "content_alignment": {
+        "type": "string",
+        "default": "left"
+      },
+      "content_layout": {
+        "type": "string",
+        "default": "middle-left"
+      },
+      "image_opacity": {
+        "type": "number",
+        "default": 15
+      },
+      "color_mode": {
+        "type": "enum",
+        "default": "light",
+        "values": [
+          "light",
+          "dark"
+        ]
+      },
+      "enable_card": {
+        "type": "boolean",
+        "default": true
+      },
+      "color_style": {
+        "type": "string",
+        "default": "pure"
+      }
+    },
+    "hotspot": {
+      "label": {
+        "type": "string",
+        "default": ""
+      },
+      "x": {
+        "type": "number",
+        "default": 0
+      },
+      "y": {
+        "type": "number",
+        "default": 0
+      },
+      "link": {
+        "type": "object",
+        "default": {
+          "linkType": 0,
+          "linkUrl": "",
+          "linkPage": "",
+          "id": "",
+          "title": ""
+        }
+      },
+      "shape": {
+        "type": "enum",
+        "default": "circle",
+        "values": [
+          "circle",
+          "rect"
+        ]
+      }
+    },
+    "product-tab": {
+      "tab_label": {
+        "type": "string",
+        "default": "产品系列"
+      },
+      "product_ids": {
+        "type": "string[]",
+        "default": []
+      },
+      "product_snapshots": {
+        "type": "array",
+        "default": []
+      },
+      "limit": {
+        "type": "number",
+        "default": 8
+      }
+    },
+    "footer-link": {
+      "label": {
+        "type": "string",
+        "default": ""
+      },
+      "url": {
+        "type": "string",
+        "default": "/help"
+      }
+    },
+    "footer-menu": {
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "menu": {
+        "type": "object",
+        "default": null
+      },
+      "menu_items": {
+        "type": "array",
+        "default": []
+      },
+      "size": {
+        "type": "string",
+        "default": "small"
+      },
+      "alignment": {
+        "type": "string",
+        "default": "left"
+      },
+      "column_span": {
+        "type": "number",
+        "default": 3
+      }
+    },
+    "footer-image": {
+      "image": {
+        "type": "string",
+        "default": ""
+      },
+      "alignment": {
+        "type": "string",
+        "default": "left"
+      },
+      "width": {
+        "type": "string",
+        "default": "100"
+      },
+      "radius": {
+        "type": "string",
+        "default": "medium"
+      },
+      "column_span": {
+        "type": "number",
+        "default": 4
+      }
+    },
+    "footer-text": {
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "type": "string",
+        "default": ""
+      },
+      "title_size": {
+        "type": "string",
+        "default": "medium"
+      },
+      "content_size": {
+        "type": "string",
+        "default": "small"
+      },
+      "alignment": {
+        "type": "string",
+        "default": "left"
+      },
+      "column_span": {
+        "type": "number",
+        "default": 6
+      }
+    }
+  },
+  "aliases": {
+    "sections": {
+      "carousel": "main-carousel"
+    },
+    "blocks": {}
+  }
+}

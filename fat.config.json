@@ -1,0 +1,10 @@
+{
+  "vaultPath": "/Users/lukaijie/Documents/Obsidian Vault/FAT/test-tasks",
+  "projectPath": "/Users/lukaijie/workspace/work/shopex/smallP/ecshopx-platform/ecshopx-web",
+  "tasksFile": "test-task.md",
+  "maxRetries": 3,
+  "agents": {
+    "coder": "codex",
+    "tester": "gemini"
+  }
+}
