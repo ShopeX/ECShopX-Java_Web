@@ -1,0 +1,16 @@
+.git
+.gitignore
+.nuxt
+.output
+dist
+coverage
+node_modules
+.pnpm-store
+.idea
+.vscode
+.DS_Store
+*.log
+docs
+.env
+.env.*
+!.env.example
