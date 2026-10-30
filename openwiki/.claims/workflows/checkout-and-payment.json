@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b05161c6f3e17eea11c5f83b0708106388a3fa9e83b72069747f413f842ef014",
+  "claims": [
+    {
+      "id": "claim_19f086983d6f4975b2b7ac44113ff75a",
+      "statement": "Checkout refreshes cart-mode sessions before calculation, while fast-buy and other modes use route or product context; it loads addresses and coupons separately and keeps checkout state in the composable.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L149-L200",
+          "version": "repo-lines-v1:sha256:1b0e3bbf0410296102c7bbfb3e1ab4cf522316753501c36b4a470cc66c33b74b:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2YTBmZDdmMWU2YmQ5ODdiYmI2ZjE4NjVlYWZiNWNkZTZlZmE1OTZiZGVkMzAwNjdjZTRjYTFkNGIxN2M3YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwYjcxZjVhYzNhMmNlMDdhNTU3YjliOTIyNzFjODcyODRhZGNmNTc2NDlmOTk0ODEyMTQxN2FhZWU4M2RhYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L305-L374",
+          "version": "repo-lines-v1:sha256:7a2bcc93b29186b370991eecde5b89943c542e7356e5d748cf8a110277972b70:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI4ZmRiMzNlNTgwZDA1Mjc4MzQ5MmZkNGVlMmYzY2MwODIyOTUwNjA0ZDU0OGVjMmQ1Zjg5ZTE5ZWM3MmVjYTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEwM2JiMWE5NTQwOGQ5ZjM3NDBjODI5ODM3ODM0MGYxY2FjNjk1YTgxOGI2NGY0NDVkMWI3ZDdhZjM4ZGI2Y2MifQ"
+        },
+        {
+          "resource": "repo://app/pages/checkout/index.vue#L947-L969",
+          "version": "repo-lines-v1:sha256:e57a767b565c739bdc6eef33d151e1264b516224282ca8de87bb17be4079a280:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUwMjkxZDMxNThjNDgxYjNkZjg0NTk0NDczNTc1NDE5ZDlkN2ZmOThiYmIwZWZlYTk2YmMzZmVmOTc2NDE3NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2YTJlOTZhM2IyNWRlYzVlOWE0MzM5NWQzM2I1MTdmOGI5OGM3YTE0Y2Y5MzgzMjFhMDhhMTU2ODJmZmQwYmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjllYzM2OGQ2ZWJmZmJhM2ZlZjQ2OTMxMzlkOWJhYzhiMDIxOTZmNzQyZWIwYjBmZjJhYzdkMmRhNjNmZjViZWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_89ceb6b880fa46558f54b619533826ef",
+      "statement": "BBC cart checkout enforces a single selected distributor store, using the selected rows' store ID for cart mode and rejecting multi-store selection before calculation or order creation; non-cart modes resolve route and fallback context differently.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L309-L353",
+          "version": "repo-lines-v1:sha256:056e95445df9188344a36103077bedb03c9965759258b9efca0e2dea558485db:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2MTVkNzM5N2FkMTk0MjUyZjY3NTZhYjIxZTc0NzM1OTMxYTVmMTliZDhhODJkMTBlOGE0YTY2ZDY1NGZkNjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhNDg2ZTU3MmY4MGM0NjAxOWFiYzMwY2VhMjAwYmYzMGE4NTY3ODc0ZmM0ZWIyNTI4YTA5OTM2MWRmNDc2MzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwYzM2ODU4YWRlZmI2N2U3YTk2MmE5MjQ3ZTMzZWQwYjI4NWRjYWQzOTJhNDhkOWZkOTBiMmQwZjM4ZWE5NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ5NDE4YzhmNjY4NDA1MGIwYWM0YTFjYjQ4NTBhNWE5M2QwZDY3MTM5Yjk2MjdmMTEzMGU2NGNmYTZhY2U0OWEifQ"
+        },
+        {
+          "resource": "repo://app/utils/checkoutStoreSelection.ts#L13-L41",
+          "version": "repo-lines-v1:sha256:6efe99767ef17ca80f7f7a798b24574614259ac9dec234d92a8feee81c135950:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1ODg3M2JlYWU1ODc4ZDY4NTNlNjUzNDZlZmE2MDQyMjE2NjA5ODBjMTE5ZGE5OTBkM2IzZTdjMWU0YmY2ODIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRlMzE3ZmFjNmZjNjcxZmQ5MzMyNjEwYzBjZDMyYzg4NGJhYzA0MmExMDkyYWEwNDJkOWIwMmE3YWQwMWE2YmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ed8f4cbb98454fe188e719bc6a9e2d51",
+      "statement": "Checkout calculation calls POST /wxapp/getFreightFee with distributor, cart, receipt, coupon, and point fields; logistics sends receiver address fields, pickup sends pickup_location plus pickup contact fields, and recommendation rows are included as item_id and quantity pairs.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L376-L409",
+          "version": "repo-lines-v1:sha256:339177911789ed207c577e885401b584079931709cb3a70cb2719c2ab8255dad:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5MDYwNjZkZTU5OGUwMWZmZWM4NjJkMDdjODAwM2NhZjcwODcwODVkOTYwNzVlODVjMGM4N2YwOTFiNWUwMGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkMWIwZWRlNjU4YmFlYzE1MGNlYjJjNDZjNjVjMGJhZDE0OTNhZjA4NDcyNWJkOWVlMDBlNTJkOGJiNTkxZjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlhMTdhMjUxNzE2NzQ0MDMxMzQ0NDc2NjA0YzA5YzQwOGRhZDM5NzI3M2Y4ZjgyMmZkNTYxZTE3N2VhMmVmYzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyYjlmMDc3YjFkYzM2MGJhMmYyYjFkY2Q3YTE2OTZlYzFmZWQ0MGY0YmQzZTMyNzE0NDdhNTQ0ZDY0MzU2YTcifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/OrderApiClient.ts#L149-L200",
+          "version": "repo-lines-v1:sha256:407a2058790b751ee21c1f328f1de48840f8ca3b04b176fb42df26c0afa4e34c:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZDg4YmVlNDhmYzAyMTk5Y2IzNjFiZTdiMTc2MTk3MGUyNzE0NjkzMDFmYThkMTlhOTg3ZGY3MDNmMDVmMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyNjQ4NzQyNTMzZTRlZWNkYTZmYmI1ZTY4ZGZkNTY5M2FlNzkxN2E2OGUzN2QwMTkyZjc2MDJlZGYwZjBiNTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4NzU2MzU0MzAwNDM5Y2VhMjlhZTQ1NzUyYjczM2M3ZDM1ZDczYTczOTM5YjExZmE2NDY0MTRmMTJjNDc5OWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f2465c6f85c343b0a1082aa0c9933eae",
+      "statement": "Checkout recommendation items are held outside the cart, trigger recalculation on add or removal, and must be sent again during order creation because otherwise the created order and calculated freight can diverge.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L405-L421",
+          "version": "repo-lines-v1:sha256:aff6a7b793206f5db0a2a9cc6b7127ca419e3d74f563f6acb997ba2c4b7e2ca7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5YTdhNTc3OWUzN2U1NGQyZjFmYzZjZTcyODhlYTUxM2IzZThkMDQzOTdmZWRjMWZjMGUyZWQ0MmUyZGJiM2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhYjNkYzMzY2QyOTUyZjczOTFiMzUzNjBiNWFlMGJkZTBkZDJkMWRjMWFkZjZiNjYzZjAwYzYyM2JmNjZiYjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwNjRiNWY0NGFjY2U1OTYzNDk5NTY3ODFiMzQ0MjlmZDY3NWU0Y2NmZWEyMzk4MGFlZWFmYjY3MjU4MTkwZGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ0M2I5YWJhMGNiMjIyYTVhZTJiZTBlZjVhNGY3ZGFjM2IwYzRhMWZlODU4ODUzOTJjZjJmOWM2MjE1ZWFmNDYifQ"
+        },
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L508-L594",
+          "version": "repo-lines-v1:sha256:7d42b05eac0d15d29844235809cd66906aa4a6e88ad7c34abc5e8fa173c05e4f:eyJzZWxlY3RlZExpbmVDb3VudCI6ODcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ1MWM2MWNjZjdiYjNlYTllYmQ0N2VlZTMyNDEwMzg2OTFlYTdlOGRkYjI4NzI4MWRiMmE1NjE4MDg4NDk0NTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImExZmY5YWU3ZjU2NzViNDU2YmM3ODNmYmIzNmFiYzdmM2RhYjQ0ZDc5OTRlMTFhNmU5ZGFhYWIzZmZhODAzMzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk0NGViMTZlOWE4ZmM2MDE3NDQ1MGQxOWJmNTM2ZmZmZTEzNGNjNjg4YThhNGEzZmVhYzZmMDcwOWNiODcyOTgifQ"
+        },
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L615-L630",
+          "version": "repo-lines-v1:sha256:f4f0f468403eccf84722c4af48eacfeecc15f6c163acfef31819f7ff831b030f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4NjVjYjg3ZWU2ZTQzZWE0MmFjMTUyZjUwZGIxNzE3ZTZlMGI2Nzc4ZWRlNmYxM2NmZGMyZjcwOWVmNzRkOGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliNjJmNjBkODU5MGE1NzljZjQ2ZjhkNjczNzhjNGM1NzJiOTYyY2VjY2RiOTBjN2E1ZjdiNDJiOTYwNzgyYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJiZWE3NDEwZDk5ZTI5ZGNkNDhlZjRmZThmZTMxODU0N2EyZGE5NjYwOTQ3MDUxYzNlYTcxNmZmMWFkZDI0NmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc5NmU2ZmVlYmJhY2NjOWM3OTFhZmZkZGZkYzIxMDY0MjFmYjM4YTdkMGYyZGZlODQwNWZmM2Q0ZGYyM2Y5ZTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a9676cb0a2c049c79f2b03add3d5725b",
+      "statement": "Checkout treats HTTP 422 as an actionable validation state for calculation and order creation, suppressing the generic error-code toast and exposing the code and message through checkoutError; other failures use the general checkout error.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L461-L503",
+          "version": "repo-lines-v1:sha256:c40c43a5ff12908448d10c71bb7b4f7bd37d2204f289296c942a8c7ae80a509b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwZjkyY2JkOWRhODk2NzNmZTVhNjllZjhmODE0NGM1NTk5M2RlYzUwMWEzZjcyNzdmNzE2NTIxZTg3OGE5OWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3NGQ4ZjNhYjQ1NDQxZTEwN2NiMGEyMTVlYWU3ODdlMjhiOWI1MWRhZDI5NDhhZWVmNTNkZGZhM2FjYzk0OTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlZmNhZmIwYzA0YzVlNDM4YzBjNGZjYWUyMjExZjljZWM5ZTExMTdjMzBhNThiYzdhNTk1ZjU2OTYwMjliZTIifQ"
+        },
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L662-L684",
+          "version": "repo-lines-v1:sha256:4963a0bf9e33a3d2c642ee05524082826c51269ea2222adcf3bd74d61d4cd8ce:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc0MjkxOTZiYmIzYmE0MWQwZWRjZDI4ZjhiNTA1N2IxYzdjMDkxOTM1ZjgwOWMzMDkyOWQ5MWJkYmNlZTc0OGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk2MjFjYTBiODdhZmZjZTFjNjMyMTI1NjFmMzg4ZmE4ZTA2NjJjYzgzN2MyZTg3MTgwNzk5ZTA5OGJlNGM2MTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L829-L838",
+          "version": "repo-lines-v1:sha256:effc1f0bfd95568d17a248c1a759b995f6b7d4a96867e086aa90bb1dc6acae38:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/OrderApiClient.ts#L195-L214",
+          "version": "repo-lines-v1:sha256:3586a77fb358d295051598991a211fd7264a06f176724aedc3e11094e4d2a470:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiZWRlYTIzYTZkNTRlZDMyNjQ0YmQzN2IyNmI5ZTQ3MzQzMmFkNTliMDk3ZTA4MTRmNDlmMmQ2ZDNmOGFhYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyNjQ4NzQyNTMzZTRlZWNkYTZmYmI1ZTY4ZGZkNTY5M2FlNzkxN2E2OGUzN2QwMTkyZjc2MDJlZGYwZjBiNTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkYWVlYjQ3ODlhYzA1NDkxZTg3MjcxNTdmYWQwNGFiMWQxZjEwMGYzM2U3ZDIzMzVjMWUyMjE3NzIzNTJlNDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_52dccace3cce49a2aa3d4ccba0997de8",
+      "statement": "Order creation posts to /wxapp/order_new with the final delivery, coupon, point, payment, invoice, and recommendation payload, JSON-serializing nested recommendation and invoice content for the form-urlencoded transport boundary.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L599-L660",
+          "version": "repo-lines-v1:sha256:cee5d4aaf5fc190a87fe2186d42e77c3dc931f3f47ecb7e716bca029b26dcc1e:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2NDI0ZmE3NmViYTk5ZGQ0NmMxNThhMGFmMjdlMDY4N2Y4MDM1OTEwYTA3MGU5MDY1YzY4YjQ4ZThhMmZjYWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliNjJmNjBkODU5MGE1NzljZjQ2ZjhkNjczNzhjNGM1NzJiOTYyY2VjY2RiOTBjN2E1ZjdiNDJiOTYwNzgyYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmNTE5NGI1N2VkNTI0NDM3MjNiNDk3Njc2ZTdmNjdjZGU0YWJiOGY4YjBlZTBlOTIzZDZiOTI1NTY5M2Q1NTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJhZTAzNDQ4NDA1NWM4NWUyMjFiODViMGEzM2I0NTUxZGIyN2U4MDkxMDAxNWQ5NTVlNzY0OWY2OThiODY4YTMifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/OrderApiClient.ts#L149-L168",
+          "version": "repo-lines-v1:sha256:336bff72c45512fc3ca13e1139d9f250c9a6e005109fdf0e7684eee670cd4d5c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZDg4YmVlNDhmYzAyMTk5Y2IzNjFiZTdiMTc2MTk3MGUyNzE0NjkzMDFmYThkMTlhOTg3ZGY3MDNmMDVmMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4OWEwN2JiMzEzZDEwN2ZjNTA4MGMyODRhMDMxYzFkZjUwYjkxYjUwYjg0MjAzM2JmMWU1NmExMTNmODRjY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4NzU2MzU0MzAwNDM5Y2VhMjlhZTQ1NzUyYjczM2M3ZDM1ZDczYTczOTM5YjExZmE2NDY0MTRmMTJjNDc5OWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkYzVjZGVkOTI3ZDc1ZWFmMjYyOTg1YmE1NzNlNTkyM2FlODMyMjFjMDY1MmJmMzVjMWZlOGYxODVlOTExYzQifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/OrderApiClient.ts#L203-L214",
+          "version": "repo-lines-v1:sha256:6ec9c97cd36e84f300aa7c00279d71a111bf7dc8b7ee434fcf46ccafdeef6420:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyNjQ4NzQyNTMzZTRlZWNkYTZmYmI1ZTY4ZGZkNTY5M2FlNzkxN2E2OGUzN2QwMTkyZjc2MDJlZGYwZjBiNTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmYzI4M2IxMThmNmU1ZGUwMzEyYjA4NWE5NmE0ZGE4ZmZjNTA5NWZiZWI3YWZjYjNhYThiYjEyOGMzMzYxNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0274575e06d2448892ecb22f4fa31d86",
+      "statement": "After successful order creation, checkout preflights payment methods and directly redirects a single doumen_intl method through the payment endpoint; otherwise it replaces the route with the localized payment page and order ID, optionally carrying a nonzero distributor ID.",
+      "evidence": [
+        {
+          "resource": "repo://app/pages/checkout/checkout-payment.behavior.test.js#L11-L65",
+          "version": "repo-lines-v1:sha256:72ec88b263a0390e829de33c86143fb5fcced68361e2b49d324a8e23a6ee86ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3OTRkZDhjNWU2YTBkOWVhNDk3NmFmOGRhZDY4ZGViNTQ2N2YzMjhjOWYzMGVmYTRkYzM4YzI5Nzg4Y2Q2NTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/pages/checkout/index.vue#L1032-L1069",
+          "version": "repo-lines-v1:sha256:9d531ebb70050a4b9f58e2730e1bb5c594d9ce718b863bc4bcaad4ace345ef1b:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkOGFiNTRlZWEyNmM0MzQyMjI1M2I1N2U1NjQ1OWJiMTg5YzdlZTY0NWU5ODI0MWViODQyMTg0YmM5ZTIyOGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZmMDFiZjY1M2I2M2Y2Nzg5Mzc2NDYyMTg1Y2Q3OTliM2ZlY2JhNzVlNWVkNjNmYzg1ZTk5ZWMzOTFhNjVmOWYifQ"
+        },
+        {
+          "resource": "repo://app/pages/checkout/index.vue#L828-L897",
+          "version": "repo-lines-v1:sha256:b3091fa0940471c86efa03d6c86f2bd91081320495b22a86efa368068546fbf5:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMzdlMDI0NzQ0ZDFjODU1MTk3ZDI1NjdmMjYzMDFkMjM0ZTgxYzUxM2NlNjkyNzdiMGU2ZjcxNjNhYmVlNDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjczZmQwYzdiNDg5ZWNhYTkzYjU1YTY5ZjkyYjM5NDdjNmE4Mzk2MDViM2U5NjJiYjM5YjE2ZWFkYjQ1OWRiYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNhNmNhYmE1MDZjMjRlNDEzY2Q5ZjcyNDRhMDhkM2RhODU1ZmYwYzdiNzFmYmNjYzMwODA1ZWMyZTY0ZWVjZDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_291135b175d24286bc70a8435cb37984",
+      "statement": "Payment execution is selected by normalized pay type and runtime: WeChat uses PC QR, WeChat-browser JSAPI, or H5 redirect; Alipay uses PC form or H5 form/redirect; deposit is a balance flow; doumen_intl is an external redirect; and unknown types fall back to QR execution.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/usePayment.behavior.test.js#L69-L99",
+          "version": "repo-lines-v1:sha256:6579f5a2056ae73303d03bbe0bb94b7b2b8b9c0ef612ff4d072ebd25039649a9:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkZDY1NmNiZTAzNTY1NmIyNDQwMjI0ZWRkMjQ4MjA0NWI4MWNlOGJiZGY0ZWRmNDE1NzA1YmJlOTk0YWY5OWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5ODUwMTBjZmE1MWNiNDM5ZTUxYThjN2Q1MjFmZWMzNzQ2NzcwODVjYjI5ZWNlOWMzM2ZhMDJmY2M5YzFlYzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhZWNkZDc5NzIyODRkYzBiZWUwYjBiNmNmMjJmZTc5N2QxODJlYzI4N2E0NDhkYTUyMmI2MGRlMjE4N2E0MzkifQ"
+        },
+        {
+          "resource": "repo://app/composables/usePayment.ts#L123-L167",
+          "version": "repo-lines-v1:sha256:2b0a9ecdb3b83efc3ba6c39a0749f2a9e252e726a06619092fcd1b0188362b52:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkNzY4ZTIyY2M0NDQxZWVhMTJkNDBjZWUzMTUzZDAxN2M0YjQyMDFmMGMyZjgwOTg4OTBmNzE0ZmZlMTk5NWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1NDlkNWFkY2YyODcyYThhY2E1MzhkMDFhMDkwMDVjYjhkN2E3ZTFjMmE5NDA3YjQ5ZjkyMjBkMjQwNmFjY2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzOGVjNjQ2OTI0NDg1ZWQ0ZDRkZjRjZjg5ZjdjMjJiZWQ5YWU3ODdmNDI4OWMxMTg2OTg4ZDBlNGYwZGNlMjQifQ"
+        },
+        {
+          "resource": "repo://app/composables/usePayment.ts#L527-L638",
+          "version": "repo-lines-v1:sha256:54fe2939ef6824869d26d58590b8a430606d79eab1cf90b9949d7d65b75a1752:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlZGIyZDdhZDUxNDBmMjkyZGZhNGJlMTI2YjgwNmNlOWE5ZDk4MjE4ODAzYmNiNGM1YzU2NjliYjU4MTRiZmE4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyN2U1Nzg4ZDVkOWQ3M2QyNGE4MWRiYzBhNWE3NGJmYTgyYzljM2IzYWY5OWU1MmFmNzk2ZTkwYjQ2OGE4YTNkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5YzlkYzk4NzhiY2QxZGEwNDI3YzBmOTUxZmE3M2I1NWNmNDM4ZWU2NGVhMTY4OTFmMzM4OGQ2YmMzMTY4NDlmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlZTgxYzkwMTAxNDc2MzA3NWY1M2FiNGFiYWEyZjBiM2QxNDU5MjdmMGVjYjYxZTNkNjU2ZjZhMGZjNzNiY2UwIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_6aab023805084ec7a6a4053881b16e46",
+      "statement": "Payment polling checks order status every 5 seconds for up to 60 seconds, performs a final status check at timeout, stops on recognized paid or post-payment states, and marks the result unconfirmed rather than failed when the bounded observation window ends without confirmation.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/usePayment.behavior.test.js#L35-L67",
+          "version": "repo-lines-v1:sha256:ae5a975319563cfbbd01b4d3af41d501fe1539cc52ec06e462e8836debb3835f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3MGI3YjQ2NmUzMThhNDcwYmFlNjFhZDU2MmYyNzQ0YjcxZWEyZTUxMjk0OTk3YThjZjhhNzJjZmU0ZjMzY2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJjZmZhNDM5YTJlZWNmMzg0M2E4M2M5NDQ2ZGEwODQzZmIyOGZhMzkxYTJkMzdkMWMzNzg4M2QzZTU1MDQzNmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlNTc4MDBhYTE1OTU5ZjU1ZTQyOTA3ZjEzM2U1ODNiZjM5OGE4MDFmZjk0YTIxYmFlMmZlMzc0ZWE2MzliZTEifQ"
+        },
+        {
+          "resource": "repo://app/composables/usePayment.spec.ts#L72-L99",
+          "version": "repo-lines-v1:sha256:88340da385e65f618c6d32a6a0d70b186f5c9b30935113740b610108d064204e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5YjViZTRmMDJmYjAwYzJkYjY0N2I1M2E5NGVjOTZlNjZlOWQwODM4OWNjZjBkOWYzNDlhMjBiNzk2ZDM2YTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkNDk5MGY5ODRlNDE0ZjU1ODE4ZDQzZjExOWVlNmRjYmQ2NWQ4NGVlZDgxNDRkMzgzMmFlMDUxNzk4ZjhlOTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/composables/usePayment.ts#L478-L525",
+          "version": "repo-lines-v1:sha256:b8c9f0bda1a902b34fdd5e2f1f11a8954a57255ecfb09b644b590a64502d49f2:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2NGJmMGExNDMzMGQ3ODgwMTE5OTA5OGM3MjQ0MWY3YTIyNzljNmY0MjE4NGQ1ODRkZTk2YjA4MTFjMTVhOGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2MzFiOTU3ZmJjZjI2NDQ1OGFmZWQ2MmY3N2NkZDdhOGQyMzg3N2E0ZGNiNzJmM2I2YzhhMTU0MDVhOGRlNGQifQ"
+        },
+        {
+          "resource": "repo://app/composables/usePayment.ts#L491-L509",
+          "version": "repo-lines-v1:sha256:611895b8a38bd424b9981a1b16a9f600d28c84c9e8ada08bb7e77b87e8387668:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjMjgzYmFhZjA2NTc5ZDk1MzZhZjc2NjRkMjM5MTM4OTcwYjZhMzIxMzU5NGY1NDYyYmZiMTRiNDA0MTljMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkNWQ0YzU1MjliMmZhNTE2NDExY2Q2N2ZiZjljYTFiNzM1MjI1MmViNmRkMzIzYmY0MzYyYzc1ZTVkNjU0MWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVlZWRiMjQ1MjRiODczZmNlZGZmYjA0NWQ2MjBlNjVjNjcwZTA3ZGRhYTQ4NTk5OGNlMDFiNWUzNmZiMjNmNjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9d04f6324d53434c88494c468466e21b",
+      "statement": "Bank-transfer payment is a separate workflow that loads bank accounts, initiates payment, uploads voucher images, posts indexed voucher_pic fields to upload or update endpoints based on has_check, and navigates to order detail after success.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/usePayment.behavior.test.js#L145-L195",
+          "version": "repo-lines-v1:sha256:f9e1cf87d8aae0c5f422d5d8db57bc2aadb6a2bc23d89040e15e632a1458c44e:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2YzZhMDA1MDMwNjI4ZDIxMmYzZGM3OTFhN2E5ZWQ2NDdkNDUwOTU5N2JmM2UzOTdjMmVmMjA2ODQxNjZlMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2ZjQ3ODdhZTk0NjRjYWNjOWNiZGE4MjUwMmU5NGU2YTFjNDYxZjFmOTlhYjM3NmU1Nzc4NjFmMDM5Y2YxM2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5ODUwMTBjZmE1MWNiNDM5ZTUxYThjN2Q1MjFmZWMzNzQ2NzcwODVjYjI5ZWNlOWMzM2ZhMDJmY2M5YzFlYzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlYzhlMzA4YzhiMzA3OTQ5NmFiMzBhMjdiZTkzYTczMjRkNzc4NzhmNWEyNDdkNzQzZWY3MDBkYTZjZjlkMTcifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/PaymentApiClient.ts#L128-L146",
+          "version": "repo-lines-v1:sha256:234cace07baf066903d94e267a87475dc289cad939cca50b9dbf923999fffa4d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlNmNlNDhmNTgyMTAxMWJjM2RhNzY4NDg4NzkyNzc2ZTJkNjQyZDI0NGI0ZDVmNzVlNzhkYzQ5MzM5NjJlM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYwMDNjNDA1ZWYwN2FmN2MyZjM3NDYwZjZiYmM5MGY5MmE3Y2ViZTg5NzE0ZjkyNjI5YzE3YTYxMmMxODEwNDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRkYzkzNzYyZTJhYWYzZjMxYTgwYTExNDgxMWNlMjAyMzk4NTc1NjQwMzIxOTYxZjU3NzE2ZjZmOThmZTY4ZTMifQ"
+        },
+        {
+          "resource": "repo://app/pages/payment/index.vue#L723-L763",
+          "version": "repo-lines-v1:sha256:114d358ed7df4ccb8c6ae252b55c817157c1bb70319852a47e14ba863452ac96:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2OGIwZGYzN2ZmN2FhYjg2YzNlMjMzZGJlNWI3NDg1ZjY5ZTU3ZmNjNjUzMDAzN2JjZDExOGUwOGU4MjE2NmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIzMzBjZTZiYzRjMDU3NWVkYzkxNTc5MDQyNTlkNGFkMDZiZTIxZDM0NTE2NzkwYzk0YzgwNmMyNWUyNmE0NjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiYWQxOTFiYzY1ZDk0YTFhYmQxM2QxNWFiODUwN2RhNTc2NmZjYzBlNjRkN2M3YWU4ZTQ2NzAzNmNmM2RiMzQifQ"
+        },
+        {
+          "resource": "repo://app/pages/payment/index.vue#L849-L924",
+          "version": "repo-lines-v1:sha256:3fe8c6956bd8223edf4b8b5e914e9244b48f1b20c380b6d8c0f7fd01564e04a9:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA3ZjA5YzVlNTlkMDVkYzgyOWJmOGRkZjliMjc4Yzc5NmJkNmUwYTNkZThjYTVhNjAzNzgwZjM4NTEwZGNiODQifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}

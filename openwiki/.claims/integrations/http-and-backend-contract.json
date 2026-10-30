@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b9642f0d7b093fef7a23f6b798711abdee6bec7b8a27e462d520ec8ca90737d9",
+  "claims": [
+    {
+      "id": "claim_3a305eddf26e4c62a2f38d6f58b17767",
+      "statement": "The Nuxt HTTP plugin provides the shared `$api` transport instance; API clients lazily obtain it from `useNuxtApp()`, define endpoint-specific paths and payloads, and deliberately leave response transformation to downstream layers.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/AuthApiClient.ts#L15-L27",
+          "version": "repo-lines-v1:sha256:9d7af58da46efe77eda1e4f5c32b81f73a0fd31c8af5c5081bceb8687ac5a0ac:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4ZTlkZGFjZmNmM2VjNmQwMjkzM2RiNGRhNzI5ZjBkMTliZDY5YWU5YzAyZTA0YmFlMjg3YzNmOWZhMzgyOGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA5NzY1MjgwNzVjODg3ODU5ODQyM2Q1NWVlNjMwOWYwN2ZjM2E4ZDAxNGFhNjE0MmQwM2RmN2VhMTkwZmQxMjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMjJmM2FhM2FkODgwMDI2ZTkxODFhYzA5NzJmYjE0MGI4NmE4ZTM2OTU5N2U2ZmE2YzY1NWFkMGFhNTIwYzYifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/CartApiClient.ts#L3-L15",
+          "version": "repo-lines-v1:sha256:2108308b062e061b8bcc25eccdb580663eb12e4f7d636a62047590d980b19c04:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4ZTlkZGFjZmNmM2VjNmQwMjkzM2RiNGRhNzI5ZjBkMTliZDY5YWU5YzAyZTA0YmFlMjg3YzNmOWZhMzgyOGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhhNTNkZDliNTgyYTc0YzRlY2YwMTRhZmY4YWM0MDdjMGRmODQzZmVjODJjYTI4Y2M3M2JmMWNkNGUzZmVmOTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMjJmM2FhM2FkODgwMDI2ZTkxODFhYzA5NzJmYjE0MGI4NmE4ZTM2OTU5N2U2ZmE2YzY1NWFkMGFhNTIwYzYifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/index.ts#L3-L9",
+          "version": "repo-lines-v1:sha256:a8e5ea69eae143a0fcf036e122a579fec9f90660fd458bffec66578defc84825:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjIzY2I0YzEzZDY3NzU5ZDU0Zjc2NzFkNDQwMzQ5NzJkMDkwM2EzOWQwOGFmYWU3M2JiOTgxZWI5YWIwZGNmMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDVhOWQzZDZhOWY2NDZiNjJiOTU0ZWYwMWI4NmU5ZmQwMWU0YzNmMzVmZmJmY2NmMjcyNmI1OTI1M2Y1MDE4NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWM0YTdlOGIyNjdjODMxNjVhOWIxY2IyZDkzZmEwNjU0ODZiYWNlN2UzOGNmNmE4ZGVhODExYmFlMGJkZjY3ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2QxYmM2MjUxZDMwZjJhZjNkYjc4MDRiOGMxYTU5ZDk5MzhjOTIxNDAxODRlNDU3MzI4ZmVkMjQ1ZWQ2N2ExYiJ9"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L250-L266",
+          "version": "repo-lines-v1:sha256:548240f746034161a5f1d9bf9aa755e3203480e37f9bd944965f8876efd6453d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0MDg3ZDM0MGE1NzVjNmJmZDUxZDBmZmY4MTA1YzY3ZTcxYTQzZTE4YThkODJhOTlkOWMzNTJiNThiYjgxODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2OGRhZGYyNzA1M2Y3MTBhM2E2OWU3MmFmMmNhNWZmYmY0OTM1OTkzY2U0NmI3ZjVhZWRjMDUyNTQ0YmUyZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0YjlhMGIxNmI5OTEwYmFhNWQwYTRkY2FmZjhhNjBjNDI5NjMzYmYyYWUzY2JhY2M4MjAyOTA3NTgwZDEwY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVkNWU1YzQ1NTVlYWEyOWY4YmFiZjA0MGU0ZjFmMzBlOTJlMDYxN2U3MWI5ZTA1YWUyM2RiNWI1MWQ5NzUwMzkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cfa0d11aead74056848b3da6ce6cbcf9",
+      "statement": "Before dispatch, the HTTP plugin conditionally adds a Bearer token, `company_id`, locale-derived `country_code`, and a B2C-only `distributor_id`; `skipAuth`, `skipCompanyId`, `skipCountryCode`, and `skipDistributorId` control those injections, while a real distributor ID is preserved and an unresolved default store does not send `0`.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L21-L101",
+          "version": "repo-lines-v1:sha256:59c6df7ef35fc16fd199aca7e6de1f6a5f13386069825260b9db51a3bfdb6194:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhN2NkZDlmMjA2ZTNkNTFmMjk5NTg5MmFiMzM3ZjJjMTRmNWY5NzAwMDlkMDYzNWI4MmU4YmRkZGVkMzBjYjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlYTAzZDUwNDlhYjI2YjAxMDc1Mzc2YzRkMGI2YTNkNzAyMjlkODNmOTgwZWJlMThkNmJmNWNlODJmMmMwZGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxYTgyMGYwYTAyMWZiMDBlYWMyOWIyNjZiZGJkNmVjYTMxOTc0YzAwNDZlYzdhZjRjMDJkY2Y3NjQ5YThjYmYifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L266-L305",
+          "version": "repo-lines-v1:sha256:31add0205c2095e6ccaf15a76384cd5bf9db52c6721a7bf60e1a7e9153331fda:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2OGRhZGYyNzA1M2Y3MTBhM2E2OWU3MmFmMmNhNWZmYmY0OTM1OTkzY2U0NmI3ZjVhZWRjMDUyNTQ0YmUyZTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzYzA5NjNiMDQ1YzA3MTg5NmRmM2ZiZGUwYzc4MzhiOTg5N2ZkZTg4ZDExNGIxYjhmZTAzZGZmMDQ2OGYxMDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiOGYxMjg3YmRkZDliMmJmMGY4YzI2NTM1NzY0ZjFlYjdlNmU3ZWFlZTlkMTRhNGI3MDgzNjk5N2YxYTVlOWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiZjYzMzdmOTE0YTc4ZTU1YjhlOTY5MmVlYjU0MDQ0MTQ1NmM2NzAyY2FhYTEyZWIyOWM2ZDZjNGNmOTg1YTEifQ"
+        },
+        {
+          "resource": "repo://app/types/http.ts#L4-L16",
+          "version": "repo-lines-v1:sha256:05415fbaa3ac694d8e4d3c30cb590a87c5344b96626f5ff616ea7e672bd10e5a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhZTI3ODkxOGRmY2Y5NjcwNzQ4YTFiMmJlZDViMGU1YmQwMjY4MTBiZGQxZDI4MjIyYmIyYjI5M2Q1Y2MzZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNmNzIwNzBlYTA2NDExNDg1NDU0ZjRkODY1YmI4MzYwODBlZjA5YWM3MjI2Yjc2ZDQ4MTQ5NzM0NmQ0YWE5ZTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxNGM2YjVkOGNkN2QzNzVjZTFlYTYxMDhhOGE1OTMwNTcwNTRkZDhmMWJlNjFjZTg4MzE4Y2E1NmFjYWUzNmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d2a89655317147e384f9084206d3ed53",
+      "statement": "The plugin routes GET parameters through `query`, defaults other structured requests to `application/x-www-form-urlencoded`, supports `useJson: true` for JSON bodies, leaves `FormData` and `Blob` bodies structurally untouched, and does not overwrite a caller-provided `Content-Type`.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L174-L209",
+          "version": "repo-lines-v1:sha256:9c464be34806d834ccf1d610a856d6bbbccc0200c91e1a571286525108e9ec16:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0NGMxODUwN2U1NmQzNDI5YzRmMDBmOGE0NzZlYTBmMmJhMzkxZjhiMDg0MTQ1YmFkNGY3MjYwYjE4YjZkODEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyOTE4N2E3ZmI5YTFmNWVkNGM0NGY5ZDdlYTAxZjAxYTk1ZTUzNDM2NjczNTQ4ZWQzODFhZWYxZjE5YjcyNDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNhMDgzY2I1YTI2N2FjZDk5ZWYxZTk1YTlkZjZhZjc2ZDgyMWVmMjU5YjhmNmRmNzRiNDBjZTAwYmI1N2JiYzQifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L278-L308",
+          "version": "repo-lines-v1:sha256:b144df21025813b20a247fb44e039e82b69befe980a5b28bd8266c266e9cddb6:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZiMDFhMDZiOGFlNGRiNmE3MjdjZjRjZDFlN2I2Yzk5MDNhZjNmZGIxOTFhOWM1NTczMzBiMjkwOGI3ZWQ4YjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0MzlhYjU3YjIxYWU5ZGE2ODAzNjhkMTliZDJkYmUyN2M1YmMyMjM0M2U0MDE5ZmNiNjk4ZGMwYzk2YWFmYmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFlNzVjYTg4OThhNTZhOTZmZDI3NjY2OGEwMjc1N2UwZmNhY2I5MWY5OTAyYjZkZThmZGY5MTYzZTRkZTQ4ZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEzNjkwMDljOTVhM2UyYTQ1NzZiMGQ3NjdhYzg5NmI0MDZkMzk0MDE3YTBlYzk1ZDgyNDZlMzI2ZDczYzcwOWUifQ"
+        },
+        {
+          "resource": "repo://app/utils/formUrlencoded.ts#L1-L26",
+          "version": "repo-lines-v1:sha256:86e027a108d00bf4eb3cf8c2a294e4249c1778af547b7eeaf19f007d09a1daa5:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmYTY3ZGNjNDZiYTgxOWIzNWE5MzEyZWVlYmM2YTIxMWRlNWQzNzI3MDdhNGMzYWQzZGMxMDE2ZWMzN2JjOGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlNTcyN2RmNjgyOTJhYzQyMTQyZGUzM2ZmMWE4MDY3OGQ5MTBmMTM2ZTY4Yjg4YzlmNDZlYzU2NTg5ZDhiYmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5db762d731b74d3589b087d0670dada3",
+      "statement": "The form serializer is shallow, so endpoint clients must encode nested or repeated values themselves: `OrderApiClient` JSON-stringifies `recommend_item_id`, while `PaymentApiClient` expands voucher images into indexed `voucher_pic[n]` keys; JSON recommendation matching uses `useJson: true` to preserve arrays.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/ItemApiClient.spec.ts#L64-L112",
+          "version": "repo-lines-v1:sha256:3b313e96dacca5cf7b1cd32366293a594a9d0ce51c6bc0cd1c6a05c9ba9219a3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjYzVjYTAyYWQ1NTcyMmFlZWE5MzgxOTMzMDVlZjhmZWNiM2EwYTAyNzk5MWY2ODBmMzQzNDk1MGVlOGZlOGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlZjBiOWRjMmI1ZTFiOWFiZWNiZjJmMTAxNWE0NTIzY2IyYTc1MWVlZDgyNDQyYTBhNzA4ODBmZmNhZjliZmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/ItemApiClient.ts#L190-L210",
+          "version": "repo-lines-v1:sha256:e40fa6bb514cc619f088120301406ee10b4bbdf665491487b0fb228cba36ca03:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlNzExMjdmN2Y1ZjE3MTdiOTZlN2U5NzY5MGE3ZDE4MWE1MDcyMzdmY2FkMTg4NDBiYmIwOTM0MDIyYTkyMGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkMmEyMWRhZDAwYTg1OGZlMGJjZGQzZjdiMTUxNjliY2JlODhlOThjNmNmYzE1ZmFhZThiNDU3YmE1MGU5NzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5NjA0NjFhYjVkMzJkNWFlZjMwMDc3OTAzNmJlMmQ5NTViODFmNWU1ZTVhNmU5ZmY2M2ViYzAxYzZlNDEwZDAifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/OrderApiClient.ts#L149-L168",
+          "version": "repo-lines-v1:sha256:336bff72c45512fc3ca13e1139d9f250c9a6e005109fdf0e7684eee670cd4d5c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZDg4YmVlNDhmYzAyMTk5Y2IzNjFiZTdiMTc2MTk3MGUyNzE0NjkzMDFmYThkMTlhOTg3ZGY3MDNmMDVmMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4OWEwN2JiMzEzZDEwN2ZjNTA4MGMyODRhMDMxYzFkZjUwYjkxYjUwYjg0MjAzM2JmMWU1NmExMTNmODRjY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4NzU2MzU0MzAwNDM5Y2VhMjlhZTQ1NzUyYjczM2M3ZDM1ZDczYTczOTM5YjExZmE2NDY0MTRmMTJjNDc5OWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkYzVjZGVkOTI3ZDc1ZWFmMjYyOTg1YmE1NzNlNTkyM2FlODMyMjFjMDY1MmJmMzVjMWZlOGYxODVlOTExYzQifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/PaymentApiClient.spec.ts#L13-L56",
+          "version": "repo-lines-v1:sha256:04c0201a6d60160fef84ca41e05cd49365de3e95f665bd79cd618f7b466e0b21:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2M2JhNzNkYjk1NzNiNjQ1OWQ0YWExNWI4ZDQ1MGM5MzE0ZWZhNmYyYmY2MDFiYzFlZDM3MDBjMzg1ZDRhMTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkYmNkMTAzY2VmM2IxMmEzNzk1N2ViZGE3MzA2OGRhNDAyMzIzMzJhN2ZlZGEzM2NmM2JiNzY1YWZiZjNiMDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxYjIwODJhZGQ5YTI5ZTA2MmU2MGQ0NmRiYTFlMWY3YzUzYTBlMDUwYjg4MTE4YzExMDIxOGJjY2UwNTUyZDAifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/PaymentApiClient.ts#L128-L146",
+          "version": "repo-lines-v1:sha256:234cace07baf066903d94e267a87475dc289cad939cca50b9dbf923999fffa4d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlNmNlNDhmNTgyMTAxMWJjM2RhNzY4NDg4NzkyNzc2ZTJkNjQyZDI0NGI0ZDVmNzVlNzhkYzQ5MzM5NjJlM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYwMDNjNDA1ZWYwN2FmN2MyZjM3NDYwZjZiYmM5MGY5MmE3Y2ViZTg5NzE0ZjkyNjI5YzE3YTYxMmMxODEwNDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRkYzkzNzYyZTJhYWYzZjMxYTgwYTExNDgxMWNlMjAyMzk4NTc1NjQwMzIxOTYxZjU3NzE2ZjZmOThmZTY4ZTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_58c8519712ab4b2abddd3b234716ba92",
+      "statement": "For successful API responses, the plugin interprets a business envelope through `response._data.data`, rejects business `status_code` values at or above 400 as non-retryable `BUSINESS_ERROR`, and unwraps the successful data payload before returning it to clients.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L108-L124",
+          "version": "repo-lines-v1:sha256:371939389d2b1aaccd222a4c9ca3d33697fb5b1fba783aabe62510f8ca11e74f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4ZmVlYjQ4Mzk5NDk3ZTU2MDVkNTZiNDcxZTNhODk5ZGRjYTczOWRhMTllOWNhMWZhZDlmN2I4ZGU5Yzk5NWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyNTg2ZWI5NThiYjM1NWEzMjZhN2ZkZWQ3YzM5OGY5YTUxOTgyN2JkMGI5Njk3YjhlNDZiMmZjN2ZiZjBmNGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlM2Y2Y2FmYTM4M2Y1OGRlN2NiOWU3NGUwMzg1ZWI5ZDFmYjE2YWUxNmVkZTNiNjUwNWY3MGMyMjVjNzQ0NjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVlMmI5ZTIxZmRjODZmYzJjMmVlNDQ3MjE4NWQ2NzY0NjdiZGQxY2JmMmUyNGI0ZGM2NDRhYjFhYmIzMzI1NDcifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L334-L373",
+          "version": "repo-lines-v1:sha256:c5060ba1fd70947a1a0ff5d6561e4db27dd02d23a1fe26f14b35d0da9fe5a795:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3ZTUwOThhZDk0ZjYyZjk4Y2U0ZDMxMmU1Njc3YzE0ZjViYmVmOGJhODU5ZTQwMTZlNzUzMTdiZDJhZTkzMzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQxMDhkNWZkYjRhYmFhZTY2MDY3ZTZlNTBiMGUzZjc3NDMyNzg2MTNiZWMwMTUzMDM4NjEwYzk5MTYyZjE0NjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5OTZmOGI4MWE5YjI3YjViYjc1YWEzZjg0MmI5MWMxZDI4YjVhN2JjODM2NzkwMDgyMTA2YjI4Yzk0OWVkZTYifQ"
+        },
+        {
+          "resource": "repo://app/types/http.ts#L34-L43",
+          "version": "repo-lines-v1:sha256:6fce73b391e43fbe2b0b6c7f8c8a7403a31ec7a0b07bdab25ca086e13811b80a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2MTBjNjg5MjhkMTQyYzJmY2NmOGEzYmNhZTVkNWIyN2NmOTdlMWEwZmIwMGNjNDQ1OTA1ZjgzYjQ3ZjliODkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIwNjY4ZmU4YTA4NjkyZWYyNDU0OTNlMGIzYmRiMWY5MGFlZjgyNTU2YmQxMjhhZThhMDQ3NDU4OTcxZGQ0NjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ0ZGZhMjhjMTUxZTRhODBjNjgzMWIyODhjYjQxMWFiZjg3OWVjMjIxNzFiMmZhMzQ2YzQ2YjZkNjQ0NTdiNmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_72534ce79cc14cee90ee3db51e9f8d06",
+      "statement": "The plugin captures `X-Token` and `X-Refresh-Token` response headers into the `token` and `refresh-token` cookies, independently of body transformation.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L316-L329",
+          "version": "repo-lines-v1:sha256:5bddd83ab30f5943b16e839c0c4b85cd9e2da3a287f217ef8f3215a5edc26178:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxMDBmZmI3MDkzY2M0M2YwMmYyZjJlM2QyNGU2MmNiYWNjMjEwYWIwZGUxYjYzODI0Y2RiMjFmNjIyYTI1N2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQyMmVlNmFiYWRhZjUzMGQ0Y2VmODJjNTE5ZjlhNTAwYjU5YTZiZTU1ZjM5MGZjYWJjMTg0YjRlNWI3MTJhNjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNhYjkzNTg2NDA1MDhlOWM5NWRkOWE5MmExNGRhMWMwZTdhOTEzYzEyMTAzNWM1MDk4M2NiOGQyNDliM2E0YTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ef3fbd45d9944c68940fd54a7e9617a3",
+      "statement": "HTTP response failures are normalized into `HttpError` categories: 401 authentication, 403 permission, 422 validation, 5xx server, other HTTP errors, plus timeout, network, and unknown error categories; retry eligibility is limited to 408, 429, 500, 502, 503, and 504, and errors are rethrown after optional client-side toast handling.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L127-L153",
+          "version": "repo-lines-v1:sha256:1c048232049d2da2547d8c392dc6fb9baf47fa8077517671dda5fbfa1fcfb9f6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2JiYzY1NDY5ZGIxY2EyODQyZWZkOTdkZjdlZTJjZTZjYzE1NzE0ODJkMDFhMThiNzkwYTEwYzdjNTEwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0MGM1Mzk0NWQ5NWY1ODc3ODhmYTNjYzIwNzIwOWNjYzAxOGQ2NTE1YjJmYjI4NGZiZTA3OTJlZTdiYjFmNTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhMzE2MTVlNzQyZmE1MDVjMTQ0OTQ2YmI0MGE1YjZiMzFhMzhkNDgxYTUzNGZjNWZkNTJjN2ZjY2YzNjI1ZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3MjY1ZjY0YzVjMzBiMzU5NmQwMjkzNzgyZDllMDc5OTI0NGQzNjc5NjY4YjI5YjVhODNlY2Y5NDU2ZTk4ZmIifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L376-L425",
+          "version": "repo-lines-v1:sha256:6860c7f3d7991ab783c30701b98ed7e1f4921d10106e940692da5e1262e5bf0a:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyYmYzMDA0YWNjNGMwYjRlOGQ4ZDU4ZjQ1NmUxNDRjMmU2ODk5NDRkY2E1Mzg2MjhiOTU2NTdhZDg0MjI1YTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2Zjg2ZDgxNTFiNTRkMmNiYjliZTBiYzJhNmE4Y2JjMmNiYWVkYTk5ODRiZjkzOTMwYmZjZmNiN2U3MWU0ZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM2OGYxZDRkZmMxMzE1YzRmYWY0NzdiMTEyOTUzYTg4ZTJjMjIxOTZkNGJiNjVmZDFkYzViNDFmYjQzYjAzY2MifQ"
+        },
+        {
+          "resource": "repo://app/types/http.ts#L65-L90",
+          "version": "repo-lines-v1:sha256:0a8bc724649bea089f6c251ac9675be8283bd887863b150256a78ad82295117d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcxMDczZTQ4YmIyZWY4MWRmNjNjN2VhNjc2ZWY5MTc4NWY5NTZmMzQ4ZDRhOGQzNmE3YmU0ZmRjZmQ0YmVhNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAzY2UwZjZjMmEyMDgxZmY3ZjhmZTMzYzA5MDJmMmQwMDM0MmI4NGViMDc5MWYzOTg4MGVkZTkyYjUxMmRiOGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5NmEzYzNhYTY4NDcxMzQzODVhY2I2MjJmZTkxYTNmNTJkODk3NmU5Yjg2YmQ0MjRiZmI2ZTQ3ODk2ZjJiY2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4428f023396d4aa6ac8549d9dd5eb242",
+      "statement": "The shared `$fetch` instance is configured for three automatic retries with a one-second delay for statuses 408, 429, 500, 502, 503, and 504; this transport policy does not retry business errors.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L118-L124",
+          "version": "repo-lines-v1:sha256:be3de3dec9ae63d4244d96856f1900afb925ef4e24ace159095acb9bcf4aedaa:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzczNjI5NGY5NWZjNjk3ZThiOTk2ZGU0YmYwZjFlYjFjNDgyMGQ2MDM0NjliYzU3MWVmNDYxODk2NzlkMmM1MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzI1ODZlYjk1OGJiMzU1YTMyNmE3ZmRlZDdjMzk4ZjlhNTE5ODI3YmQwYjk2OTdiOGU0NmIyZmM3ZmJmMGY0YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODQ0MDE2NTUxM2I2OWNjOGVmNWMyZjE2M2U0NjdjMTQyOGVhNWNhNjAxNjg0NzNiMTVlMTFiMmQ4YWM2NzU2MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUyYjllMjFmZGM4NmZjMmMyZWU0NDcyMTg1ZDY3NjQ2N2JkZDFjYmYyZTI0YjRkYzY0NGFiMWFiYjMzMjU0NyJ9"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L257-L265",
+          "version": "repo-lines-v1:sha256:c875dadaaf81102409b5507af57c965ff26bfdac42dcc4989e225f4f3f6eaa80:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmMyMjdhYTdmNDVkMzI0NDc1ZjMxMmM1ZDU4ZjAxNDRkNGUyZGE5ZjU1MjUwYWJiMmMzNjM3Zjc5MDk1MmJmYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiN2M5N2JjODM0MzYwNGU5ZDUwYjg1M2RjNWZiMTc5YzQ4N2I5OTI5NjhlNjY2YWU2ZWEyMTk0MzEzOGM4ODQ0NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWFjNTgyYzExMjNkYWU0ZmNlYzRkMjRhYzZlYjFhOGVhODdmOTQwNzBiNmI1YWE5OGU3NjBlYjllZTRlNzkwNyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9471254738014fc2bdab38fa8388143a",
+      "statement": "Both an HTTP 401 and a business `status_code` of 401 navigate the client to the localized `/account/login` route, and this plugin boundary does not perform automatic refresh or logout; token refresh is an explicit `AuthApiClient.refreshToken()` and `userStore.refreshAuthToken()` flow, while logout and failed user-info recovery clear session state in the user store.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/AuthApiClient.ts#L236-L266",
+          "version": "repo-lines-v1:sha256:a1093ef54106d05a2b6f60008be50c9daf906a7f16fe0a2087c37667a4247155:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L338-L359",
+          "version": "repo-lines-v1:sha256:fb6dd584503ded9247826cc9f2ba8d368fea386df08b60ccb84d25f52ddbd286:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyY2IzMjAzMmNmYjIzOTM0MzM2N2FmMzViMjcxNTAxZmRjNTIyMWU1OWNhZDM2MGQxMWMyNGM0MTI4YTIxMDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3ODcwNGNhNGZjMTg0MTQ3NjUyMDkzNjlkZTc4ODI0NWNlYTZlMGU0M2Q5NWU1MDhhYWRlNmQ5OWIyMjM0ZmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5MjA4MzFlZDQ0NjliOWYwNDFkYWM4Y2I0ODRhM2NmM2RmNzNlNDc1MDAwOTc5M2NhZjhkMWI4ZjJkYmZjODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1ZjNkMGVjMWU1MTdkNzQ0YWY2NmMzYWUzMWQ0ZThkODY0MjQxNjFjNmM5NTUyNDc0NDBhNWFiYjdmMGVlMjYifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L383-L399",
+          "version": "repo-lines-v1:sha256:01ad20efa66afe1fe08198050ff8cb984539becd254debecd41214514cb56443:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjMjk1ZjMzYmU0ZTcwMWJlNWZjY2IxMjRkOTk1ZjcxMWRlYTAyMWQ1OTc3ZjRhZDQyOTlkZDEzMTE3MTE4MTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg4MDA1ZDU3MTA2YTM2MmViMDAwZGFmM2RhNDY3NGM4MmI1MThmZjVhMmUyZjY3ZWU4ZTc1N2EzMzNjMmFmNjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI2NDZhNTM2ZGMyZjNlM2MyM2RhMjAxM2JmOTViYjBlMDhmNzI2ZDExNzgzZmQzZTdkMzhiMWRiYmJhNmQxNGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3YzUxNGZhMjFkZDRiMjZmODkxYmUwNjI3NjM5YmYxZTdlNDZkYzk2MDI0MGY4ZGZmN2Y4N2NiYzZkNTM4ZDcifQ"
+        },
+        {
+          "resource": "repo://app/stores/user.ts#L162-L174",
+          "version": "repo-lines-v1:sha256:e72e6bcbd4fb79a6637a5032c2c21471810b8b265353b34d966e5e6edcf15bdf:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2JiYzY1NDY5ZGIxY2EyODQyZWZkOTdkZjdlZTJjZTZjYzE1NzE0ODJkMDFhMThiNzkwYTEwYzdjNTEwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3MWZhOTJjNTJmYzA4Y2UwZDMyM2VhNmI4ODk4YzcyMWJhNzg4ODQ5ZWJiYzg2MjljYTE3M2ViYmU0MTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY0ZWZmMmIwNWRmZDlkYmVlOTY5NDk4MWZiYWQwNzljMjE5MWM3YTIyMTIyNTE5OTIyMGQ3NjgzNTAzYjc3NGUifQ"
+        },
+        {
+          "resource": "repo://app/stores/user.ts#L210-L239",
+          "version": "repo-lines-v1:sha256:c9c5bce4f52e653b664ffae2ccb9dde15943136f1548d868a1574eb236282ce8:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyOGU0Mjk5Yjk3NDNlZjFhOGJhNzcwNWRhZjg1ZjNiYTBmNGMyYmEzNjQ0ZWVlMzc3MmQyYzEyMTIyNWY4YjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliNjJmNjBkODU5MGE1NzljZjQ2ZjhkNjczNzhjNGM1NzJiOTYyY2VjY2RiOTBjN2E1ZjdiNDJiOTYwNzgyYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3MWZhOTJjNTJmYzA4Y2UwZDMyM2VhNmI4ODk4YzcyMWJhNzg4ODQ5ZWJiYzg2MjljYTE3M2ViYmU0MTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmYjIzNDQ3OTg3NmRmNWFmYWQ4YjRmOTJkOGJhYWI0OTJlZGUzYTg5ZjdkZWM0MzU0NTRiNjgxOTY3OGEyY2MifQ"
+        },
+        {
+          "resource": "repo://app/stores/user.ts#L242-L273",
+          "version": "repo-lines-v1:sha256:f841e306015eb32d6986436ebcc176ad01bc314355c5fe99fd29a99657cc2294:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2JiYzY1NDY5ZGIxY2EyODQyZWZkOTdkZjdlZTJjZTZjYzE1NzE0ODJkMDFhMThiNzkwYTEwYzdjNTEwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliNjJmNjBkODU5MGE1NzljZjQ2ZjhkNjczNzhjNGM1NzJiOTYyY2VjY2RiOTBjN2E1ZjdiNDJiOTYwNzgyYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3MWZhOTJjNTJmYzA4Y2UwZDMyM2VhNmI4ODk4YzcyMWJhNzg4ODQ5ZWJiYzg2MjljYTE3M2ViYmU0MTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxMGVhZmExNzZiZTRjMDVmOGVjY2ZlZjY3MTkzYjM3NTQwMzZkZjc0MGRkMTQ1YzkyZTk1ODI3YmE4ODY2YWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_43aca672d6c14193b56c7462fb3e1aac",
+      "statement": "Transformers are downstream pure mapping boundaries that convert unwrapped API payloads into application models and apply model validation or normalization: authentication requires a token, cart data becomes value-object-backed models, and order calculations convert cent-based amounts into application values.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/transformers/authTransformer.ts#L23-L38",
+          "version": "repo-lines-v1:sha256:125af4016fd34edf59d83f51a67103127c8fa25aec10f138efd699907cb26b83:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1Nzk1MmE5MzcyYTIyNTY0Njk3M2Y5NGI0NDZhZjNlZDQwMmM3YzMyYjI1NGQzMTI5ODcwOWMwYjFkOTQxNjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5MzdjODUxZTA1NmQwMzhjMDhjMmZkMmIxMWM1YjgzYmNjOTI2M2M0NDJjYTliNTI2NTZlOTRmOWZjZGE5ODkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3OTI5ZTkxZTBmOTljM2U4MjVkZTY5YjQzNWZiNjQ4NGQxYjBhMWRmMmY0NjU2MWFiZjFhMjlmMDQxODhiODgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMjJmM2FhM2FkODgwMDI2ZTkxODFhYzA5NzJmYjE0MGI4NmE4ZTM2OTU5N2U2ZmE2YzY1NWFkMGFhNTIwYzYifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/authTransformer.ts#L47-L81",
+          "version": "repo-lines-v1:sha256:c546b599a1c94d7a210a3496194b06ed8db5b4acc943dad7783015e2fbbbf925:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0MjliNWMzOTdhYjNhZGVlNTM1NzIwOWQ2ZTZlOWI4ODVmMzY4ZDY4YWEzNGYzYTVjZjY5MDkxNmJmMDNkYWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY1YzMwMjRjOGNhZDA4ZjA4NGIwY2YxMzA3OGI2ZTc5OTk2NjFlYmNjMWY1ZTkwZDU3YWJhZTU0ZmU5ODhjNjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImViMWJlNGJhM2FhMzE2M2NlODg2OWMwNTUyZTljNWZiM2Q3ZTg0Y2E5NTJjZWNhOTRiY2U2ZDYwMjNiM2Y1NDgifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/cartTransformer.ts#L11-L27",
+          "version": "repo-lines-v1:sha256:d981138c53a9593bc413c3ddb29595789793cb2e39d51952bd009f6e7a28a2f7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyZTYwNzc2ZWUyZGYwZWMzZTRiZDNlYjMzNDc4MzgwNWY3MzU3NzAxOTNkYWFlOGVkMjBlN2VhMGEwOGU1NjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUzYTdhZDJlM2Y3YTQ5MzYyMDZmYTA4N2E2MDkzZDI4MTkyMzk5NDM4YWM5ZWNmZDYxZTcyM2M2MjgyMzE3YzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMjJmM2FhM2FkODgwMDI2ZTkxODFhYzA5NzJmYjE0MGI4NmE4ZTM2OTU5N2U2ZmE2YzY1NWFkMGFhNTIwYzYifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/cartTransformer.ts#L38-L45",
+          "version": "repo-lines-v1:sha256:fae9ed68ed3318f871959afa11cf6a76349c1c64b27bf22582d84ca060669e0f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmQ2OGI2M2Q2OWJkMWQ5MDM5ZDA5MmFkMDYwOTVlN2ZlMGQ5NmRkNWYxY2ZjZWJiYmJmNmVhNjhmMmFiMzQ4NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGUxZmNmYjcyNjA4ZTdkNTY2MjM2MjJjY2VjYmE3ZjU3Y2NjOWVhNTQ3NTkyOWQxMjhiMDAxNTI5YzUyMjljMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjljODI1YzMzNTg3ZmU0OGVlNWI0OWJiMWFlY2UzYWUxNmY5NDRmMWJlYmZmYjg2NzhlZGMwNjk1ZTI5OGUwYiJ9"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/orderTransformer.ts#L12-L19",
+          "version": "repo-lines-v1:sha256:edec22a3c2a07a78c988b67adc56f1e5d7186d42c3a7ae19e7d94e8944f68742:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWFmMjJjZjA3MzI1OTJjMjQ3MTQxY2JlNjFlZmExMTAxMjYxMmY1YTMxMjJiOWFmOWJiYWY1MmY1NzI0ZDE5NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTcyYTQyOTM4MmIyZTE0NzE4ZTBlMzdiMDU3MGE4YTE3MDI5OTFmY2Q4NDk4Y2Q4NDA2MGE4YmY0ZjA1MDE3YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjc1ZGJmY2NjOGEzMmMxMTQzMDg2NThkM2YzNWE4NmRlZTlkYTI4MzAzNGE2OGMyNGMyMzJhNDhhYzMxYTljMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzYwYjAyOTU1OTRjYzc1NzQzODM0NDJmMGIyMjM5Y2UzNTBiZDZkMDM1MGUzMGU2ODc0OGM3M2RlNTUzODNhNCJ9"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/orderTransformer.ts#L211-L276",
+          "version": "repo-lines-v1:sha256:10b219bd6100611b0a5039f66c90a2217d349c57db669306826208216b742072:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_24d62f680e6d436eaf8b25e26d0d732f",
+      "statement": "Focused API-client tests verify the transport contract at the call boundary: item recommendation requests preserve JSON arrays and omit invalid distributor IDs while retaining real IDs, and offline voucher uploads use indexed form keys.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/ItemApiClient.spec.ts#L64-L112",
+          "version": "repo-lines-v1:sha256:3b313e96dacca5cf7b1cd32366293a594a9d0ce51c6bc0cd1c6a05c9ba9219a3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjYzVjYTAyYWQ1NTcyMmFlZWE5MzgxOTMzMDVlZjhmZWNiM2EwYTAyNzk5MWY2ODBmMzQzNDk1MGVlOGZlOGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlZjBiOWRjMmI1ZTFiOWFiZWNiZjJmMTAxNWE0NTIzY2IyYTc1MWVlZDgyNDQyYTBhNzA4ODBmZmNhZjliZmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/PaymentApiClient.spec.ts#L13-L56",
+          "version": "repo-lines-v1:sha256:04c0201a6d60160fef84ca41e05cd49365de3e95f665bd79cd618f7b466e0b21:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2M2JhNzNkYjk1NzNiNjQ1OWQ0YWExNWI4ZDQ1MGM5MzE0ZWZhNmYyYmY2MDFiYzFlZDM3MDBjMzg1ZDRhMTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkYmNkMTAzY2VmM2IxMmEzNzk1N2ViZGE3MzA2OGRhNDAyMzIzMzJhN2ZlZGEzM2NmM2JiNzY1YWZiZjNiMDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxYjIwODJhZGQ5YTI5ZTA2MmU2MGQ0NmRiYTFlMWY3YzUzYTBlMDUwYjg4MTE4YzExMDIxOGJjY2UwNTUyZDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_262134774b0e458292ff9c5d5350da37",
+      "statement": "The plugin chooses the server internal API base when available, otherwise the public API base, and configures a default 10-second timeout; the relevant runtime settings are `apiBaseInternal`, `public.apiBase`, `public.defaultCountryCode`, and `public.businessMode`.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L250-L264",
+          "version": "repo-lines-v1:sha256:3a5d9eceb3349e20a39862e203a5ca389c9b67b2618353bab13192086bed6a99:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0MDg3ZDM0MGE1NzVjNmJmZDUxZDBmZmY4MTA1YzY3ZTcxYTQzZTE4YThkODJhOTlkOWMzNTJiNThiYjgxODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ5NWEyNTQxMzc0MzVlYzQ2ZTNiMmRmN2UxNDQyZjA0YzkwNjJjMzUwNzMxZDJjOTRkODU2NmZiYzY2MjAwOWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0YjlhMGIxNmI5OTEwYmFhNWQwYTRkY2FmZjhhNjBjNDI5NjMzYmYyYWUzY2JhY2M4MjAyOTA3NTgwZDEwY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ3Y2FmOWM1OGU1NGNiMzE5YjAwMTg3ZjYxZDg5MmFiZmQyMDNhMzBiZWVlZDk4NTI5NzFmODdiOWYxM2E3ZmUifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L123-L143",
+          "version": "repo-lines-v1:sha256:4135007739546110ae3538a0e85505a3fcd62f7a0fd2577b9b8b5299ae5c7ff8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwOTc3MmJkZTI2ZGFjMjhkNDI0ZjNiN2U4OGQyMWFmNTBkZThlMzEwYThiZDA4Y2E2ZDEzM2FmM2ViYzUwNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2ZDJjZjBjZTdjOGQ5MGIxODAzYjgzNmQ1MWJjZjhmOTQxMjU4NzI2MWY0ZGY1ODQ5NGVjMDQ5N2M2YWNlN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYzQ3ZmUwYmNhOGM0Zjg0NDdiZWU2YTVkOWY0MjEwODkwZTVjNDBiNjA0Yzk4NjhiMjc2NDUyNjg1Yzk2MjYifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}
