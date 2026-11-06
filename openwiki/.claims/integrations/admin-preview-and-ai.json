@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ffd3428685cf73a3be2362471793781a531b25d25a0b99f57c57cedb07a8eacb",
+  "claims": [
+    {
+      "id": "claim_c710d308f195485790085a3dddc19319",
+      "statement": "Decoration preview accepts incoming postMessage control messages only from configured admin origins, with a development-only loopback hostname compatibility rule; when no origins are configured, only development loopback origins are accepted.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L18-L27",
+          "version": "repo-lines-v1:sha256:555c9216f87048748f99ba7e7801a4df90c7ffdcdeccb133d8fa99c768201de4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwOTE1MTc5MGM2YmZkNjMwMjkwNGI1MGZlMDU4YTEyZDljZWZjODE4MTU1NjllNzUzOTBlZGMxNzg1NjVlMjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRmNjUxOWE2ZTE2MzEyNThjYjI0ODRiMzE2OWQxY2E0ZDA5ZmI0M2FlMGJkYjViZTI2NTkzNjAxODBhODc2YWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5YzBmODM2YWNjZGI4ZjA0YTkwOWJmYTMwZTY3YzlkOTFjMzM3ZDRmZTgxZTc4YTAxNGFiNDg1YzU0YjM4NDcifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L288-L302",
+          "version": "repo-lines-v1:sha256:2f9d034d7726995066f1c952cde1c368c03fb56e80e26c78119f86568424492a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YmQzNTIzNmRlOWVjYTI0MTI3ZTJmMjQwYjNlZjAyZjNhMzlhNTFhMGZiMDVjNTc4OWM5MmM3M2UzYzA3ZTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmZWUwYjljODI0MGZiNGViYWRjZmU1M2NkMjQ2ZjA2YjBiMmNhY2E3OWVlY2YyZGQ1NmVhN2RkYTNmYmU5NDAifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L86-L129",
+          "version": "repo-lines-v1:sha256:a7f5035b28a789d8dabbae5808a8d91769d1c6a5c1068402fea5019a77eaee21:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2OTcyOWVhYzI1NWQ1ZWJmMzM3NjY2ODBhOWNiYjdlYzAxYWQ3M2U5NGNkZTkwYzVmMWUxODIxYjFjN2MxOTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQzOGJjMjJiM2QyMWQ5MzZhYjE2NDk4NjYwZmY0NjZlOWRjYjZkNTc5ZWQ2Zjc5OTMwZGMzNmIyYWMxZTBlMzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e2bb192ccaf34c70af172d8eaa5ba39f",
+      "statement": "Decoration preview derives its outbound parent target from an allowed document.referrer origin when possible, sends PREVIEW_READY only from an iframe in the browser, and uses a 250 ms retry loop capped at 20 attempts until a matching PREVIEW_READY_ACK is received.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L216-L242",
+          "version": "repo-lines-v1:sha256:ebd1e0e71ff21190981c9102fae2d815533ca44a41d1cde93e12e762f34e1ff4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1YWRlOGQ0MTMwZGFjODZjNzhmZDA1NGM1YTE3YzAxNzA1MjZiYmI2ZjBiOGM1ZWQ5YTMwNTdiZDE4ZWViMzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQyYWU0MjFkYmNhNDU0NjgxNWNhMDNlYjg0NDZkZDY5MDhiMmZjZGZjNjIwOWY5MThiYzdlZDM0YWM4YjQxYzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIwMDVmMGEyMjliMjgxODE4MjI0ODAwNDc3Y2M1NDQ1MTE5Y2U5MDNkZDU5MGU3MGQ5MjJkNGRmMGQ3MWYwNjEifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L354-L387",
+          "version": "repo-lines-v1:sha256:b6bb6c62cc10ba9209adbcc84bb47d67350064db6b336a15370e8cc3ece7030b:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhOTI3NDAzNDExYWE0NGQ1ZGY5ZjQ4OGZiOTEwZTNmYmEzMDBkYzFhMTViNWQxYmM3Mzk5Nzc2NzFhNzgxNzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0MWE2YjZhYjY2NWYxZGM2ZjVlNWZjM2MwOTU2NDFiNzQ1YTgwYmM2NzIxMDA2NDVjNjg0MTEyNjk4MTBhM2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwY2IwZmFiYWU2NWYxNzk2Yzk0MzIyNTYzNjY1Y2EyYWFjMzExODdiMWE1MDY4NzBmZjllMTI4ZmNlYzM4MGIifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L390-L469",
+          "version": "repo-lines-v1:sha256:9a7341c6e3767a930c81589e5b2ec99abdab15251768d3c2fa06672a898fce1e:eyJzZWxlY3RlZExpbmVDb3VudCI6ODAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJlYTI5MjMwZGU5YWZiOGNlNmEwZDlkY2ZmNjhiZmNkZWE3NmI3NTNhNWVlZjU2ZjA1NDUxOWFjZmZhMTM5MzUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmYjNlNTkzMTkxMzA3NTdmNzZiMzdmMmMwNTZhOWJhMWQxYjA4OTA3NjQ1ZDA3ZDllZWNiZTFlMzgxOWQ3YjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM2MjI1YTc1MTc0Y2RlNzg5ZDc5OGM2MWQ1ODY5ODg5OTc0MzkzNzE3Yjg1Mzc4YmMyYzRjNjhjYjAyNTk3MjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5NDZjNWVmNjFlN2NhZDE5OTk2NGJjNDQxMGNiMzAyYmJlMmY4NWY5OWM1OTM5N2IyM2RkNjM0YTU1MTZjMjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5448fdf85e914164b985896b1eddb1da",
+      "statement": "The decoration preview protocol supports DECORATION_INIT and DECORATION_UPDATE with legacy single-DSL or split page/header/footer/global DSL payloads, normalizes them into shared page-scoped state, and handles BLOCK_HIGHLIGHT plus editor focus, hover, geometry, scroll, and mutation request messages.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L244-L286",
+          "version": "repo-lines-v1:sha256:4dd915f1c01f1d498fd6adda01dfaac24ac722216aea56c97874ff3d96891a0c:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhmOTdiNTgxZjU5MTYyNmNmMGQ4YWQyM2JkMzFhMWQ5MGM5YmQ1M2EzODAwZGNkNTVmOWEyNWNiZDgyNTc3NDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI0YjFhN2Y1M2M5MDI1YjNjMDdiZTQxYzcyNzdlMzI5NmFjYjIyNDhjYTZkOWNkZDFkMGE0MDAzZmQ2OGQ0NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYwMDE0MTZjNTA1Nzg3NzA2YmJmZGFkNTEzMmY5MWQ1NWIxNzQwNjNhOGZiMTM4YjM4Njg4YWViMjE1OWQ3ZTEifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L328-L351",
+          "version": "repo-lines-v1:sha256:a36e6e5eba3e0bd1919c45f38ef17c6c31cccf10a59747caaefefcfe42054c8f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiMWU2YmRmMTlkNDcxMmY5NjMyNjJmMjVmNDA1NzM5NDIyMTQ4OTViZGUzZDljMmY1NmJhZWU5NDkzZGZlZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlOTBiY2E1NDgzNWM5NTE0NGU5NTNmNzlkYjZiZWJhYTI4MGIxZGY2MmNlZWM0ZmY4YzkyNzk2OWNhZGU1NzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjczM2E5ZmIzNjA2OTI1YzQ5MjNmN2VkM2Y2M2Y4Y2Q4YjY4MWQ0NzliYmU5NDQ2ZDY0NmRiNWIyYmIxZjBlNTkifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L418-L601",
+          "version": "repo-lines-v1:sha256:15458f0a86aa89916c06719a59f9a8aa7abbb57486768967093f3a9147fc29e1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyOTM3MzgwMjQ4ZWFiZTE4NDNmODZkYjlhYzA0ZTk3NWMzNDFhODM4MjliMjg2MGNkZTdlMTg0Zjg4OTkzY2RlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2NDc1ZTk0YTkwNGFjNDliMzE1NGQ0NjcyYTY2ZTg2MjliODZkYWM3NGUzZTI5MzdiZTY5MjdhZTNkYTExYzUzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwOGRkMDEzZWE2NTg4ZjI2MTQwNmQ4YjA4ZDc1YzNhMjYyNzdlZmJiMDkyZWNiY2NmYTVkMjVmNjk3NzM4MGZiIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlNGMzMTk2ZGI5NzhjNTg0OGYyNmE4NDY1YzRiZjgwN2JhZjQyNjhlNzhhNGU4MmIwYTI1Nzc3NjFlZDIwMDZlIn0"
+        },
+        {
+          "resource": "repo://app/decoration-engine/types/decoration.ts#L33-L58",
+          "version": "repo-lines-v1:sha256:fdce4c846a9adf935f281ccf91474ecff4124c7349ff3871ea200097057c27d6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0MzhmYjA3MTliNTk2MDZlMTYxNWZkNTg5M2ZhOWNkNTUyOWJmNTYzYmRjMjQ2NmM3ZTE0Yjc2Y2E3ZTBmN2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM1MzQwZDcwM2I3NzNiNzJlMTE0ODY4YzdiMTNlMTc0YjdkZmMwODg5ODg0OWMzOGFmNWMzNjczOTRhMmQ3YWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5NzU2NDJhZDQ0ZDc1YmI0MjYzMTM4MTk5NDM4MjAzMmQ5NTE5Zjk1ZjhjZTI3YWIzYTk2ODI4YWNlZTZiNmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7ea3436a2bd14edea92efc28266e0404",
+      "statement": "DecorationRenderer starts the preview integration after mount when isPreview is true and retries initialization when preview state becomes true; the composable removes its message, scroll, and retry-timer resources on unmount.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationRenderer.vue#L161-L189",
+          "version": "repo-lines-v1:sha256:8cdfa3f14a979f5c1633cbb99d60d10545d2b976ae99d921451d705b8faa228e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1MDc0Nzg1NzE0MzI3MmE3NDgyNjVmNGZjNDQ0MTNhMjRhY2U0ZjMyYTAyODQ2OTRjN2U0ZTQ0NTQ3NmY1NWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFhMDNiOTI4NjA4NDYwZTgxN2MzNzE1NWZjODNjNWRkOGRhZTQ1Nzk0NzkzMjM1MmUzMzkyM2RlYzZkYjQ3MjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMzNDJiN2I2ZTMxZmMyMDUzNDRjOGY0N2JiMjRlYjYzYmNkODZlMjRmYmNlMDNlYzcxMTBlMjI1NDE4NDBlYjAifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L604-L615",
+          "version": "repo-lines-v1:sha256:fe7f290829eb260ad216f3607fca6874baad74c3ccf64a47c24aa8ba8010eca7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5MGVjNjAyYTUzYjJhZjNhOWU1ZTkzYjc1ODNmMWU5ZjM3NTc5Y2RiMTNhODRiMzZhYTcyMjFlYmU0YzM4M2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYwY2JjY2QxNDU0NTdiMTUxOTYwMzA0OWFmNTE5NzdiYjc4NGE2OGY3ZWZkZDg5NGUzNTY4NmQzMjI0YTFjNDgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_392ec587189043b0961bbdaf375c9ff2",
+      "statement": "AI embed configuration resolves the page URL from an explicit embed URL, then aiBaseUrl, then a relative fallback; it resolves the backend from aiAssistantBackendUrl with aiBaseUrl fallback and builds an iframe URL containing auth context plus backend, layout=page, and page-soft-close=true.",
+      "evidence": [
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.ts#L105-L123",
+          "version": "repo-lines-v1:sha256:0475542afeba6894891cb1b63aec9ac757a80d8c3187f653b819da824efdd391:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkMTk0NDFlMDg0MDNjZWE0M2I5YTNiMzNjY2UzYzMyMzE5NGM2ZTU4N2MyMzQ0NzUzNTkxMWZkNDQ2YTY1ZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlODgxOGJkMzRjYjgyZTUyMDhiMTVhOGEwNjkwNDMyZThmMjM1MzIwNmFmYzI4NWE1YzVlYTU0YzEzNWU1MWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM1NGMyZWU3MjkxMTJmNTNlZDI5YTBmZTI2YmMwZGRhNmI5N2Q2MTM1YTk3ZjVjYTk3MWY5ODgxNDcxZjU2YWQifQ"
+        },
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.ts#L33-L63",
+          "version": "repo-lines-v1:sha256:8c60eae92a64990be549aafacd402940de5f3d0151c6db1e67e98fec1701b85c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwMWI0NTAyODIwNWEzZDk3MTU4MDAzMDM0Njk1NDUxNTkyNWFjOWRjMTdkODM2ZjVjYjgyYTY3YTBhNDE4OTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI5Mzg0NzZlMTUxNjJmMzg0YTFiMjFhZGZiZTliOTE5MDU5NmE2NWM2YjgxMzM5NDEzYWUwYjQwNmE5YjgxNTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiY2U3ZTJjOTY3NzBjNjNlMDBmNDc1YzdjYTc0MjU4ZTEzMDZmMGUwNjQ0Mjc4NDNkYjc5YWZhNjAyMmIyMGMifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L123-L143",
+          "version": "repo-lines-v1:sha256:4135007739546110ae3538a0e85505a3fcd62f7a0fd2577b9b8b5299ae5c7ff8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwOTc3MmJkZTI2ZGFjMjhkNDI0ZjNiN2U4OGQyMWFmNTBkZThlMzEwYThiZDA4Y2E2ZDEzM2FmM2ViYzUwNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2ZDJjZjBjZTdjOGQ5MGIxODAzYjgzNmQ1MWJjZjhmOTQxMjU4NzI2MWY0ZGY1ODQ5NGVjMDQ5N2M2YWNlN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYzQ3ZmUwYmNhOGM0Zjg0NDdiZWU2YTVkOWY0MjEwODkwZTVjNDBiNjA0Yzk4NjhiMjc2NDUyNjg1Yzk2MjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e5bbbc8afe6d4215b93a5e91f1b5de82",
+      "statement": "The AI assistant authentication contract is an ECSHOPX_AUTH postMessage payload containing token, companyId, tenantId, distributorId, and locale; the host also maps these values to token, company_id, tenant_app_id, distributor_id, and locale URL parameters when non-empty.",
+      "evidence": [
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.ts#L105-L123",
+          "version": "repo-lines-v1:sha256:0475542afeba6894891cb1b63aec9ac757a80d8c3187f653b819da824efdd391:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkMTk0NDFlMDg0MDNjZWE0M2I5YTNiMzNjY2UzYzMyMzE5NGM2ZTU4N2MyMzQ0NzUzNTkxMWZkNDQ2YTY1ZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlODgxOGJkMzRjYjgyZTUyMDhiMTVhOGEwNjkwNDMyZThmMjM1MzIwNmFmYzI4NWE1YzVlYTU0YzEzNWU1MWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM1NGMyZWU3MjkxMTJmNTNlZDI5YTBmZTI2YmMwZGRhNmI5N2Q2MTM1YTk3ZjVjYTk3MWY5ODgxNDcxZjU2YWQifQ"
+        },
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.ts#L88-L103",
+          "version": "repo-lines-v1:sha256:78296fa9b835fc2e07660de8e6d4909bf997d0afe50dc4c4983ed3f6068626e3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwZWU4MjU2OWEwZWI2OGI0NWEyMTdkM2I3MzEyZjAyNzAwMDg1OTA5ZDlkNjQ1MDQ3ZjVmMzY0NzY1ZDJiMDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2NjRhZTQ1ZWM0OGQ0ZDRhZDRiZjYyYWU2MWIyZTIzZjcwZjBjYTQzMWRlMzQzZDZiMjBkOTRiNGRmODkzYmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmZTcxMjM5OGEyNDQ0ZjRkMzZkNWU2ODM0MWQ4ODllNDgwNmVkNmE1MmNiYTU3Y2I1YTI0N2RkNjJjMTM5YzkifQ"
+        },
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.ts#L9-L16",
+          "version": "repo-lines-v1:sha256:758c11ba51e43755306444985eb6597a58e14663009272f46739c19d12c4a144:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTc1ZjY3ODM4YTQzODNkYzkyODJiZTMxYTk4MGNhNTM4Yjg2MWFjZWNjM2FlNzAzZmY4MWVjZTZkZjJlYmEyNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDlhYmQxMTY0MmZhNjhiMWVjZDc4NzY5Mzc1MmIzN2YzNzYyOTU0YTMyNTg0ZTFiM2U0MWQ1ZTEzZGQzMDNhNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTc1M2I4YzUxYjhjNzdiYWJmNDAxYjM2M2FiYTQzZGY2NDFkYTNmYTdhMWI1YzViMzRmNmJmMGExNTI3MTgwZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_12ef68346101466988ac5f715d5a69e0",
+      "statement": "The AI page and drawer derive auth context from the user token, resolved company, configured tenant, route distributor context, and API country code for the current locale, then post auth only to the exact origin parsed from the iframe URL after load and when token or locale changes.",
+      "evidence": [
+        {
+          "resource": "repo://app/components/BCAiAssistantDrawer/BCAiAssistantDrawer.vue#L120-L125",
+          "version": "repo-lines-v1:sha256:3e4dbdbdcf9154bdf856c279f7026b53635fbd3a73d38ef649c3bcd961fe3838:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTVjZjNlMzE2NTg4ZmQ1ZTcxMDk3MWNhYTlmMzE3NDE0NDJlOWQ2Nzg5YTMxNzJmNDlmZmFmNjFlYTYzNWIzZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmFmYmEwNTI3YzM5NTNjNGI2ZTBlNWI1NzM5YmE4MzYxMmY4MDUzYmNkYzk0NjY3MzAxOTNjZDFkNTkwYjQwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGYyOWM5NWRjMjAzYTIxMTlmYWE0NzQ5NjhhNGRjOTcyZDNmMmQyMTE1ZDA1OWUxM2U5MmRmMzllNDY1MGRkMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmYzNThmMDM3MWE2ZTczMmM0MzQwMzMyMjM1MTk5ZGNkOTFlYmM0NjIzOWE1ZGRjZmU2ZjlhNjNlNmViZWNmZSJ9"
+        },
+        {
+          "resource": "repo://app/components/BCAiAssistantDrawer/BCAiAssistantDrawer.vue#L46-L90",
+          "version": "repo-lines-v1:sha256:fbb739479228773d62fc7e5291b6e92b4d4d10e6620de3ac28aeb634b482b8a3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NzBjNGE5ZTU1M2FmNmI4MjliNDhiMmRiYzMyOWM4OWRlYzI5MDBhYTQ4Mzc1OTA3MTFkYzk1YzZjNjNkMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg0OGQ4ZWQ2ZGRkNWY0MjcwNDAzZjUwNjQ2ZDlhZDc2YTIzMjg2MTQwZGEwNmY2YWM4MjMzMTIzOTlkZTA5NTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFmNGRkZWQ4MDUyOWJiNjBkOGE0MDVmYzE0OGJhZDNjZTdjMjYxNmZlNjRkNTI4MDFjMmM2ZDMwMDgyNTRhNjkifQ"
+        },
+        {
+          "resource": "repo://app/pages/ai-assistant.vue#L105-L110",
+          "version": "repo-lines-v1:sha256:d468707b7e7b34770d849dcec5ec41be135066fac91e0c7dd3e84f13f7bdf1c4:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTVjZjNlMzE2NTg4ZmQ1ZTcxMDk3MWNhYTlmMzE3NDE0NDJlOWQ2Nzg5YTMxNzJmNDlmZmFmNjFlYTYzNWIzZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmFmYmEwNTI3YzM5NTNjNGI2ZTBlNWI1NzM5YmE4MzYxMmY4MDUzYmNkYzk0NjY3MzAxOTNjZDFkNTkwYjQwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGYyOWM5NWRjMjAzYTIxMTlmYWE0NzQ5NjhhNGRjOTcyZDNmMmQyMTE1ZDA1OWUxM2U5MmRmMzllNDY1MGRkMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmYzNThmMDM3MWE2ZTczMmM0MzQwMzMyMjM1MTk5ZGNkOTFlYmM0NjIzOWE1ZGRjZmU2ZjlhNjNlNmViZWNmZSJ9"
+        },
+        {
+          "resource": "repo://app/pages/ai-assistant.vue#L33-L71",
+          "version": "repo-lines-v1:sha256:1b0ea038efd3ff18a1158bb02ffb812177264b930f0b35410deb6948fddd52dc:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NzBjNGE5ZTU1M2FmNmI4MjliNDhiMmRiYzMyOWM4OWRlYzI5MDBhYTQ4Mzc1OTA3MTFkYzk1YzZjNjNkMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0Zjk2MjQ0ZDNjNmFkYWJkYjkyMzBjMDM4NjNiNDZlM2RiNzk4MmRhMzIzNjEzOWY5NmRjMjIwMjA0YjU3Y2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU0MzU0M2Y0MDE5YjFhMjZkODZiZDc3MzFlNjE0YzU2YzhhNzMzY2IwMGQ4OTRkYmUyZTAyNTU4OTljN2U1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjYTYwNDAxMmNmOTlhMmY5MTIzMzVlNzhkNmRkYzNkOGVjODllNWVkN2JlODk5ODExNTFiMDA4ZDgzODgyNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f0acb451015c4af9b1b07a599fec61a6",
+      "statement": "AI host message handling rejects messages whose origin differs from the iframe origin; widget-close closes the drawer or navigates back with a localized-root fallback on the full page, while AI_ASSISTANT_MINIPROGRAM_NAV normalizes a leading slash and performs localized router navigation.",
+      "evidence": [
+        {
+          "resource": "repo://app/components/BCAiAssistantDrawer/BCAiAssistantDrawer.vue#L79-L110",
+          "version": "repo-lines-v1:sha256:d028ec45bdec280c2c0255ca8a332902f9ad11b3006df0b619ce1f3ff05189f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ZjM2Y2FhMjhmMTgzMjVlMTZlY2U4Nzk0OTRlYmU3OTM3ZjUxZmU2NmM5YWE2NzI3MzgyYjI1MDE3MWIzZGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcyNDMxMzE2M2Q0OWVhNGQ3NjA5ZDMyZDc3NGQwZTFmMTE0M2ZhNzFiMTU3YzBhZjQ3Y2Y5MmFkNTZjZjZiZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4MzVlNjRiZWU2YWJmNDYwY2Q3ZDFmZjA4N2FlYzkwNzBiMTVjNDVkMmM5N2I3N2E0M2I1Y2FjYzQ4ZGZkZGQifQ"
+        },
+        {
+          "resource": "repo://app/pages/ai-assistant.vue#L61-L95",
+          "version": "repo-lines-v1:sha256:c312bef46b347dea3f0281487a36b3ff6d16faad650e6ba6ff631a48a422107e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ZjM2Y2FhMjhmMTgzMjVlMTZlY2U4Nzk0OTRlYmU3OTM3ZjUxZmU2NmM5YWE2NzI3MzgyYjI1MDE3MWIzZGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM5YTI2YTBmY2I4MzM0OGFkMmE1MzI3MmI2MWU0ZDNlMmEwNzZkMTQyZjZhMGM2ODgwYjc4ODQxMmY1MGZmZDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4MzVlNjRiZWU2YWJmNDYwY2Q3ZDFmZjA4N2FlYzkwNzBiMTVjNDVkMmM5N2I3N2E0M2I1Y2FjYzQ4ZGZkZGQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b35820f820ab4ad48e4338d5f7d4e9e0",
+      "statement": "The AI FAB is client-only, shown only when the explicit assistant enablement flag is true and the current route is not an AI-assistant route; it loads tenant-scoped widget configuration from the resolved backend and emits an open event for the default layout drawer.",
+      "evidence": [
+        {
+          "resource": "repo://app/components/BCAiAssistantFab/BCAiAssistantFab.vue#L35-L56",
+          "version": "repo-lines-v1:sha256:56f53ba65f981b9b94d3fd3df55288c2d762fb2e0342f81783b772aaecc89494:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NzBjNGE5ZTU1M2FmNmI4MjliNDhiMmRiYzMyOWM4OWRlYzI5MDBhYTQ4Mzc1OTA3MTFkYzk1YzZjNjNkMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5ZjlkZGRmOGEzZGQ1YTVjYjQ2ZTIzNjc2MWEwZmZjMDVjYTYwZWQ0ZDdmNjM4OGEyNjRmMzAzMDY5ZDRlZmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEyZjMwOWUwZDA3NWExYmFkYzQ4ZmNiNmJiN2M0ZmI5M2M3NzllOGFiNDI2ZmY3YTFmOGU4MzBlNzNmMWZiOTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4OWQ4MDlkYjEwNDc2OGMxZDU0OThjZTZkYjEwZWExMDk0ODA0Zjg4ZDNhYzliODkwMDMxZGM3OTMyMjE3NzcifQ"
+        },
+        {
+          "resource": "repo://app/components/BCAiAssistantFab/BCAiAssistantFab.vue#L65-L91",
+          "version": "repo-lines-v1:sha256:cb465d21adfb8c02aa0f89e4650d55729c74968567e71159f11841c1afc0717f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4M2Q0MDJiY2Q2NWM1ZWY2OTgwZTk0YzUzYmIwZDZiNjEyM2JhN2RkYTdkYWM4MWZkODYyN2M3ZGIyM2JiZTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVhNWYxNzY3ODdkODNkNDhmZWQyODczNDUyZWU1MTBhYzQ4OTY0NGI3YTI5NTRiNzBlYjRjYzZiOGMyYmVmOWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJmMzU4ZjAzNzFhNmU3MzJjNDM0MDMzMjIzNTE5OWRjZDkxZWJjNDYyMzlhNWRkY2ZlNmY5YTYzZTZlYmVjZmUifQ"
+        },
+        {
+          "resource": "repo://app/layouts/default.vue#L111-L125",
+          "version": "repo-lines-v1:sha256:a059158b176430e49ff828191e916e18216d894df46ec629941ca15dd8e46ecc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkYmZmNWU1YzBjYjEyM2MxZDg1MTgzNGQ2NjAyYjUzZmFlZjkzMGQzZWY4Njc4NWY0MzIyNzYxYjI3ODk1NjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzNTVmZjkzMmNiNmY3NGZlNjk3OGI5ZDNiYjdlYzgzNTFjMTIzYTcwOTY5NTk2MjRhMDM1NWNkM2Q0ODUwNDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAyOWYxNzMwNWYxNGU1NTZlZTkzMmVmNGU0ZDkwMjg4M2Q2ZDE0NGUxM2Q2ZGIyNmIzYjBjMWY3N2VkNmVmYTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFmODBlNThhOGQ2MDU4NzYwYWQxYzYzZjdhZDcxN2JlMzQyMTExNzVkOTg2NDU2Y2Q5MDVlZjM2YWE4ZDI0OGIifQ"
+        },
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.ts#L29-L31",
+          "version": "repo-lines-v1:sha256:512cb3793e031d40c062a6540cd58b5f6c57e9c492cf7c3b6527f571296ba1e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjE3YmNhZjZiYTNmOTZlOWM5ZTkzMjMyYWIwN2Q0YTM4NmQ1NDc2MDQ5NzcwZTFiMDllNzMyMDA2Y2U4NjFhNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWExNjZmODU3YWIwYjczYWMyYWVkZGMyMDg4MDk1MjRhYjY0NDU0Yjc4ODZjODRlYWFmZTMyZTdlNGY2YmRhOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDA4MTA5ZjI5ODNhODMwNjhiNGE4MTdkZTE2ODE0NGMxNzkxNjJjNDkzNTE0ZTM3M2MxMDAxYTk4ZTdjZDgyOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2340e02a7b3d4ef1bd3ab6b131c0adfa",
+      "statement": "Focused tests cover the decoration message/origin contract, DSL normalization and renderer behavior, AI URL and auth payload mappings, explicit-origin posting, widget configuration fallbacks, and page/drawer/FAB listener, routing, enablement, and wildcard-origin safeguards.",
+      "evidence": [
+        {
+          "resource": "repo://app/components/BCAiAssistantDrawer/BCAiAssistantDrawer.source.test.js#L11-L41",
+          "version": "repo-lines-v1:sha256:7f64d11d2fd99f1e4fe2661e905a16eb2ace137e0f788d8436a89c9124fb4d24:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmYzc1MzU5NDA3NDE0Mjk2Yzc5ZjI0ZjM0NWYxMmI0MWRjYTM4YWRlZGQ1NzE1NTE4MDE1YTllNTQ3YjJmNTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/components/BCAiAssistantFab/BCAiAssistantFab.source.test.js#L10-L27",
+          "version": "repo-lines-v1:sha256:7c32ab8e0d364a5d7448a89807c11e9e4b4ab7bb17b8aaa5986d80082917ea39:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5NWQ2MmNmNjFiZGNkMmZhOGEwZTBjZjJiNWNjY2NkOWQ4Y2UwNmIzNWNmNzU0ZTllMGE1Y2FhY2JmMmUwMzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/components/decoration-core.test.js#L10-L64",
+          "version": "repo-lines-v1:sha256:17cf07925b25a5cc1b75d3cf33c6c76574f7937c8a27004129d086c2762a2f68:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4MmY1OTBhNzlmNTk4YzkyNWU5MDFmM2Y4YjMxZDMxNWQ1ZjZiYTg2MmNiZTYxM2Y1M2I3NmFhZGViMWUwZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxY2MyODZmOWRjNDI2YmVmMzFmZDRiNzM3ODU3YTY3OGFmYzUwZjQzZTY5YjgzZDRkNDllYjdiZTUxMmU4NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE1NzExYTcyM2FiZjFlMDE2ZDAzYzQzMzE1NDgxMzZkMzE3MzhiZjNjYTRkYzAyMmQ1NjIwNjM3MDAyYzlmNDcifQ"
+        },
+        {
+          "resource": "repo://app/pages/ai-assistant.source.test.js#L8-L29",
+          "version": "repo-lines-v1:sha256:a43d2aec34d3d1d3bb0a391143d27841a445712d6d9f3e7e96203fa8634fe435:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2YWZmMDg1ZjRlNTdkYWNlYTU1NzI0OWU3ZGFjMWNiMjI1YzZjMzJjODNjYzk2ODk2ODA0MGMzNGIxNjNiMWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjZDg0ZjY4NWU0OGRjMjk4YWZkNzk0OTBhNWUyNGIwOTlkYjI1Y2U5YjYzZDFjODUyM2EyZDExZTEzOTZiZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNkOGM5NDQyNjNjNDkyMGI0MjBlNGE5NjBlYmY4MzZjOTljZGQ2ZThlOTEzOWZmOTBjOWRlMWI4MzMwNDg4NjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.spec.ts#L16-L194",
+          "version": "repo-lines-v1:sha256:0d310bb47879697bb0ea08773ceb0e6697a3b5a5c433137f66db0839e7f62aa6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTc5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3ZDc0ZDczOWYwNTNjYzc4NmIyMWNlY2Y5MDdlMTI5MzQ5NTEyNjM1ODZkZjBiZTk5ZTMyYjg1MWJiNWEzNmVkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiMjM1MjU4OWMzNGQzYzYwNjg1OTMxYjZlY2M0ZDUwOTkxYTdjNTZjOGZiYTI4OTQxMTQ2NTc2OTAyNzJjYWMzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1NGFmMmMyMGM1YjJmNmQxOTJjMWI5ZDg4ZjA5YjlhODcwYzU0NzkyMDBlYjVlZjQ0YTBmYzhiMDFlOTNmOGQ4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MSwiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4NTgwYjc2NTE4ZGFlOTc5ZmFlYmQwMjM2N2EyOTI5MmE1MGQ5NzYwOTIyNTFhMzhhNmNlMzA4ODBiYTQyODI1In0"
+        },
+        {
+          "resource": "repo://app/utils/aiAssistantWidgetConfig.spec.ts#L4-L69",
+          "version": "repo-lines-v1:sha256:6ed0f097ee5618287b535b02674f99c8c5608936c611d231a7a82df07a347604:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0NTlkODljZDc0ZWU2NDk1NDE5MzMwZGQ4NmZiODFkOGQ4MGQ1YTU1MjA5MmJlMGNiNDk1NzY3NDIzN2VkOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc3NmMyMTQwMDMwMzM1NjdiNWIyODU3MDFmMmVhOTljNWViYzk4ZWJmYWZmZWUwMGMzOGUzNTQ3MTYxYmNkMmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}

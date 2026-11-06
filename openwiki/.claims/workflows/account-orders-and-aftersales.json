@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7abac8b0baf7848f345e55977193bc23e2817fdf8ca5f39e95506a8515e9fbb7",
+  "claims": [
+    {
+      "id": "claim_dfa7b27d33224a4a9e16edb9f03a1f54",
+      "statement": "The account commerce workflow is split across `/account/orders`, `/account/orders/:id`, `/account/aftersales`, and `/account/aftersales/:id`; route pages render tabs, pagination, states, dialogs, and navigation while dedicated composables own request state and mutations, API clients own endpoint transport, and transformers convert raw responses into view models.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/AftersalesApiClient.ts#L1-L8",
+          "version": "repo-lines-v1:sha256:4d37b963cfe6a13d943b3ac1663d08883f8179e9f1501870319cd4b668df67a4:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWFmMjJjZjA3MzI1OTJjMjQ3MTQxY2JlNjFlZmExMTAxMjYxMmY1YTMxMjJiOWFmOWJiYWY1MmY1NzI0ZDE5NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTcyYTQyOTM4MmIyZTE0NzE4ZTBlMzdiMDU3MGE4YTE3MDI5OTFmY2Q4NDk4Y2Q4NDA2MGE4YmY0ZjA1MDE3YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzI4MTM4MjRjODVlYjM4NzA0NTYxOWQzZWU1NTZlMzE0YTE3OGFiY2ViYTM0N2RmOTA3M2I0OTg5MzcwNjQwYiJ9"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/OrderApiClient.ts#L1-L8",
+          "version": "repo-lines-v1:sha256:bd3c68e438b93354ed3bb3cb9833e8e419636f000678e009d85c702454292990:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWFmMjJjZjA3MzI1OTJjMjQ3MTQxY2JlNjFlZmExMTAxMjYxMmY1YTMxMjJiOWFmOWJiYWY1MmY1NzI0ZDE5NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTcyYTQyOTM4MmIyZTE0NzE4ZTBlMzdiMDU3MGE4YTE3MDI5OTFmY2Q4NDk4Y2Q4NDA2MGE4YmY0ZjA1MDE3YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWExNmU4ZjlhYzZkNzg3NGVkZWJkZmJmZGE2ZjUyZjFkMTA2ZDJlZDA2MTlmNjkyZGQwZDEwNDc2ZjAxOWRlYSJ9"
+        },
+        {
+          "resource": "repo://app/pages/account/aftersales/%5Bid%5D.vue#L98-L127",
+          "version": "repo-lines-v1:sha256:f604981bd48305561eb7d5b387393fe2535630a8af2ed0efb774ca48924fb778:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmNDMzNTYxNDJhMWEyMzRiMWEwMzE5ZmIyNzYzYmU3ZWQxMDhmYjgxYWM5YzNlNmQyNDQ5NmY5MmVhYjk2YWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMxYjkzZWJkNGEyODg4ZWYyZjQwZDljNjMwNmRiYTk0MzM4ZjM4MmMzMDdjOTk5MjY0YjdhMjk3ODhjZTc1NGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyMTJjMzAxMjdlMDYyY2MxNDZlZDU0NjRlZTc1MzJjNGI3Yzc4YmQ1Y2UzYzZlYTFkYTZjNDIwN2FkNjcyOGEifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/aftersales/index.vue#L103-L134",
+          "version": "repo-lines-v1:sha256:accc1efc5ba170998887f1ce9145a248a062339e2172e9ffd436158056b8a514:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1MjI4NDBlZDVlYzU4YTM2MmYyMGI3MWI4YWViNjc1ZDdlZmI5NzQzOWM5MGMzZjYxNTVhZmVjNjUyODU5NDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3ZDg3NWQxN2ExMTczNjY3NTFiYWQxMTYwNjU5NTUwMWNlOTMxNGY1NDg2M2Y1ZGM3ODY4N2Q3ZjQxN2UzOTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVjNTg3YWE0N2FmY2M3YjExMDJiY2YwMjkyNzMxNTc1ZThjOTIwNmExZDUyMzMxMDE5MjA0YTIyMjRkMmJjOWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRlMThkMDA4ZDc5NmMzZWQ2NWYyZDExMjNkMWNlODIxMTkzMjNjNWRhOTU4YmU3YmE5MWFiZGM2ZjZhYTMyODYifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/%5Bid%5D.vue#L428-L490",
+          "version": "repo-lines-v1:sha256:efb44c4a4bf2716858edef937193a97177a921c85a8ba167dd4667bedb20e64b:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmNDMzNTYxNDJhMWEyMzRiMWEwMzE5ZmIyNzYzYmU3ZWQxMDhmYjgxYWM5YzNlNmQyNDQ5NmY5MmVhYjk2YWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkZGJiZjBkZjZkN2RkN2VhMGU5OGNkNGQ1NGY0YmMwOWI5NWJmN2RhMjQxYjIyZTRhODIzODlhYzM1MzEwNDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMxYjkzZWJkNGEyODg4ZWYyZjQwZDljNjMwNmRiYTk0MzM4ZjM4MmMzMDdjOTk5MjY0YjdhMjk3ODhjZTc1NGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU1M2Q1ZmU2OWJjZmY0MDFkZDY4NmU0Mjc1NWE5NmQzZjM2MjdhMDYzN2IzZjE3NDk4ZjZiZGQ1NWRmODExOWIifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/index.vue#L1-L20",
+          "version": "repo-lines-v1:sha256:f273608fb98cb8d3231ef6ff073d3c2f6421f7bd0e0d0e31d73342d7344fe370:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMTRhMDdiNmQwNWQ3NmFiZmEwM2VkZTE5MjZjMWUyZTc0NzI3MzEyNzlkODU4OGU4YzYzYzU2ODliNTAwNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmZjA0ZTBjNDhmYmNkMDhjNzdjZTZjMmI3ZjE2ZWEyMTM3ZDY2MzIyMzEyYTg4MzBlNDhmZjlkZGU5OWVlNDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhZDRiNGNiNWU2NmUyNmQxMWNhMzk3MDY0MjAyZTkxNjRhYjA3M2Y4YTU0ODhmMmZhYjg4NmUzNzk1MDY0M2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_26430cb341584d97a2ebc466584e766e",
+      "statement": "`useOrders` maps supported order tabs to backend list status values, sends `page` and `pageSize`, replaces rows on page 1 and appends later pages, derives `hasMore` from total count, and the order page uses `ECPagination` to request selected pages while status changes and refresh reset to page 1.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useOrders.ts#L157-L175",
+          "version": "repo-lines-v1:sha256:46a10824a3db36de5d31499a64e918ec310afe2c063759ae962abc62b2d0e624:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3YzRmNzEwNzQxNTQwZjgwNGFjMDUyZTdkYTVmYWYxMDYyNzdhMWQwOGZiYjI2ZGY5NDY2NDU2ZjQ1NWU0ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFmY2ZlZWUzZDAzMmNjNTkxMDVlYzgxN2QxYmZhNGY2YTg3YjUwMTkzZjU3MTkwNWRjNWQ1YWEzMzdkNDJiZTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwMDYwMmI4MGE1N2EzYzM5ZGJkOGI3NTg0NmVkM2UzNmM2ZjQ3MGQ4NWUxMmMzMjVmODUwZDFhNjdkODFkNWUifQ"
+        },
+        {
+          "resource": "repo://app/composables/useOrders.ts#L29-L35",
+          "version": "repo-lines-v1:sha256:1045b019fd0085d58d1ddce01d2153f741abfdde399a8455eb4d01e63746ef63:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjRlYzk4MzE2YTFjM2ExMDNjNTllM2MxZmZkNWZiZGIxYTYxNzQ4NDBjZGZlNjM1OTI3ZWIzMzFlYzc4MTMxYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTE3Njc0MGUwNDg2OWRlYzhlZjU0Yjk0YzA0NTM4MGM2MGViYWRhNzE5YWMzMDUwM2ZkN2MxMzcxZWZkZTU4NCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDk4MGVkZGY3OGJlNzM2NWYzNGIzMzUwMDY4ZTI0NDAyM2U5MmM4YWViNmVmNTYzNDNlNTM4OWI3YWI5OTdmOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDI5MzUzMjUwYzExNzhjN2IxZDI3ZDQ3YTMxOGE5MTA3OGJkZThmMmNmZjBkZTMzNTU4ODUyZWVkZTMxODAyNCJ9"
+        },
+        {
+          "resource": "repo://app/composables/useOrders.ts#L46-L52",
+          "version": "repo-lines-v1:sha256:2d0fc3714b162e93af95290757ec436fece3c7338d73e5c7a08a0c7c8038a50f:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDE5YTI3MGU3MzEwZDI1NGJjN2QyNGJhMjJkYzUwMDVkOTFhZWI5MzM5NTUwMzEwODY3ZjAyMGI5MTc5OGVmMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjIzNTI1ODljMzRkM2M2MDY4NTkzMWI2ZWNjNGQ1MDk5MWE3YzU2YzhmYmEyODk0MTE0NjU3NjkwMjcyY2FjMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWE5ZmZhYmIyZWQzMTZiODg5ODNkZjBjYzMxMTkyNzJkNmM1ZDlkZjBkMzIwZjcwMDMwNTc4ZjMyNDNkYTBhZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGRjNTNlZWIxZGRkZjAyMjJhMzA1YjgyM2VjNTAyYWZlOTE2ODIxYzgzZGI2MWQ3MDA5OGQ1OGM4NjQ2OWYyMyJ9"
+        },
+        {
+          "resource": "repo://app/composables/useOrders.ts#L91-L152",
+          "version": "repo-lines-v1:sha256:1864860377f268be0d37b36d2c6a3253811bcca75c38fe599f0be3fa7c6a054c:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjMWY0NzU1MzU4MmU1ZjA1YjI5OTdmZWNjZWQ0MWIyZDE3N2FiMmEyNGZlMTE4MmEwMWU2ZmFhZTI0ZWE2NjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2NzFlNjNhZjA5MjgzYjUxMjVkMjMwMzA5ZjM2NThmNWYxM2M2YzdlZmY1ZTI1OWRlMzI1YjNhNDJiYmZiMmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkNzMyZGY0MzVkNmM0YjcxYWM1ZTg1MTdmM2ZmZjU1MzcxZGMyODU3YjhhZjMzYjdlZmE3OTY4MTU1NTRhYjUifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/orderTransformer.ts#L615-L624",
+          "version": "repo-lines-v1:sha256:fa2a73f9a4651668b91688af6e9a04dcf7c15dfe0ee4865687d4c8c1d010d71d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2MGMxZjEyNDRiMTc3MTg0MGUwYTlhYmUxYmY0YTk5ZjYzOTQ5OGZkZmNiM2Y0YzY3MWRjMjJjMmI2ZWI1NmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI4NjNmM2JjNmQ3MjMyZjNmMmY5ZDU3OGMyYjZiN2MzMzcwMTUxMTBlZjBjNWFmZjJmMmY0ODE4NDMzYzdhYzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmNzM5YTA2YzFjYmIxMjQ0ZTMzNjNkMzhiY2Y5ZmE1MGNlODRmZWQzOTljMjE5M2EzYzdmMDhkNTk5MThiMmEifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/index.vue#L661-L663",
+          "version": "repo-lines-v1:sha256:dc5b4060832a361776c926997ab49767c5ce1e6e331d7d866df85e2c82712b3c:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDE2OTk5YjE5YzAzMjEwOTdhN2NkNjhlYzFhZjZlY2ViODFiODNhNTY3OTAwOTg1NjZlNWZlMWM1NDVhZTgyNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmYwNDIxN2UxZjE1MzU0YjM0YjIwM2U2ZDIzNTdhNjYyMmQ4YmU5ZTc0MjdkYjE3ZmZmZGIxNDI1NjJhNDVkYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTc5MmM5OGY1YTY1OTE1NTEwM2Q0YjFiYzg3OWRhMjcxNzJiYWY4MzQ5ZTNjZTUwNTc3NDdlZjI4YjY4YWM5NSJ9"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/index.vue#L774-L777",
+          "version": "repo-lines-v1:sha256:024594c2fc0e359a4419c37e237dc4861954fdeaf179d6e551d1a82e4c2a5f6e:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmI3NTg2ZDdiMmVjZWNlMWVhM2ZmMjFhZTBjNmQzNjI4ZWQ0YjJiNDgxNmZjMTc4ZWRhODJmNzQ3MjllYTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODU4MGI3NjUxOGRhZTk3OWZhZWJkMDIzNjdhMjkyOTJhNTBkOTc2MDkyMjUxYTM4YTZjZTMwODgwYmE0MjgyNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzAwODhlZjhmODE3MTM5ZjFkZjk1YWZmNWZjYTlmZTdjYWI4ZDI0YWQ2ZjJjZmZmNzRkMDZmNjdlMGU0NDc4MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjIzNzc1NjBjY2U0ZTFiZTIxNGYxZWU2NGUwMTk3MmRlYjRjMGJjZmFkOGEyZGFjNGQ4NjVhZjZkZDQ5MmFlOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6d1cedebcf504b1493404ef8cb4a0534",
+      "statement": "Order transformation is the action-policy boundary: it normalizes API payment, cancellation, delivery, offline voucher, and item aftersales data into statuses and capability flags governing cancellation, payment, voucher correction, receipt confirmation, invoice, logistics, aftersales, and review actions; partial delivery remains pending shipment but changes the action rules.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useOrderDetail.ts#L104-L114",
+          "version": "repo-lines-v1:sha256:df2944fb9230d45088b1f46565ec8c358249f6d2f92ed769e7e532f2bdce9115:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiMjliNTdjMjVmYjIxZmJmNDA2NTUwYzVlMWE4NDNiODNmMzU5NDc4OWI0YjIxMWMwNzA3ZDUyNzFkZmE0YzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI5Y2I2ZmUwNjBjMmZjNWVlY2YxYWIyMzc5ZjczYWQxNjEyZDg2MDA2MGQ5YTg0ZjU0NmYzYTE3NTBjMjhlNzUifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/orderTransformer.ts#L391-L459",
+          "version": "repo-lines-v1:sha256:0c12f9018d4f08a7627d7a276894f3c0e13645d936f7d62efce9580242b64a8d:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUzNTI2NjhiOTJmYTE1MWVlOWZiYWE4MTkxYmZjM2FiZTI4MTI3NGViNmI5MjQxZTk2OTA2NDg5NTVlMjg5NjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5NGQ5YThmNmJmZWY2NDliYzFhOGVkNDk0ZWYxYzgyNzFmZWUxNjgyNGZmMDVkNGNjZmY3MzYwMzljYjY5N2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM4OTg3M2JlN2EyMzNhNDQ2ODIwMTUxNWQwNTY2M2IyNzMwMjEzZTIzNzJkZTBjY2E1YzE3NjNlMjkxY2M5YzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFjY2M3MGI2NmZkMGM5ODhjMzI0NGI0ZDY4YTNiZmQ5YWM3ODA2MDQyMTQ2MTVkZmRiY2U4ZjFkOGI2NmVjZTIifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/orderTransformer.ts#L461-L516",
+          "version": "repo-lines-v1:sha256:3e293bc753d47ccb25d68b47bdd394a7a06695d009ecf4dd9cb5f7d4c9941dda:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg5MjJmMGY1MTVmYzIwMjFhYjM2YzJmZjUwY2E4ZmJiY2M1MjkzZjg4ZmFiNWFhZDFhNTIzMjRmOTU0ZGY1MGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZjZWQzZmZlZjg2ZDU0Mjc3ZTAxMWYwZTcxMjYwZmIyNzZmY2U4ZDY4M2I0ZDNkYjRhZmQ1YzI3MTVmOGY4MjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/index.vue#L531-L565",
+          "version": "repo-lines-v1:sha256:648f98dfde7f708b1fc696001cfe03008a1139250ef2eb0861ef3099957fb975:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMmNlMWVhYzM2OTRhOTRkMmM2NjI2MTg5MzFmN2VlMDBjOThkYjRiNDhjYWRlYjI1MWVhNmM0ZmMyMjM1MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI0OTJhYzkyZDdmOWNkNTRiNWZlMThmNWNkZmE3MDE1ZDQwMDRmNWI0MmQ2ZGI1MDUyYzcxYjgxMzNjNDIxMDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIyYjY4MzI0MzJhMWZkZTE1Y2ZhZTcwZWE3OWNkNTcwYmQ1OTg4OGNlNTg4YTRhNjVjMzBjNjU4OGE2MDJmYWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxMTRhNTE4MjUyODAxMGRkZDU0MzUzNDA2MTkyOTU3Y2FhNmE4OGM1YzFhMzI4NjJkMDcxZGYwNjFiOTIyM2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_169f97f19d954769a3a458ae37b74b75",
+      "statement": "Order detail loading accepts either a raw order payload or an `orderInfo` wrapper, transforms it through `OrderTransformer.toOrderDetailModel`, resolves offline-review and partial-delivery display text, translates generated shipping and invoice keys, and exposes retryable error state when the request fails.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useOrderDetail.ts#L73-L102",
+          "version": "repo-lines-v1:sha256:75e2d799b7165f292aa0d37010c9c714e80bfd834539f68a8ccb81452de4d937:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyZmM0MTk0MjJiZTdjNmE1MTcxYWY0ZWY4ZmNhMzM1ZmZmN2YzYjZiZDY3MjI2YTk3ZjY1YjU3NGRmMzBjOGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU5MWU5M2EzYTgwNDZmOTY2ZWQ2OTBiN2I0YWMwYWRhYTQxMDNiNjE3MTA1MTZkYjJjM2I2NWRlM2I0YTRjM2UifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/orderTransformer.ts#L568-L610",
+          "version": "repo-lines-v1:sha256:712c152a6401fd7f25b876174cd0b66fd0be9a484f5c8831e44359fcf6112ea9:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY5NWYwODI3NTAxYzhlOTdhNmE0ZTE1MzAzYTZkODMyMjQ2ZDA0ZTJjYTA1ZDFhMGViNzI5MjMyYzIyNjJjNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRiZDBmNjViNDlmZTU4NDBmYTIyYTU2MzhmMTVkN2M0OWI5MjU3NDhhM2I4NjBhYTU2OTNmNzMzZGM5MDg1OTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJhM2QxOTc3ZWFlMTg2N2I0NWMyOTcyZGRkMzUxZGVjMDQ3M2U4ZjI0ZTRkMzExMTUyMzJmODY5Yzk0ZWIwYzUifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/%5Bid%5D.vue#L146-L156",
+          "version": "repo-lines-v1:sha256:0e9bfd08fc420edb74d9a7dc55f12588749ca847412a08853c64e1313f2ebdc4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyZjQ3NmM4YWQ3MmUyNjM3YjE2MDUzMTQxZGViYWU2MDI2ZjExNWVkMDRhM2M5NDI2NzQyZTJkMTY2MTRiZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUwNTYzMDRiMGVlYWJkODhhZDRjYmRkNjBiZGY0NjY1MWFkODU3YWQxZTAxMDRlNDJhYmZmNmIwNDNhZThlYTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyMGVmNmViNDJmZjZiYjdhNTE5OWMxNzg2YTA4Yjc3YzA2Njc0ZDQzMTkwN2QzNTU4YjE5NDk0M2YwMWNkZDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAwMGZiNmJjMDcxYTNmMjQ4YTE5Mzk1MjE5NWZmYWQxMGIxNDgxNjY4YTI2NWI1YjA4NGRhOGM0YWY2NGM2NmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_76259075496e4ea2b92893a7eaed7cc5",
+      "statement": "Order cancellation is centralized in `useOrderCancel`: paid orders open a reason modal, unpaid orders require confirmation, submission builds a reason-aware payload and calls `POST /wxapp/order/cancel`, and successful cancellation invokes the caller's refresh callback; receipt confirmation and deletion similarly confirm, call their API methods, toast, and refresh.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useOrderCancel.ts#L20-L81",
+          "version": "repo-lines-v1:sha256:2d6601f13f7382e629998ba726e13b2641be96219f3134d8b3cd1cb3150283c3:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5NjYzNDIzZTUxNmExOWNlMzg2Y2ZmYWFiN2JhOGMxZTYxYjAwN2I2NTgyYjE3Yzk3OGYyNmQyN2YyYTJmYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU2MWM3ODRhNzkwMWQ0MjNlNTUyNGNiYTk3ODMyODE4YzExODIzMjZkODc5NzlkZmUzNTc3ZGI4OWI1MzExOTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZhNDY4OTI0MzUyMDIxNWI5MjU5ODQxM2Y1ZjU2ZjM3MzliZDFmNWRhZDE1NWI2MTQ0OTM4OWY3OGQ5ZDAwMzAifQ"
+        },
+        {
+          "resource": "repo://app/composables/useOrderDetail.ts#L116-L141",
+          "version": "repo-lines-v1:sha256:e3d05a65e7c43118db4971b3d3eb54549f11014188338e004e1b9a7d4e6e082e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzYzQ5NzRhZWEwN2I1ZTcxMThkZmRlZGU2YTkwMzk3NWNhNjg0NTU1NGQ0MDkzOTBjM2Y3YTBlMzUzY2QxMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0NzYwYmVkNDFhNGIyNTMxNzk4YTg1MGUzMzAyNDk2MjAwM2ExOGM2MGMzNzcxODk2ZmRlOTQzMDIwOWExNDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIzNzEyYmUzMGEyNTRiMTNhNGQ2YmRhM2UzN2QzZTI2ZWVhOTVhYzIwNWY3MTQzOGEzNzU0YjQxMmNlMDg0ZjcifQ"
+        },
+        {
+          "resource": "repo://app/composables/useOrders.ts#L180-L234",
+          "version": "repo-lines-v1:sha256:b1a783f8488c0c5c53da26cbfb7ae23573cec2fae40c3ebd74fdcd224fe32570:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmNzNhYmI4ODUyNGZlNThlYTM2YjQ2ZDllYzliOGU0MmViZDdlMjU0ZmZjMjY4MWI1ZmM3YWJlYWQ3ODJhY2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2ZWVjYmU2YWQwZjk3NjMwODgxNTlmMjExN2YwYWM2NDkwNTUzZWU1NzlhMDc2NmIxMGY1ZWRiNGE0ZGJjMDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjllNGZjYzQwYjg1Njc3MTIzMGYwMDlkYjAyY2Q4MzZlYjhmZGZmNDQwMTI0NWM4YmI5YjE0YzNhODdhY2U1MjQifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/OrderApiClient.ts#L238-L265",
+          "version": "repo-lines-v1:sha256:9782817dccdfcc67ef93529f08a229f18ec1880bb39cddc4c2dcda9cbfcd273d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fe8d123ecb2649e0aa5d4323dd9149a8",
+      "statement": "Payment navigation always carries `orderId`, conditionally carries a non-zero `distributor_id`, and adds `has_check=true` when changing a rejected offline voucher; the detail page delegates payment to route navigation rather than making a payment request itself.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useOrderDetail.ts#L159-L177",
+          "version": "repo-lines-v1:sha256:98c0ba524ccf93a35729b7e331c0fb792dd7225242185aee7109f48349b349b1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiYjE1MzM4MzBmZTQyNjk1ZTYyNDM1MjQ5YjVlMzVlYWJhMWUwOTEzZGQzZGI0ZDQ1MjE1NzM5Mjc5M2JmYTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiNmNmNGNmNDFlZjA5NDFhNWQzNzUxNDAxNzBiZDU1MGEyMGFkYmQ4MDUyOTNiYzU4NjIyZjgwNmIxMmM2Y2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUwYjUwYmM2ZmJmOGZjMjZlMDI2MTlmZGFlNzJmODVmZDk4YWRkNjljYmJjOWYzZGMxY2M5YmI0MmNjN2RiZWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhmYjdlNjc5MjcwYmJjMDI2NGRkMDk0NDJhZDQ1YzYxZTUzZTA0YTVkYmRiMzljY2E2ZmNhMDgxOTg3ZmQyOGUifQ"
+        },
+        {
+          "resource": "repo://app/composables/useOrders.ts#L236-L257",
+          "version": "repo-lines-v1:sha256:946777f3d083aa7f4d0e28bf81f9241fe7269eb9d7f7624c45d673a356d3609c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmMTE2NWM3MzRiZmE3N2Y2NzkzMDFmYWUyNGVjZjEwYzFiNDkzNDRlZDUwZjE5Y2UyMWIyNjI3YjYwZGI4MGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzOTAyZmM5OWM2OTczMjQ4MWU0NDg1MjE2OThhYzcxM2Q1OGI5MDA1MmJjYmVkNjFhOTljZWM5MGYzM2U3ZjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b5e7f30dc78b48b19befadbf85ba4de3",
+      "statement": "Logistics uses `/wxapp/trackerpull` and tolerates tracker failures by falling back to traces embedded in order detail; tracker traces are mapped from `AcceptTime` and `AcceptStation`, common logistics error codes suppress global transport toasts, and an error is shown only when no fallback traces exist.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useOrderDetail.ts#L180-L216",
+          "version": "repo-lines-v1:sha256:07ed68496ee00f390b715b263ca6fb426dcde518b3eeb2d5e993bd2ee9f33946:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkY2ViZWQxM2Y3MTljZWIwZTE5NTZmNDdlMTNlNWQ0NWFlNjRmZjNjMjE0YTllNWE3MzAyNmY3YTY5NGQxNGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNmZGYxYTk4OTU2ZmYxYzVlM2NhYTU2NWIyZjM5NDk0N2MxMzg3MzczMjI0ZDUwYWU1ZmFiYjE5OWI2YTNiMWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZlYjJlNmEyOWZjYmRhZTFlNjNiYTc1OTNmMzRmNTNjZDVkMGNlYTQxZjM1MDc5NWYxYTY2NjY2ZTkyYjE0MzMifQ"
+        },
+        {
+          "resource": "repo://app/composables/useOrders.ts#L268-L317",
+          "version": "repo-lines-v1:sha256:68e5f08500336407a680ad66b51e793353034b787fe46913b8c26b70e59b92b0:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1NGZmYjI2MTI0ZmE1Y2QxMGVlNTEzNzkzNjc1ZDJlNzE5ZTY3YjY1NDYyNTg2Nzk1MjViMmJkMGQ4ZjRjNjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyMjczNzliOWQ4OTc5ZDZiZTAxODFiMWQ1NWNlOTc1ZmZhMWNiNzkyZWNjYjcwN2M4NWUyNDNjNWQyYjM5YjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEwZDVjOWYyMDU2Y2FiN2EzOTY4NDg0YzgxY2YzNGE2M2ZhYWNhZGIwNmRlZWRjNjZkZDExNWU2OWY0YTFiZmYifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/OrderApiClient.ts#L277-L289",
+          "version": "repo-lines-v1:sha256:90f006033e3911e8745b8cee9f6d07e295ae115ef8fd3e3313d5b802d37869c3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmYzYxNTU5OWFkMTA3OGVmZmRlZTBhZDA1YTVjYjMxZjM4NWE0ZTgwNDEwZmY2OGI3ZmI4NDZjNjY1N2QzNjQifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/orderTransformer.ts#L544-L562",
+          "version": "repo-lines-v1:sha256:8b73bf5f4b0437dd0aa96e67026b00900f9c3483d32a4bc6079f6d79c0767940:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjY2NmMDdlODU4ODFlM2VjODBhOGFiNzc0ODQ4YzBmODc4NmViZmVhYzIxY2UxNDllMWI0NWUzODQxYzAxZmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM0NzA4MjRlNjljNmQzOTNlNDAyYjI3OTYwNmVmN2QzZDdiNDJhMzc5NzJmNmQzYWVhMTZjOWY4YmNmNmRjNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_334b251565bc45d68bd7d590f3b20860",
+      "statement": "Aftersales submission preserves the order detail row identifier through the order transformer and page mapping, requires selected items and a reason, uploads up to three image files before submission, and posts a form-shaped `/wxapp/aftersales` request with scalar fields plus indexed `detail[index][id]` and `detail[index][num]` fields; `REFUND_GOODS` adds `return_type: 'logistics'`.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/AftersalesApiClient.ts#L105-L148",
+          "version": "repo-lines-v1:sha256:ca646a3e2908d00d06f8a7d876105a682132c0a7a48d85adc2e93bdaa4be55d6:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/components/AftersalesPanel.vue#L335-L362",
+          "version": "repo-lines-v1:sha256:00147e71b0413e97dc18bfbc76bbac4b0b6e3fd462aee56f483b6c15df5bac7f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxZTBiMjBiZjk0MzQ1ZGMyNzBmODJlODIyZWRhMzQxMDNiOTFjNjdjYmVjMmM4ZWRkMjQxOWU3ZjcwMmI4MzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2NjRhZTQ1ZWM0OGQ0ZDRhZDRiZjYyYWU2MWIyZTIzZjcwZjBjYTQzMWRlMzQzZDZiMjBkOTRiNGRmODkzYmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZmMGY1NGU1NDJiYTNmOTU2MDAyNjMwNGY5YjRmZjkzNzY1Y2RjY2Q0NmYzZWUxNWJjYWZlM2E2NDFkYTU3NzkifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/components/AftersalesPanel.vue#L390-L434",
+          "version": "repo-lines-v1:sha256:197571a440648c97fba482a48c6c6424f37e9de84631d16628ac0f6e61c05cf9:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiZTFkNzA5ZWFjMTQ0NmQ4ZmNmMThmYThmZGJmM2FiMWIyNTZhOWNlNzhlMDgxMWIzYmFhODU3NDhkMGRlMjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI3MDlkOGQ3MzRiOTI2ZWQyZWEzZTQzN2QzMzEyM2EwMjc1NjcxNDVjOTc0YjMxMDM1MGEwNDc2NjMxZjhjNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2OTgwOTkxMTE5NDI5ZjdkMmVhNjhkMGJhZDFhZjUwZDZiMDQ3YTdiNzRlNTY5ZmI4MGQ3N2EzMGZhMTcxYWMifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/%5Bid%5D.vue#L566-L610",
+          "version": "repo-lines-v1:sha256:de079afea661f011d3af71408e5050db045f5f716030371a24dd7faee2d724a0:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyZWQzNjhkZGM5MGM5M2U1ZjJjY2E5OWNlOTMwYzI0Zjk4NTUwZTA3ZDY2OWE4YzZjODNmOGE4ZmMyZWFhZGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhNjUxZWUyYjM2YTQwMGMwNmU1NmI3ZDQzN2ZjMjEwNWQwMmUxNTYwMzVkYWQ3Yzc5OTQ0NTBmNzgxZjc4M2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI3MDZiOTc1MzJhYzQwNGJmMThiMjk1OWFkZmNlZWE2MDBkYjUyNTBhNzQ0NzM5YTRkNDUwNDE4ZTZjNTdiMzgifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/aftersales-submit-payload.test.js#L27-L58",
+          "version": "repo-lines-v1:sha256:35627d9b735db623cd230af7e27f4fa517ea8fee41cc3528d2247ca54c5b644f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmMmMxN2JiZTYwYzRlZDM0ODU4ZDI1M2RhODI3ZmQ1MGNiNjU0Y2M4ZmNkNDc0NDI2MGRjZmM0MjZkNjhkYmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliZGRkZjljMDAxNmUyY2Q5MGQ5ZjdkNGJhN2RmYTIyMTdjYjQ0MzJlY2E5YWY4ODgwZjhhNWFlOTBlN2FkYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/index.vue#L669-L735",
+          "version": "repo-lines-v1:sha256:370a7e52284a56149eecb8519fef5b575ce7a93d203e9cc8322fa9fb60f0cd55:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyZWQzNjhkZGM5MGM5M2U1ZjJjY2E5OWNlOTMwYzI0Zjk4NTUwZTA3ZDY2OWE4YzZjODNmOGE4ZmMyZWFhZGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBhMzE3NGM5ODViMjQ2NGQ4OGNkOWY0YWYyOTNjYjJlNDBmOTYxZDIxMmJjYmU1OWNlNjlmMGYwNjgyMjNkNzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzOWMzYWQ4ZTVjN2UzZDA5ZmVjNmNjY2MwZTM5MDIxNDlkYWNiMDhhZmJhNDExNWFlZjU1ZTFkNDdlMjkxNmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_77ff91c6441146cca31908bd119473ba",
+      "statement": "The aftersales list maps tabs `all`, `pending`, `processing`, `processed`, `rejected`, and `closed` to omitted status or backend values `0` through `4`, always requests normal orders, transforms list data and totals, paginates through `ECPagination`, and refreshes after cancellation.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useAftersalesOrders.ts#L33-L81",
+          "version": "repo-lines-v1:sha256:2f6c7a873869e4e4878faa2c038e6dc1f31b88960fb59a8676ef9d55997070fb:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1MzczZjM4YTU5ZmViOTNhNTIzYTI0NGJiODM3ZGNiODIzNGRkZmYzNGQxZmFhYTJhM2RhMGQ1NmRhMDYyMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY0ZDhhYzliZjIyMWM2ZmEwNzkxZGM1NDA2ZDI5MmU1YTg5ODgwNjdjOWRiZjc1YjRhYTM1NzYzMWZjMjJkN2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNkMTA0MzEzOTRhYzk5YjlkZjU3MzE4YTRlMGIxZTNlMGE2MDE0MTBkZTg0ZThmMDNmMTUyNTU4YTBiY2IxZDYifQ"
+        },
+        {
+          "resource": "repo://app/composables/useAftersalesOrders.ts#L6-L13",
+          "version": "repo-lines-v1:sha256:7fc62812fd54d926991cf78484f448fa7834b5bb69cbff2522044171322b9306:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGU2OWUzMGI2MjllNTA5YjRhMTU3MjhjNGJiZDcxMTIzMDQ0MTQ3YzZhNWIwNTE2N2Q0ODM0YTk0YjIyMjNlNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDM1YmZhNmM5OGY5ZjE2MjNjOGYwN2ZjZDkzNzYyZWY4MGQ0M2U2MDdmMWY0YTJlOWJlNWQ1ODU1YTFkMWUxYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzk4NzRlMWE3MGI5NjFhYmI5YWU0ZjY2MTBlMjYzZjliNjA0ZjQwNDg5YTQ2Yzg1NDQ3OTE4MmI3NGY1ZDFiZCJ9"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/AftersalesApiClient.ts#L63-L79",
+          "version": "repo-lines-v1:sha256:3664510f2a16917fc71de8d6749df059cae8bfaadeadb2bfda1fad38fe4caae7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ1YjJmY2QzYTQwYTJlOGQ3ZWFkZDBlMjY2YTAyZmVkYjcwMGEzYjhhMzczYjQyN2NlMWE2ZDhlN2ZjY2UwZTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIyNTYzNzI1MGJiMThiOTI2ZTcwMzUwYzZjMTY0ZGMwOTIxYzM0NzU5MjE3ZTM4NzY1YmVlMjRmNzIzZjMwOTAifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/aftersalesTransformer.ts#L290-L298",
+          "version": "repo-lines-v1:sha256:af4a2e59dd7b2419b32a5b0eb2996a76411c2978b2f6e2c820f63602293cd09d:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzNmMzc2OTg0NzY4YTZjNTVhMjJlNDVhM2I0MGJmN2I3ZTRmNjQ5ZDkxZGRhNDdkMDM2ZDYwOGE1MzU1ZjI5MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTdkODYzMmU1NGU5Mjk4YWJiOTU4NzI3ZTJkNTE0MDhhYmFmMTM2NjAzNTM3OTEwMTQwYWJmNjViMzBhYjYxMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSJ9"
+        },
+        {
+          "resource": "repo://app/pages/account/aftersales/index.vue#L203-L221",
+          "version": "repo-lines-v1:sha256:7e538f9f5d706d3bc8e03550fc67c82170b8913617d527848ec684a8626d6acc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxNjk5OWIxOWMwMzIxMDk3YTdjZDY4ZWMxYWY2ZWNlYjgxYjgzYTU2NzkwMDk4NTY2ZTVmZTFjNTQ1YWU4MjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzOGQzMjk0MWM5YmE0NWMzZWJjZmYwYzkyNmQxZmQwMWFiYjliZDQ4MGNhYjc3Y2ZmY2ZhNGQ1MGU2MjQzMjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJmMzU4ZjAzNzFhNmU3MzJjNDM0MDMzMjIzNTE5OWRjZDkxZWJjNDYyMzlhNWRkY2ZlNmY5YTYzZTZlYmVjZmUifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/aftersales/index.vue#L81-L97",
+          "version": "repo-lines-v1:sha256:d7ed6c4975690ef68915e760fc3823d6ebf42401228298cd0165ba7890348cb3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzYTlhYjc3MDkyYmNlNDgyZmRjYWU5OGNjY2YxMzMzZjc0NjM0OTkzMjI3MWE1M2YzZTdiYTdlOWUwZGQ4NWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5OTAwNTlmNDhjYTU2ZjZiNTBmZGM2OWExNWM3YjdlNjMzY2MxZTEzNjA4ZGFhNTBlZDkyM2JlYjBmNjM2ZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE0NGYzYTNkMmI1NTBmNjRhYzA2MTAzNDRhZDM0NDhiMzE4YTUzMGNmZjY3NDI2ZDk3MTY2OWFiMmI1OGQ2NjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjOTg2ZWZiY2YxYjNiNzE1ZmJhNGIxN2U5NGExODlmODQ0ZTlkZWQ5YmUxNDc3NWUzZGViOGNkNDExNjVhYzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ebeea589c7404d0d90ac99ff7ca8fa4a",
+      "statement": "Aftersales list and detail transformers normalize numeric and textual status values, preserve live refund amounts without cents conversion, resolve item and store fallbacks, and build a detail model from order and refund sections with receiver, reason, evidence, payment, timestamps, amounts, progress steps, and backend action buttons.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/transformers/aftersalesTransformer.ts#L20-L90",
+          "version": "repo-lines-v1:sha256:0af87afc953338c5589ae37c859f3e33cf6020b70fb429f1f5de509d0b3727b1:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1ZTZlNDRiYTMwNzAwNjRmOTQzOTgxZDQwNTc0Yzc4MTUyY2Y2YWM5OGM1ZWMxMTcxMDA0YzNhNTZlYTNkYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNjYmE4Yzk3M2QzYmUxNzQ3NDRmNmQzODRlZmViYzY2NTkxODY4NDBmNDU1NWYwMmNlZjRmN2RiNWY4NWRiNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkM2Q1OGQwNTQ4NmZlNDczOGE4Y2Q4NDBiZDE0ZjAzMzI3NjBkZGMwMzkxYTliNGI2M2ViMDgyZjJiOTRlNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiODE5ODhjNGQ4NmFmMTNkMWI2MmQ5MGNmNjY0ZTc2N2RjYWJlM2ZlMWVmM2ZhMDUyNjE4NzA4MTZmYmVlYmEifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/aftersalesTransformer.ts#L205-L240",
+          "version": "repo-lines-v1:sha256:b2e7601235e42c32947b722b91f5e6035d1a2caeed35c9aae1f00fd3120716cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwYmEwZTE2YmMxMTdmZTQ4MTViYzYwYWU1OTA4YzgxNjk3YTViZjU5OWMxZjYyNTJhMWU3YjcwMTIwYzBkZTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYwNjQxNjViNzM4NWMxNTkxYzYwYWNkZDYyY2Y5YjYwNWZiNDdjNmJhMTc4NWE5ZmQ3MjIzN2MxZDczM2Q1MmEifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/aftersalesTransformer.ts#L242-L288",
+          "version": "repo-lines-v1:sha256:c31f6b6930f577492af5d18e0cf8e5b694fe602b5488c7831e028dad943d82d9:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2NDhkZjA5YThiYmM3ZjYxN2RhMmU4MDI5ZDZkZmQ0NjZhMzBmY2U3MjczMDVjNGE1YmQ3ZDRhYjFhYWFhN2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViYmE2MDBjNzk0MDI0NjM1ODY2MDU3YzFkMDc5YWYyNWZmZDQzM2M5ZmFkYjg5MDI0ODRhZjA4MWRjYThiMTcifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/aftersales/aftersales-api-alignment.test.js#L31-L53",
+          "version": "repo-lines-v1:sha256:86a4c1a5278e0eaeb7dd9c758cf2f10885bc8cfcfeacf81d25a5cee6f4650583:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlNDg4ZDViYzBlNzk0NDZmMmE2OTg1YjNjNGQzYzNkN2RlZDlhZDBkOGI2ZTcwOTAxZWRiMDY0NjQwZDU0ZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE4ODIwMmI0NGVjZWU2ZmE4MmVlZWVjYWZjNDc0Y2Q3NGNkYTQwODlkZjY1YmJlMmM3YjI3ZTUzMzJlNTllOGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/aftersales/aftersales-detail-transformer.test.js#L11-L35",
+          "version": "repo-lines-v1:sha256:c3210d6789e9f4ffde122b184c4906c816fc22c668a42095259835beb5f51f47:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlNmRjYTAxYmFlMmVjMDQ2ZDI5M2Q3NDI3MjJkNGZlZmEzZWQ0NTdiYjE3ZDg4OGExZjBhM2E4NDVlMDk5MmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6530e1f3d1f24a6d89d96443b00fc416",
+      "statement": "The aftersales detail workflow requires both route `id` and query `itemId`, sends them as `aftersales_bn` and `item_id` to `GET /wxapp/aftersales/info`, rejects missing identifiers before transport, and reloads the transformed detail after cancellation; pending records receive a default cancel action when the backend supplies none.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useAftersalesDetail.ts#L14-L53",
+          "version": "repo-lines-v1:sha256:0ebbf2d59732f10c2a728b012c3eac1b04887384832a0bc5c83aa8708e5e343d:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2M2VmMjRjMzJiMzY0NTBiODIxN2VhY2NjZWNiNzE1NmJiMzUxNTI5MjAxNGNkZTNkZDcwM2NjMjA4OGRlYzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkNWNlYmNiODE2YTU0MjY2NmZiYmU2ZmQ5ZTU2NzVlYWZhOTQ0YmI5OTM5YmQyYmZmNmMyODcwYjc4ZWFhOTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1ZGFhZDk0YWJlNGViOWM1NzU5MGZlOThkOGZmZjQ3NjQ3Yzk5MjQxOGM0ZDVlOTIyZTlhMDcyMjBkYTJmMTEifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/AftersalesApiClient.ts#L91-L103",
+          "version": "repo-lines-v1:sha256:494d31b8adf0cbf1ea11d244f82b28ca39d0bf5265f175569899e55664d732bb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUxMmEwZThmZDg2MTgwNTQzOTEyODhlNzdjYzk4ZDMyZDg1MThjMTAwNWIyMTg0ZDA4OWU5OWNkNzViNGY5OTMifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/aftersales/%5Bid%5D.vue#L114-L136",
+          "version": "repo-lines-v1:sha256:8c6b65adee5886e6e23c00951fcc10236039feb0586a27c67c38f6870cb78fc1:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzMmZkYTRmNzlhZTdkMWVlOTdmNzQ1OTkzMWM4ZmRhYzVlOWFiNTQyODg0OTBiZDFmODZmZjE2NWE3NTg5MDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjViOWU2ZWEyYzc1YjFiOTFmN2ZmODM4MGY2ZTY1MDhkNzQ2Y2E0YjIyNmRhNDk0MTQ3MDc4YzEwZDViYmJlZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM5YmUzN2VlZTcyYjZmYTQ0ZmVlN2FiMzIwMGRmMTVkNjA0MTRlZjcxMmQ2NWYzOWMxMDM2ZjY5YmZjZGM0YzUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c97038a37c554eb1b8c1ef55b2bd3455",
+      "statement": "The focused account and aftersales JavaScript tests are source-contract tests that inspect endpoint, pagination, payload, and transformer wiring for these workflows and should be run explicitly with Node's built-in test runner.",
+      "evidence": [
+        {
+          "resource": "repo://app/pages/account/aftersales/aftersales-api-alignment.test.js#L19-L53",
+          "version": "repo-lines-v1:sha256:83a8ad3f827f37c4059e18b5b1d71340633648bfbf103220ce024d8fe5ad9a77:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhhNGY4YmRhNjY0M2U3YTYyZTEzOTYxZDg0ZjBhMWJjZTU4Yjc5YWIwNDhmMmY0MWJlOGFiYjVlYTgyMDJkOGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/aftersales/aftersales-detail-transformer.test.js#L11-L35",
+          "version": "repo-lines-v1:sha256:c3210d6789e9f4ffde122b184c4906c816fc22c668a42095259835beb5f51f47:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlNmRjYTAxYmFlMmVjMDQ2ZDI5M2Q3NDI3MjJkNGZlZmEzZWQ0NTdiYjE3ZDg4OGExZjBhM2E4NDVlMDk5MmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/aftersales-submit-payload.test.js#L27-L58",
+          "version": "repo-lines-v1:sha256:35627d9b735db623cd230af7e27f4fa517ea8fee41cc3528d2247ca54c5b644f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmMmMxN2JiZTYwYzRlZDM0ODU4ZDI1M2RhODI3ZmQ1MGNiNjU0Y2M4ZmNkNDc0NDI2MGRjZmM0MjZkNjhkYmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliZGRkZjljMDAxNmUyY2Q5MGQ5ZjdkNGJhN2RmYTIyMTdjYjQ0MzJlY2E5YWY4ODgwZjhhNWFlOTBlN2FkYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/orders-pagination.test.js#L23-L57",
+          "version": "repo-lines-v1:sha256:98ec65aecdd4ea3b43ed1cee3584fb38144936222c7481eae70700aeff4a3a40:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMxYzc2MzVhZWY4YzlmOTAyNmEzYjU4MTI2OWFkMTdhYjI5YzdjZGEwMWQ0NmQ0N2I5Mjg4YTBlNTY5NDY2MGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}

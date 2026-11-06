@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1a28303a312d243ed1acb7347bd21496d73839f37daff0483e75c3c24fcdca57",
+  "claims": [
+    {
+      "id": "claim_226e182222f24fe68ec39e7102aa1da8",
+      "statement": "The Nuxt application uses app/ as its source directory, mounts the application through app.vue with UApp, NuxtLayout, and NuxtPage, and keeps route pages in the outer shell rather than rendering them directly from individual entry modules.",
+      "evidence": [
+        {
+          "resource": "repo://app/app.vue#L1-L10",
+          "version": "repo-lines-v1:sha256:c8f813715b9211ab9b79896731e27868724cf57fa6f16650cbca58536cb71c99:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMTRhMDdiNmQwNWQ3NmFiZmEwM2VkZTE5MjZjMWUyZTc0NzI3MzEyNzlkODU4OGU4YzYzYzU2ODliNTAwNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViMDJkMDYxNjI1NGVlY2E5ODcxNzZhODE1M2FlNGI0N2M5ZjZhNjhlNzUxYjgwMzVjYTdlYmFiZDljYTdhYmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyMTIzMmYzNTA1MzUyODE1MmQ3ZmNiMWI1NDFiOWNjNzA2ZjA1Yzg1MTExMjk0MDMwZWI3MzlhNTU4NjhjZDEifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L49-L50",
+          "version": "repo-lines-v1:sha256:0182370c4a1ea047090e8f64778dba750e9256298f974bd132a802f78ab1abb9:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODkwYzVhOTE1OGVhNWU5YTI0N2NhZjJjMmYwMzVhMWRjOTY1ZDIzOTQ5NWIwZjRjNTljMDk5NTNiMjliZjgxOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGJiZjY0MTE4ZmNmY2ExMDQwZDg1OTUzNTY4MzgzOWM5YTQwMzFiMWI3YjViYjM5NWZmNTI1ZDE1NjJlMzBkNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDY0MWZlZWIwZDE2YTVjZDEyNTg0MjljZDU3ZDEzOThkZGZjMjZhMTcyODRmZTM3YTk5YzEyZjViMDViZDYyMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDUxMjcyOWZiYWNjMGYwNjliYjVmODdhYjNlNGM5MGQ0ZDRiZjJmNzQ5ZGI4YjhhNjI3MzEyODJlZTAxOWRhNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ef414991a8f442dcbc3f3c7eebde4761",
+      "statement": "Application startup injects appConfig and constants through app-init, while the HTTP plugin is the dependency anchor for currency, distributor, and auth initialization plugins.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/app-init.ts#L1-L16",
+          "version": "repo-lines-v1:sha256:4acd69a865e6c98772e6acf0935247318f73f5b6f4e6319656eb93fc0058c3fc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlMzIxNjgxNGM1YThiMjJjYzUzNmRjYzQwN2I1MzQ4Y2NmNDIzNmRlNmQzODExNTI3YTJhZjA0YmMzY2VmNWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY4MmQ1NmEzYzUxMDI0Nzc2YjA4ZTBmZmNjMGFlZWNhOWJmYjJhOTg4OTE1M2ZiMTUwMDA4NGM5MjNmMzVmZmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIwNzZkMDEyNjk0ZWIxZTI0YzNhZDljMTZlZWJlMmU1NjVlNjNhOGZjNTU3MzNkN2FiYzc3ZjBmNDgxMmI1YTgifQ"
+        },
+        {
+          "resource": "repo://app/plugins/auth-init.ts#L12-L15",
+          "version": "repo-lines-v1:sha256:9ea8d474e85465ef2753ab6123f1480dddf800b3829209be721ab6a11213fa07:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGViNzhjMmEzYjlkZjAxM2UwMTJmZGM0YmNlYzg2MWYxNGZkNzI1ZTMwOWY1NDQ4MzhmZjIwMTBmYTZkYzc5ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWE4N2ZjYzk2ZWJiNWY5NmI4MmE4YTkzODJhNjgxOWFlN2QzMWZkYTZkZTYxOTgyMGI0MTU0ODNiNjNhNzcwYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWI0NDM4ZWUxMTBkMGM0ZTRhMDNkYjg2MDU0NzcxMDQ0NzIzNGIwOTIyMzkzOGY0ZmJiMTI4MmVmNTdhNzNiZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWRlYjBlZDA2ZDE3Mzg3NmVjM2Q1NGFkZjM4Y2JhYWQ5ZTA0MDI3YTc5NTdmZTEyMTM5N2MzZTU0NDIxY2Y1YSJ9"
+        },
+        {
+          "resource": "repo://app/plugins/currency-init.ts#L9-L12",
+          "version": "repo-lines-v1:sha256:ce89a582fd5b2d4bba9289e487b9f1a06d45d290c53d94bcf4c7770418327890:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGViNzhjMmEzYjlkZjAxM2UwMTJmZGM0YmNlYzg2MWYxNGZkNzI1ZTMwOWY1NDQ4MzhmZjIwMTBmYTZkYzc5ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTM0ZmJmODFjMWY2YTcyYWZjNDUyNjJlYTllNzYyYTE2ZDc5Y2M1MmFjY2I5NmM0NTJjM2Q1MmYwMzA3NTU5NCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmJiZTAwMDA2OTFkMjUxMTIwOTljYTcyZWYyMzJmZWJhYTAwZTE1NDU0MjE3MjE3MTcyZjU2YmMwYmUxMTZiZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGQxZjk3ZWIwZWU4Y2ExZWFmMmJmYzI3YjliNTM4Y2EwY2I5ZTdkNGYyYjMyMTllZjcwZDk1YmVjNTZhYmJkNiJ9"
+        },
+        {
+          "resource": "repo://app/plugins/distributor-init.ts#L6-L9",
+          "version": "repo-lines-v1:sha256:7b375c749e525af57aac1efd6ca2e28d0829c4f5a0e1837610e33dd2dd9d8acb:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGViNzhjMmEzYjlkZjAxM2UwMTJmZGM0YmNlYzg2MWYxNGZkNzI1ZTMwOWY1NDQ4MzhmZjIwMTBmYTZkYzc5ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTM0ZmJmODFjMWY2YTcyYWZjNDUyNjJlYTllNzYyYTE2ZDc5Y2M1MmFjY2I5NmM0NTJjM2Q1MmYwMzA3NTU5NCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDM1NTc1ZWZmMTE1ZjY5Nzg5M2E4MjM0OWZlMGI4MmIwYmZjNTg1N2MxNzgyMDc1NDljZGE3NGFiMzFjZmI3MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDExYTMwMWM4ZjIwYzVjNmE2NmNkY2ZlMGRmYzViNWY4ZTRkNzkzMTc5YTVmNTAxMzM4Y2IxY2FjZDM4MTU2MCJ9"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L10-L15",
+          "version": "repo-lines-v1:sha256:4f414bc6f1ab5160a176995d558072f09958e7952eafb430ff492fd4bc476cd5:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGViNzhjMmEzYjlkZjAxM2UwMTJmZGM0YmNlYzg2MWYxNGZkNzI1ZTMwOWY1NDQ4MzhmZjIwMTBmYTZkYzc5ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWE4YTAzYTVmMGUzMDlmNmQyYWJkZmU4MjQzNjYzMWZlYjQwNmM4N2MzYjEzNjNjNWZhY2Q3MWFmMmE3ZDE5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzI0ZGQ4MDVmMDQ0Y2NjZTFjMTY4ZDMwNTA1NGI5ODNjZWZmYTQ3NGQ3ZThkZTNjMGMzNTRiMjMyYjM1MzExOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDdhYjg3N2UxOGQ1YWM2N2UwMTMwMDAwNDdlY2M2MGY0ZWJjOWU5YmY5MDRhODc1ZDg2OGZjMjQ0Y2Q5MTQ3ZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d48b4f917fdb4d5a811d4d10c4c6ee4b",
+      "statement": "The global authentication middleware evaluates every navigation but redirects only configured protected route prefixes when the user store is not logged in; the named init middleware runs only when explicitly attached to a page.",
+      "evidence": [
+        {
+          "resource": "repo://app/middleware/auth.global.ts#L5-L37",
+          "version": "repo-lines-v1:sha256:c58ad10300610404802385c78e0bafa26c88035fd4137dd0a5442b263b0fb182:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiMGU4ZjQ0MmM2MDRhOTY0MWY3OTQ3OGY4OTU4OTc2MzkzMjdiMTljMGQzMmJjODdlYzY2MGUyNzZkY2M4YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU0YjFkMTU3YTZmNTMwODg1NWEzNDdlNTA5NjAxMTc3NjQ3YWNjN2JlNzQ5ZjhmZWUyNjE3M2U1ZDNiN2ZjN2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAyNmFlYTk0NTQzN2RmZGY2NTQ3ZDYwMDZjMzVmYmRlOGQ1N2NhM2M2NWFjMzVlNWI2MmY1OWY3NTMwNWQ5MzYifQ"
+        },
+        {
+          "resource": "repo://app/middleware/init.ts#L1-L12",
+          "version": "repo-lines-v1:sha256:5984dcf312ba438f46d4f5fa9e224196186922990c0f80a20e4c803566fd17c4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiYTNkZDdiM2I4ZmZhNmFjZjhlZTc4YmFmMDAzYzc1NTI4NjViOGM1NGJkNTZmYmM4MWUzYTk3NTY2NjA4NTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1YmM0NjBlM2ZhZmRhZjhlZWMxMTAwMmQwZGNlNjY0YjY4ZmRkYjU0ZTc0Y2VlNTg3OWM0MmZhMDg2NzAyMWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e64bf95b8b484c0499eff1f0bd4279ee",
+      "statement": "The shared HTTP plugin selects an internal API base for SSR when configured and a public API base otherwise, adds bearer authentication unless skipped, injects company and locale context, and applies distributor_id only for B2C requests with a real resolved store ID.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L21-L37",
+          "version": "repo-lines-v1:sha256:26a17916bc6ff988e73229301c44380c3b0dbdc79d4fac3cb917521624305cfb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhN2NkZDlmMjA2ZTNkNTFmMjk5NTg5MmFiMzM3ZjJjMTRmNWY5NzAwMDlkMDYzNWI4MmU4YmRkZGVkMzBjYjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlYTAzZDUwNDlhYjI2YjAxMDc1Mzc2YzRkMGI2YTNkNzAyMjlkODNmOTgwZWJlMThkNmJmNWNlODJmMmMwZGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmMjViOGIwMjVlY2JjZTJiNjFmOWVhNjdhODMzODMzYmIzNmVlMWFiMDdkNDAyNzUwOGI5Y2VjYzQ0MzlhNmIifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L250-L305",
+          "version": "repo-lines-v1:sha256:4f9ad3a6ed82f3b1202608443da590660bbaec80be514066c1b8c0b5869d4245:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0MDg3ZDM0MGE1NzVjNmJmZDUxZDBmZmY4MTA1YzY3ZTcxYTQzZTE4YThkODJhOTlkOWMzNTJiNThiYjgxODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzYzA5NjNiMDQ1YzA3MTg5NmRmM2ZiZGUwYzc4MzhiOTg5N2ZkZTg4ZDExNGIxYjhmZTAzZGZmMDQ2OGYxMDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0YjlhMGIxNmI5OTEwYmFhNWQwYTRkY2FmZjhhNjBjNDI5NjMzYmYyYWUzY2JhY2M4MjAyOTA3NTgwZDEwY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiZjYzMzdmOTE0YTc4ZTU1YjhlOTY5MmVlYjU0MDQ0MTQ1NmM2NzAyY2FhYTEyZWIyOWM2ZDZjNGNmOTg1YTEifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L62-L101",
+          "version": "repo-lines-v1:sha256:d092c46b20fd4460a7ea559267be3176592d2fcaf8c03d605af500c9ed8b0015:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0NmU3ZGRhOTk3YTEzNzlhNWI5NGE0YzhiY2NiZDk2YzBmYmE4NWUyNDA5MmIzMDE0ZTg4M2UyZjM0MTdiNWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3N2RhNjg5MTcwMDhkZjcwZmUyNWY1MzJmZWFlZjkwYTA3OWFiNjkzZjVlMzEwZTU0ZThhZDEwNWI4ODYyOTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxYTgyMGYwYTAyMWZiMDBlYWMyOWIyNjZiZGJkNmVjYTMxOTc0YzAwNDZlYzdhZjRjMDJkY2Y3NjQ5YThjYmYifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L123-L137",
+          "version": "repo-lines-v1:sha256:fede35c5b4ee9edbe8d67b147b31bf1eeb033fe0a7fa88848d2195149f3e917a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwOTc3MmJkZTI2ZGFjMjhkNDI0ZjNiN2U4OGQyMWFmNTBkZThlMzEwYThiZDA4Y2E2ZDEzM2FmM2ViYzUwNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliMTg3NmU0NDgyMTc4ZjVhNTUyNjE5NzE1NjA5YWQ2YjdmZTYwMTllNTRhMzUxYjM3NGE0NGEzNWUzMWY5YmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2ZDJjZjBjZTdjOGQ5MGIxODAzYjgzNmQ1MWJjZjhmOTQxMjU4NzI2MWY0ZGY1ODQ5NGVjMDQ5N2M2YWNlN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIzYWMxYjQ1NzFhNjYyYzBlYWY1OWYzM2RjOWY0YzA4MzgyNWQ2ZTI2MTkzYjc4Mzc3MTRiZTQzMjdmNzU2MDkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_92aff50681f74b8383d683672cf3cf42",
+      "statement": "The HTTP transport boundary standardizes request encoding and failure handling: it retries selected transient HTTP statuses, unwraps successful data payloads, converts HTTP and business failures into typed errors, redirects client-side 401 responses to localized login, and displays client-side error messages unless explicitly skipped.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L257-L264",
+          "version": "repo-lines-v1:sha256:5f46ef64b3b0d59d7ef6ce6da6ef321dfbedea324daf37b721bc549cd17fcce5:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmMyMjdhYTdmNDVkMzI0NDc1ZjMxMmM1ZDU4ZjAxNDRkNGUyZGE5ZjU1MjUwYWJiMmMzNjM3Zjc5MDk1MmJmYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDk1YTI1NDEzNzQzNWVjNDZlM2IyZGY3ZTE0NDJmMDRjOTA2MmMzNTA3MzFkMmM5NGQ4NTY2ZmJjNjYyMDA5ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiN2M5N2JjODM0MzYwNGU5ZDUwYjg1M2RjNWZiMTc5YzQ4N2I5OTI5NjhlNjY2YWU2ZWEyMTk0MzEzOGM4ODQ0NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDdjYWY5YzU4ZTU0Y2IzMTliMDAxODdmNjFkODkyYWJmZDIwM2EzMGJlZWVkOTg1Mjk3MWY4N2I5ZjEzYTdmZSJ9"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L316-L374",
+          "version": "repo-lines-v1:sha256:a6afe3bfd1e283afa345940ed05afd5e1ae8f4d7211e0635de2f99b230868e40:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxMDBmZmI3MDkzY2M0M2YwMmYyZjJlM2QyNGU2MmNiYWNjMjEwYWIwZGUxYjYzODI0Y2RiMjFmNjIyYTI1N2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQyMmVlNmFiYWRhZjUzMGQ0Y2VmODJjNTE5ZjlhNTAwYjU5YTZiZTU1ZjM5MGZjYWJjMTg0YjRlNWI3MTJhNjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5OTM2Mzg4ZmQ1YWFkOGZjOTNiMGNhNTM2MGY3ZjdiMWZhMGYyMTgzNjdkNDBkODMwNmM3MjIxNjQxOGNkYzMifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L376-L425",
+          "version": "repo-lines-v1:sha256:6860c7f3d7991ab783c30701b98ed7e1f4921d10106e940692da5e1262e5bf0a:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyYmYzMDA0YWNjNGMwYjRlOGQ4ZDU4ZjQ1NmUxNDRjMmU2ODk5NDRkY2E1Mzg2MjhiOTU2NTdhZDg0MjI1YTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2Zjg2ZDgxNTFiNTRkMmNiYjliZTBiYzJhNmE4Y2JjMmNiYWVkYTk5ODRiZjkzOTMwYmZjZmNiN2U3MWU0ZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM2OGYxZDRkZmMxMzE1YzRmYWY0NzdiMTEyOTUzYTg4ZTJjMjIxOTZkNGJiNjVmZDFkYzViNDFmYjQzYjAzY2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8849973841aa4ec0b4b14764af442d66",
+      "statement": "Currency initialization runs on SSR and client to reduce hydration divergence, while auth profile retrieval and cart initialization are client-only; the user store restores tokens from cookies.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/auth-init.ts#L19-L31",
+          "version": "repo-lines-v1:sha256:23c6408dd889872dd307bf25f9ce44241de42d785847566bdbbd76e438d0f5ca:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0M2FlYzZkNjQ3ZjQ1OTFhMmU2NDY1NjdkNGYwNTlkZWVlNTM4Y2ZkOGVhMDhjYmM3NTQxNjE4OGM1YTI3MGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkZWIwZWQwNmQxNzM4NzZlYzNkNTRhZGYzOGNiYWFkOWUwNDAyN2E3OTU3ZmUxMjEzOTdjM2U1NDQyMWNmNWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2NjQ4ZTYxMDEyNGY5YjM2ZDA3MjNmNDg3NTYwZDM3MGY4Zjc4MDU3MzU1MGI2NmU2ZmU1MTEwYWI5YWU5NTIifQ"
+        },
+        {
+          "resource": "repo://app/plugins/currency-init.ts#L4-L35",
+          "version": "repo-lines-v1:sha256:3a46abd6861d2df4688d791f70b9523bec018fed4b6e3b8e2c9da92c03b991e5:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkzZjRlMzJkZmFkN2NmYzNmZGNmYTZlOTllYjMyMzdmOTFlN2FiM2MyNDVlMjAzNWYyOGQzNjRiYWQxYzk2MDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2NjQ4ZTYxMDEyNGY5YjM2ZDA3MjNmNDg3NTYwZDM3MGY4Zjc4MDU3MzU1MGI2NmU2ZmU1MTEwYWI5YWU5NTIifQ"
+        },
+        {
+          "resource": "repo://app/stores/user.ts#L33-L43",
+          "version": "repo-lines-v1:sha256:88f4e8202d943ec2f5d1fb617cd2cf0917995c6816e39dd58b7c74c736ce53cd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyODI2M2U4YTkyZmUyY2M4YTc4ZDdjNTNkMmMyMWJmNTg1NjIzNDFjZTk1N2FjYjA0OTgwNzY4ZjNlOTg5ODAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ0OWMyZjcxZWJjZTFiODNhZjFjOGYxYWFlZGFlNjliOGJmNjM3ZDU3NzZhMzE4MmQxNmIwNGFmMjhiMjg1MWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE1NTEzMGNjZmI1NmYwNmM1YWMxYTA3MjczNjdlMDUyNTZhODA0Mzk1ZGQ0NTNlOTYyNmFkOTExMzkxOTgzMTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f5d93ffd4f4d4c93aeec070102802a36",
+      "statement": "The home page composes decoration preview state, SSR decoration DSL fetching, and a shared page/layout splitter; production uses fetched SSR DSL, preview uses preview DSL, layout section types are separated from central page content, and an empty page falls back to the default home decoration DSL.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationDslFetch.ts#L80-L120",
+          "version": "repo-lines-v1:sha256:98c80338c981dfa1c4a36823b043d03f17708804c7616a89ca7b83b3d357c720:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMzU4NGNlYjcyYzA4OWNmOTVjNWU5Mjc0MDNhZjNhM2ZlMDdmZTRhNDgyMzhkNjRmN2M2MmVjN2E0MmIzMTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFlMDBmZDdhMjUyNGVjODMyNzZlYWIyNDM4MjNhZGJlNzRkYzg1ODA4OThkNDEzNzk5NjYzZmJlNDYxOTcyNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ4MDAzMmZkZGViNzBmMTg0NjBlM2JiZGEyMDRmYjg3ZmVkMmU4ZTQ1N2FkZGFkOGFmZDc2NTA1NGY2NGRhODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useHomeDecorationSplit.ts#L45-L107",
+          "version": "repo-lines-v1:sha256:2f80ec60b136df29db88ece4483ec3b533de1a933ab5eaa1069e89d887970d15:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkYzBhZjU1MjlhNDkxMmE5MDYxOTk3NzU5MjJiMmIwMWZlYjU5ZmQ4ZjM5MmVjZTYzYzJhMzQ0NWU0ZjNkMDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk1ZDMzMzMwYjc4ZDg1NDA2N2Q1NzUyODFhYzUzYmI4ZjRlNjgxOTcyOTc4MTA2Yjk4ODc0NzVjZDVlY2Q4NjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5YmZiY2Y1NmIwZGI0ODM2OTYxMzU2OWJhMmNjNTI1NjQ2NDAyOTVkMGQ3N2RmMGY1YzU4ODJiNmRmZjRjMmEifQ"
+        },
+        {
+          "resource": "repo://app/pages/index.vue#L19-L71",
+          "version": "repo-lines-v1:sha256:b151430818341c610e3116988e5c210e448804008602b50a5b872bec8886b855:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmNDMzNTYxNDJhMWEyMzRiMWEwMzE5ZmIyNzYzYmU3ZWQxMDhmYjgxYWM5YzNlNmQyNDQ5NmY5MmVhYjk2YWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmMzU4ZjAzNzFhNmU3MzJjNDM0MDMzMjIzNTE5OWRjZDkxZWJjNDYyMzlhNWRkY2ZlNmY5YTYzZTZlYmVjZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI5MTRkZmYwM2U4ZTRhZDljNjY0NjA5ZWZiMDk4MzRlMTc0NmMzM2NmMzljNDhmZTc0NjE1MDc4ODMxNjJhMjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_36107744084d44c09e59be0fbdb00f6c",
+      "statement": "Decoration DSL fetching is SSR-capable, uses GET /wxapp/pctemplate/getTemplateContent with skipAuth and skipDistributorId, scopes useAsyncData by country code, page type, and page ID, and suppresses the production request during an active preview route.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationDslFetch.ts#L80-L117",
+          "version": "repo-lines-v1:sha256:661bd45658c72b111cbe971e0b149b63e8c5501e7df35e0fd309a90a4670984e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMzU4NGNlYjcyYzA4OWNmOTVjNWU5Mjc0MDNhZjNhM2ZlMDdmZTRhNDgyMzhkNjRmN2M2MmVjN2E0MmIzMTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ4MDAzMmZkZGViNzBmMTg0NjBlM2JiZGEyMDRmYjg3ZmVkMmU4ZTQ1N2FkZGFkOGFmZDc2NTA1NGY2NGRhODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4YjEyZmVmMWE0OTRhYTk2Mzg5Njk1MjViZDE1MmJkODM5OGRhMWMwMjg5OGQzMDJmM2RjNWZmYjBkY2ZiYTQifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPageDslFetch.ts#L15-L30",
+          "version": "repo-lines-v1:sha256:98552b35341adb85afbedbeccaad457d291154bc08ac53ea00b94a7b052b2576:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwODQwN2RlMjdkZTFiMDE0Y2ExYjQ2YWFmMzM3Mjg1NjU0YjcyYzNmNDQ2ODZhOGQ1OTg2ZWY1M2E4ZTg0YjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM4NjMyNjZmYjY4OGVhNjIzODNhNTU5ZDQ1YWQ2MDg2YWY1YzQwNzBjZTYzODQ5YmVjZTYxMDg5ZGU3NDZmNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2745c192dc6949cb91a3715edab754f0",
+      "statement": "Decoration preview state is shared per page type and communicates with an embedding admin through validated postMessage origins, while the preview route and iframe context determine whether the page is in preview mode.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L184-L242",
+          "version": "repo-lines-v1:sha256:6d64f7594a89ad312220c18462ab5a36cd2b70b3d7233ae756060ad94370fb53:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5ODRiOWZlOTM3NWVhMzFlMzBkZjM0YTE4ZGUzYTFmYzcyNzRlY2VjOTM4OTQ2MTk1NWZhMGM4MzgxYWYxN2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk2MTgzYmE0MjYzNTZiZjJlNmFkNjIzMTIzMTg2ZjEyMTNhOGU5NTgxMjA2YzY0NGEyNmZlYWRlZDQwMWM3M2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIwMDVmMGEyMjliMjgxODE4MjI0ODAwNDc3Y2M1NDQ1MTE5Y2U5MDNkZDU5MGU3MGQ5MjJkNGRmMGQ3MWYwNjEifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L244-L258",
+          "version": "repo-lines-v1:sha256:ea6a39dc9c5a63009cba75aa53166e85007915c4de59368b9989cfd15c5964ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhmOTdiNTgxZjU5MTYyNmNmMGQ4YWQyM2JkMzFhMWQ5MGM5YmQ1M2EzODAwZGNkNTVmOWEyNWNiZDgyNTc3NDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyNjBhYjE3MzFjOGVhMTI1YTM2NmY3NWNjNWZhOGJmYmNiMzhiZmE3ZTBmYWRiODM0ZTJiMDY5OWQ4MDE1YjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI0YjFhN2Y1M2M5MDI1YjNjMDdiZTQxYzcyNzdlMzI5NmFjYjIyNDhjYTZkOWNkZDFkMGE0MDAzZmQ2OGQ0NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1YjFjMThiNTU1ZDNkZWUzYTBiMDQyOGFhNjRjNDk1ZTMyZTBlZGFjYTE0NTJlODlmNGUyMTBiNDRjMGQ5MTYifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationRouteContext.ts#L1-L81",
+          "version": "repo-lines-v1:sha256:7969cfc985805b6aca71a610ea0ab4bdcb289a22e946c5e66a41681cd1c775b7:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjY2E2M2U5NjNhOTY4M2M5YzlhYzE3Zjk0YWRiNzM3MGU5YzIyZmNjZDQ1N2Y4MjU3MmE1YmQzY2I3YWVhODkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_89f2a368093842b5929f6f244236d76f",
+      "statement": "The distributor store treats cookie hydration as a soft fallback and marks itself loaded only after an authoritative default-distributor request completes; distributor initialization is skipped for BBC mode, and the HTTP layer never sends an unresolved distributor ID of 0.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/distributor-init.ts#L10-L44",
+          "version": "repo-lines-v1:sha256:5dda56c9f10977aa101c46efc9593f64ccc431b123d80d9247aa89ea91b93c4e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhMDIyZTc4MGFjY2Q5ZjZiYWI2NzE0YjI4YzQzYzQxN2RkNjlkMjZlMmRiNzRmMjY0N2UzMTYwMTQ4YWFjN2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk0ODczYWNkOTM5MGIzMzExOTY2Y2E4ZDExYmQwYjczOTE1Zjc3YjRiY2JhNTgxZTI4YTFjNjgzNTllNTBiYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2NjQ4ZTYxMDEyNGY5YjM2ZDA3MjNmNDg3NTYwZDM3MGY4Zjc4MDU3MzU1MGI2NmU2ZmU1MTEwYWI5YWU5NTIifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L28-L37",
+          "version": "repo-lines-v1:sha256:742b3c8be26f13cb35e44d1ba05fcaf84e0770c814460ae0cb4bfc6da627f2ca:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2JiYzY1NDY5ZGIxY2EyODQyZWZkOTdkZjdlZTJjZTZjYzE1NzE0ODJkMDFhMThiNzkwYTEwYzdjNTEwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhMzY2ZmY4ZDZmYTdjMGVjNjg5M2UwMTkwNzQ0ZTZlMzcxMjE0YWI3MWNmYjAwMjE2YzFiYzAzYmY5MTllY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmMjViOGIwMjVlY2JjZTJiNjFmOWVhNjdhODMzODMzYmIzNmVlMWFiMDdkNDAyNzUwOGI5Y2VjYzQ0MzlhNmIifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L62-L74",
+          "version": "repo-lines-v1:sha256:12dfce466b63c9c78246c84fbca27e86e3a5503522135e703df2ea0fb15b7098:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0NmU3ZGRhOTk3YTEzNzlhNWI5NGE0YzhiY2NiZDk2YzBmYmE4NWUyNDA5MmIzMDE0ZTg4M2UyZjM0MTdiNWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliNjJmNjBkODU5MGE1NzljZjQ2ZjhkNjczNzhjNGM1NzJiOTYyY2VjY2RiOTBjN2E1ZjdiNDJiOTYwNzgyYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3N2RhNjg5MTcwMDhkZjcwZmUyNWY1MzJmZWFlZjkwYTA3OWFiNjkzZjVlMzEwZTU0ZThhZDEwNWI4ODYyOTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE2ZjhlNjRhOTQ3ZDNmN2E4MGY2Mjk4ZDlmYTEwOWFjNmRjOGVhNzUwMmYyNDExMTEyNTU5N2I0OWQ2NGE4MDgifQ"
+        },
+        {
+          "resource": "repo://app/stores/distributor.ts#L27-L59",
+          "version": "repo-lines-v1:sha256:b650ed734e2ff3f2fa194b80105f85856c4153d633991640c151d2f16292eb1b:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlZmIzMDc5ZTQzYzE1NGRjYzM3MGQwYmYyZjI2ZTk5ZTRhZTZkZjA4Mjg4NjU5YmI5MzNkODFjMjlhYTA5YzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliNjJmNjBkODU5MGE1NzljZjQ2ZjhkNjczNzhjNGM1NzJiOTYyY2VjY2RiOTBjN2E1ZjdiNDJiOTYwNzgyYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2MTNhNjk3ODUwNGJlOGE1ZWIxMjBhNjk2ZjRmZTViYTkyYWI0Y2MyYjg5ZWQxZDQ2ZWY2ZjE1YmZmY2M1ZTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxMGVhZmExNzZiZTRjMDVmOGVjY2ZlZjY3MTkzYjM3NTQwMzZkZjc0MGRkMTQ1YzkyZTk1ODI3YmE4ODY2YWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f46c7182336741438b6b521ee1b8d77e",
+      "statement": "HTTP clients are intentionally thin transport adapters that return raw API responses, while transformers are pure conversion boundaries between API responses, domain models, and UI data; singleton clients resolve Nuxt's injected $api lazily for SSR safety.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/TemplateApiClient.ts#L10-L25",
+          "version": "repo-lines-v1:sha256:ef8dcc4e814f8d697c2301be7e37828fca4b0d3772ae2ff06983a30961e3f0da:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkZGE2NmVlYjJhZWEyYjc4NWEwYjk4MTY1ZDMxZmUxODA2MGQyMjNkNzkwODJjZWIxODhlMjJiNDhjNDhiZTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3MzVkMzU2YTJiMTdjYzdkNGI2MDRkNDY1ZWYyMzE2ZjQ4MmY3YWNmYzQzYjA4NWE0N2RkYTNhN2IxNWVhNzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQzZWZlNGI0NWNlOWJmNzI1MzAyNjFhYjUxYzQxOTU1NGQ3YTFiZDc0NGY2NzQ0NWEzM2M1OTRmMmM5NDdlMTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/index.ts#L1-L20",
+          "version": "repo-lines-v1:sha256:8361a44b1ed6a689729a8b25f40c2942a3df2b85f1edcc39c1f23ecf2fed7d31:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4MWNiMTY4Zjk5NzRkNzFjZTRmMmRkZTI4OGIzYTM4NWNjMjU5NjNhODZiOGZiMWM4MTNjZjQwOTFkMGUzZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFjNThhMWNjNWEyZThlMDliYzAwODZmNWNhY2Y0YzM1ODQ5YjgyNmVjZDM2NjhkMTQ5MmI0ZjRlZWVmZGYzMWMifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/index.ts#L1-L14",
+          "version": "repo-lines-v1:sha256:b7eab4f9bf47738394e24457e74affd153643765bf56272b1f570310bf2f35b9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYxODEyM2YwZjY0ODFmODYwNmE4MDExMDI0MjEzZGUyZGViMGM0NGZiZGY1YjQ2ZmE5YTE4YTljMzEzN2FmNTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2feb8d068a984412a5e55c3ba7844bbd",
+      "statement": "The repository's recent product history keeps decoration/custom rendering, BBC store and distributor-aware commerce, and cart/account/order domains as separate concerns, reflecting distinct data and lifecycle boundaries rather than one shared page-data system.",
+      "evidence": [
+        {
+          "resource": "repo://CHANGELOG.md#L18-L53",
+          "version": "repo-lines-v1:sha256:ccbe911e9dcf20bdbd48ee2b73f6098149b3c95ec3294ac31b9524c1fab6c824:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyNDhhMTE0YzJkNjUyOWI1NzM2NzY0MGYyMDRkZWY5ZDA0NDJiMGU4MDE2ZDE2ZTczYjg0ODhiZjhiMDgzNTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxN2M2ZjFkNThmNGExMzMzZDFjOTRmNjA0ZTM2M2FjZDFiZTc4MjE2MTRlYjljODQ3NTU5Y2I4NzQwZmNkNzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4NGRlZmQwYTIxNTAzNmQ1YjU2YmZiZjEyNjUzOTNhZjQxOGMwNzYwNGZjMzNjM2FjNTBkMWE5ODIwOWExNTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAxZDkzYWY5MmRjMmNjZjE2MDBmN2E3ZmE5MWFkNWVlYmMxZmZmNzkzOTNlYTAwZjczNjE3ZmY0NGE0MzI2MzIifQ"
+        },
+        {
+          "resource": "repo://CHANGELOG.md#L56-L70",
+          "version": "repo-lines-v1:sha256:adaba5ba26658c0b174eddf2fedef1ca1f333ea9a014d16e4e6b91bc7befce24:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg5NmUwZmYwOTQyOGI4YTg1MzJjY2JjNGRmN2NmOTc4YjNjNDY3MzJhYTIzOWY3Y2Y2YmQyMTQ1MGQ5ZWM0NTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhkNTQwOTk4MWYxM2U3ZmQzMDA1ZTkyZmFiYTFiNjE0NWMyZGE4MDBjNzAzMjhiZWZhMmVmYjdhMzUwODMwNzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY4Yzg1YTM4N2IyOWM5YjBmZDczNDlkMTA1YjY4NmYwNDYxOGI3M2I1NWJkNDIyYTExNjZhMzk3OTQ5YzRmYWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmNTVmYmRmYTYwNDFjN2EyNWZjZTAxOWI3Y2YwNWYwZjhjNGQwNGIzZTY5MzQ1ODc4ZWQ0MTVkYmZkYmViYjIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_56890e245c3a42c4a27edb87f4ac078d",
+      "statement": "The architecture's key decoration integration contracts are covered by structural tests for home/custom page wiring, locale-scoped DSL cache keys, preview origin handling, and removal of local decoration proxy routes, while API client tests verify category parameter mapping and distributor ID omission or forwarding.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/ItemApiClient.spec.ts#L10-L61",
+          "version": "repo-lines-v1:sha256:50bbb8769423e2304d085a57d0f35b0922a31782487c1c33c20d06586511da32:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NDc4MjdiNDZkMzhiNDU0MjliZTlkYTQzYTE1NWJmNzRiN2E3ZmRkYzI1Zjg1YWVlYzQ3ZmUxOTExYjVlYWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkYmNkMTAzY2VmM2IxMmEzNzk1N2ViZGE3MzA2OGRhNDAyMzIzMzJhN2ZlZGEzM2NmM2JiNzY1YWZiZjNiMDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmMzIzZjkzNmVkYjdhOTAxNjE2MDgxYWQ1NDljYzYxOTBiMjc1ZGRiMDM5ZDIxYzc4Y2M2ZTVmYmVkOWVlYmEifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/ItemApiClient.spec.ts#L64-L111",
+          "version": "repo-lines-v1:sha256:07d826d00136dc1fd0a97f4e2505e977e48f0db3474fbfa0f2476081a2c39e8b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjYzVjYTAyYWQ1NTcyMmFlZWE5MzgxOTMzMDVlZjhmZWNiM2EwYTAyNzk5MWY2ODBmMzQzNDk1MGVlOGZlOGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlZjBiOWRjMmI1ZTFiOWFiZWNiZjJmMTAxNWE0NTIzY2IyYTc1MWVlZDgyNDQyYTBhNzA4ODBmZmNhZjliZmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/pages/index-decoration-integration.test.js#L10-L35",
+          "version": "repo-lines-v1:sha256:5ae22e1cb526c54592581220d66ed69fcff6a03298b4d4e62c6c11aebb4c43af:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmNTQyY2ZhMzBhYTY4YWM1ZjAwMTk1Y2ViNTY2N2U3NzJmY2NhMjQ5MmE3MWM5MzU1YzM3NTA1YTNhNzJiOWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxY2MyODZmOWRjNDI2YmVmMzFmZDRiNzM3ODU3YTY3OGFmYzUwZjQzZTY5YjgzZDRkNDllYjdiZTUxMmU4NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjNTQ4NWUyNWMyMDNkOWJjOTEwZjdhMDI5YjA0MDk1Mjc5MjEwNGUxODhmNjY2MjgwNTQzZTI5N2IxMTlmNGQifQ"
+        },
+        {
+          "resource": "repo://app/pages/index-decoration-integration.test.js#L124-L150",
+          "version": "repo-lines-v1:sha256:6e8574e70e176848da19c227b777b570adb2f6fc3d2194bff5298155f0ca18fd:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0Y2RmNjQ2OTI5YzMyMGZiNjA2MTlmMDYxNzNhYjQ1M2E0NjEwM2E1ODUyYTJmODNjNzAwNjQ0NTZmNWRjYTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2MjY3OTM1ZmM2MzM0NjVkODQ4YjQwYTRlZDY5NjdlN2I3YTMyM2Y4MWNkNTNjMTEwYWUyMTAyOTY4N2FhMTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlkYWM3Yzc2NTI2MjY0YTdlZDZlZmY1ODhjYmM0MWUzYTMxOTY2MjVkMDVjYzg1MDMzNTFmNDVjOGFhZmM2MTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/pages/index-decoration-integration.test.js#L48-L95",
+          "version": "repo-lines-v1:sha256:7cdb1339a4dec85621d9fd1bb67d7c829dda7a965e03aa60ec959c74d310b064:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk4YWVhM2NkMzY3MjRlMDZhNjVjZmZlMDM5ZDRiZmY0ZjI4YTc2N2RlMjdmMzcwZjdlOTY2Y2NhYzMwMDdkY2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzZjVkMDg0YWRmZjZhNjJjZjFjMDVjNWE3NTBhOTlkNTA1OGY1NWYxMzU4OGNjZDE3MGE3NGJlNTI2MmUxNDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEyMDc3ZWY5MjM0ZmZiYjc4YmViMGI5Yzg4ZjFhZTY2MDlmZWY5ODExZGZmNmMzOGY2MGM3Y2FiOTA3OTg5YTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdhODlkYzdiZjI1ZDRiOGU4MWQ3NzQ1OTg1MmJkNzU4ZTk0OTRhMTIwZjYzNGNlNzlkZTRiYjQzZWNkMGJjNDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6b8f9ef52b9f4296a9eade6850cc76be",
+      "statement": "Runtime configuration exposes separate server and public API bases, company and country defaults, business mode, decoration admin origins, and a designMode=1 route rule that disables SSR for the home preview route.",
+      "evidence": [
+        {
+          "resource": "repo://nuxt.config.ts#L123-L143",
+          "version": "repo-lines-v1:sha256:4135007739546110ae3538a0e85505a3fcd62f7a0fd2577b9b8b5299ae5c7ff8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwOTc3MmJkZTI2ZGFjMjhkNDI0ZjNiN2U4OGQyMWFmNTBkZThlMzEwYThiZDA4Y2E2ZDEzM2FmM2ViYzUwNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2ZDJjZjBjZTdjOGQ5MGIxODAzYjgzNmQ1MWJjZjhmOTQxMjU4NzI2MWY0ZGY1ODQ5NGVjMDQ5N2M2YWNlN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYzQ3ZmUwYmNhOGM0Zjg0NDdiZWU2YTVkOWY0MjEwODkwZTVjNDBiNjA0Yzk4NjhiMjc2NDUyNjg1Yzk2MjYifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L45-L47",
+          "version": "repo-lines-v1:sha256:f49301a7170959bef6189849d0dff8c0a3ef3a2aaae6a9b6a86ecc792c3a8d59:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTU2ZjUwOTAwMjJlNzMwZTIzY2ZiMjk0MzUwYTI5YjE3NjU4MjQ5MDA3OGU5OGU5ZThkOGUzMzIyNWY5NTcwNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGQ1Y2QyZmI0ZjNkZjg4NDUxNTI1NWIzOTUyM2YyZjhiNTQ3MmJlZWE5ZjU2NmZmY2EyMDRkYjgwMjU2MTA0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzRmODFhMWMxYTU3YTM2N2ZkNzAzMGRkYTdkYjM3MzFhMzAwYTVmOTAwMmU2ZmRlNDkyMmM0ODU3OWUxNjhkOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTQxZjYxY2EyYjIyNDIzNTllYjVlOTBjM2U2OTFlOWYyYjg3NDZlYzRhMGM2YTM4ZmNhODc3Zjg1MTRjODYwYSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}
