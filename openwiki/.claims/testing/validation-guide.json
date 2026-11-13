@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:09cb9901e7092591f440aff5dc6a1e4d2d246a97e8608466393291de550e2674",
+  "claims": [
+    {
+      "id": "claim_ab93d971994f471f8f253fc4250a5ee6",
+      "statement": "The default `npm test` command runs `vitest run`, and the Vitest configuration discovers only `app/**/*.spec.ts` and `app/**/*.source.test.js`; ordinary JavaScript `*.test.js` files require explicit execution to be validated.",
+      "evidence": [
+        {
+          "resource": "repo://package.json#L11-L23",
+          "version": "repo-lines-v1:sha256:fbb2fb3e53d7610e5f4dc682f0371ace0bd645df5fb28453dfacd655709677ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0ODMzZDU5NDljMDNhNDBjYTk1MjQ5MTYxMGE2NjU5NjQ0YjNhYTQ2NjM2MmY3OTkwMjBkYmYxOTgxNTQ3ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczYjM4NjE0YWZhYjRkNjViYWYwN2FjMjhkMWQ1MzFiNWQyODZlYzQ3ZDU5MjNiNzY4YWFjYjI2YjUzMWEwZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1NzE2OWZhZjViZmM0N2NjYWIwMzg3ZTE0NjllNThhN2ZjYjU1Y2U4ODU4ODI0YjgzZGE0OWM0MTExNTQxMDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyMjNkZDZiOGI5NzE3MjZkMTFjZTgwYWMzZTliNDk0NTMzYzI4ZTljODgwODVjM2I5YWY5MzcyN2U3MjY1MGMifQ"
+        },
+        {
+          "resource": "repo://vitest.config.ts#L1-L12",
+          "version": "repo-lines-v1:sha256:e1fe962fe2142083da6a9c9aa003c1aa011c7d582c1c49d4124cf1374f93bbb4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzNDYxYzY0YTBkNGFmMGRiOWRmMGVlZjVkNWIzMWZmMTA5NWVkYzMwNWY4Njk1Nzg5MjZhZDlkMjliYWYwNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_58a47b0d092449a1aca335c22e289a01",
+      "statement": "The repository contains focused Vitest runtime tests for payment lifecycle behavior, including external redirect waiting, five-second polling, 60-second timeout classification as `unconfirmed`, manual recheck success, and external URL reopening.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/usePayment.behavior.test.js#L35-L67",
+          "version": "repo-lines-v1:sha256:ae5a975319563cfbbd01b4d3af41d501fe1539cc52ec06e462e8836debb3835f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3MGI3YjQ2NmUzMThhNDcwYmFlNjFhZDU2MmYyNzQ0YjcxZWEyZTUxMjk0OTk3YThjZjhhNzJjZmU0ZjMzY2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJjZmZhNDM5YTJlZWNmMzg0M2E4M2M5NDQ2ZGEwODQzZmIyOGZhMzkxYTJkMzdkMWMzNzg4M2QzZTU1MDQzNmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlNTc4MDBhYTE1OTU5ZjU1ZTQyOTA3ZjEzM2U1ODNiZjM5OGE4MDFmZjk0YTIxYmFlMmZlMzc0ZWE2MzliZTEifQ"
+        },
+        {
+          "resource": "repo://app/composables/usePayment.spec.ts#L15-L99",
+          "version": "repo-lines-v1:sha256:15c4c957fb69ee3323c5f8e104d495febec136962aba5e84bed2062e1695208c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwYmQ2ZWQ2Y2QxNGZkMTRlODEwZWM5YjkzYTEwZDUzZWNmZmZhZWZhMmVlZWQwOTAzMDQzOWYzY2M0MDFjNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlM2U5OWI5ZjZlNWY0N2E4NDdlM2U0ZDZkY2IxNGMzMWEyNDZjM2Y5YWFjMDhiNDAzNGIzMjJmNTA2MmE2MDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_03031cad731e4c21bd704b27f1d4fc8a",
+      "statement": "Payment API tests protect the offline-transfer HTTP contract by expanding `voucher_pic` into indexed form keys and asserting the POST endpoint and request body used by `uploadOfflineVoucher`.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/PaymentApiClient.spec.ts#L13-L58",
+          "version": "repo-lines-v1:sha256:e5cca24fe8e64ca41d74ca42e7a2bd94c794199074a24fa9ac3b3135eceb88e9:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2M2JhNzNkYjk1NzNiNjQ1OWQ0YWExNWI4ZDQ1MGM5MzE0ZWZhNmYyYmY2MDFiYzFlZDM3MDBjMzg1ZDRhMTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkYmNkMTAzY2VmM2IxMmEzNzk1N2ViZGE3MzA2OGRhNDAyMzIzMzJhN2ZlZGEzM2NmM2JiNzY1YWZiZjNiMDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/PaymentApiClient.ts#L128-L146",
+          "version": "repo-lines-v1:sha256:234cace07baf066903d94e267a87475dc289cad939cca50b9dbf923999fffa4d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlNmNlNDhmNTgyMTAxMWJjM2RhNzY4NDg4NzkyNzc2ZTJkNjQyZDI0NGI0ZDVmNzVlNzhkYzQ5MzM5NjJlM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYwMDNjNDA1ZWYwN2FmN2MyZjM3NDYwZjZiYmM5MGY5MmE3Y2ViZTg5NzE0ZjkyNjI5YzE3YTYxMmMxODEwNDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRkYzkzNzYyZTJhYWYzZjMxYTgwYTExNDgxMWNlMjAyMzk4NTc1NjQwMzIxOTYxZjU3NzE2ZjZmOThmZTY4ZTMifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/PaymentApiClient.ts#L229-L249",
+          "version": "repo-lines-v1:sha256:753c73305e4542b24b01aa6ee494e2736f6843fc812957b1081feb7adc088a07:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4YmJiMWE3N2E5NjMwYzJjYzI4N2M1YWExNDRhYWY2YjA3NjQ1MTMyYTAxODJlZmMwMDZkMWQ5NWMxOTI2MTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmYzI4M2IxMThmNmU1ZGUwMzEyYjA4NWE5NmE0ZGE4ZmZjNTA5NWZiZWI3YWZjYjNhYThiYjEyOGMzMzYxNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVmYzI4M2IxMThmNmU1ZGUwMzEyYjA4NWE5NmE0ZGE4ZmZjNTA5NWZiZWI3YWZjYjNhYThiYjEyOGMzMzYxNmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_07de25460aa64010a21db629c78e1bb8",
+      "statement": "The repository uses Node source-structure tests as explicit cross-file contract checks for decoration DSL and preview messaging, aftersales payload serialization and item-id preservation, business-mode naming, Nuxt environment diagnostics, checkout payment routing, and login-before-cart-refresh ordering.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/components/decoration-core.test.js#L10-L119",
+          "version": "repo-lines-v1:sha256:f3016b3f80d42c5789bfc571651a1341332c24f2d6cdc47eb064be55ab7ed87f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIxODJmNTkwYTc5ZjU5OGM5MjVlOTAxZjNmOGIzMWQzMTVkNWY2YmE4NjJjYmU2MTNmNTNiNzZhYWRlYjFlMGVhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyMWNjMjg2ZjlkYzQyNmJlZjMxZmQ0YjczNzg1N2E2NzhhZmM1MGY0M2U2OWI4M2Q0ZDQ5ZWI3YmU1MTJlODUzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/aftersales-submit-payload.test.js#L27-L58",
+          "version": "repo-lines-v1:sha256:35627d9b735db623cd230af7e27f4fa517ea8fee41cc3528d2247ca54c5b644f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmMmMxN2JiZTYwYzRlZDM0ODU4ZDI1M2RhODI3ZmQ1MGNiNjU0Y2M4ZmNkNDc0NDI2MGRjZmM0MjZkNjhkYmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliZGRkZjljMDAxNmUyY2Q5MGQ5ZjdkNGJhN2RmYTIyMTdjYjQ0MzJlY2E5YWY4ODgwZjhhNWFlOTBlN2FkYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/pages/build/business-mode-bbc-regression.test.js#L26-L36",
+          "version": "repo-lines-v1:sha256:4c052228b06902d151ad166844995a8ff891c09b9fbd6956a601cd8f228bdbb9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMTg1NGI4MDQyMDI1MjE5NjFlYzVhYWNjOTdmOTc0NTNkYTBmYjVkZTMwMGQ0ZTgwMGI0YzBkMjljYWQ4MjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM0YzgzOWQ5NDM2YjhjZDA5ODliOTcxYWE5YWYwODc2ZDczOTgzN2MwMDJkODkzMTZlMWIyODRjMjU1NjY1MDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/pages/build/nuxt-config-env-log.test.js#L8-L14",
+          "version": "repo-lines-v1:sha256:e4777452d9891158c259d6a80915bf1e3f1285b7975849c452970333c66d5b95:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2JmMGRiZjczYmQ4MmU2NzM1YmM2OWU5ZmRkYTRjMWY4OGU0ZDhiM2NkNGQ5OTA3Zjc2MDI1MzU4MjNlNjlmOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODU4MGI3NjUxOGRhZTk3OWZhZWJkMDIzNjdhMjkyOTJhNTBkOTc2MDkyMjUxYTM4YTZjZTMwODgwYmE0MjgyNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGEyYTNiODQwZjY5ZTMxODkxNTZlN2Q1Yjg5NjUxOTM5ZWQ1YjkyZTY2MmVmOWM1MzhhNWE0NjE3ZDUwZjY5NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://app/pages/checkout/checkout-payment.behavior.test.js#L11-L65",
+          "version": "repo-lines-v1:sha256:72ec88b263a0390e829de33c86143fb5fcced68361e2b49d324a8e23a6ee86ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3OTRkZDhjNWU2YTBkOWVhNDk3NmFmOGRhZDY4ZGViNTQ2N2YzMjhjOWYzMGVmYTRkYzM4YzI5Nzg4Y2Q2NTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/stores/user-login-cart-refresh.test.js#L8-L19",
+          "version": "repo-lines-v1:sha256:8cf96665d0f1e8a6f77816c336ec3ddfd827304bfcebc0006e145f974fecab6c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxZTM5NTczOWFlYzZhMDE5ZWQxNDM5NDBjMjc5YjQ5M2MyNjMyMGZiNGE5MTY5OWNhMjY3YWUxZWFmM2QzMTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJjMDI4ZDg5ZGU4MWRmNjU3YmQwMjBhNGFmYzY1NWM5MWJhYmQzYzcxMzI3M2JkNGVkZjIxNDcyM2ViZmIwOWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_87bce77593544ff9af0f5f1bfb4eac4c",
+      "statement": "Source-structure tests inspect source text and therefore protect names, wiring, endpoints, selectors, and ordering without proving that Vue renders correctly or that runtime requests succeed; runtime or browser validation must accompany them for behavior changes.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/components/decoration-core.test.js#L1-L8",
+          "version": "repo-lines-v1:sha256:fa8fd5b7070e9bd48c85d9036e375f9ebb8a15d666c16cbe6d82da24af5eeef4:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2JiZTZhYWFmMjE3ZmYyYjA2ZWIyN2MxOTBiNjk3NDZlNjkzZTVmOGQ1NWY4NjUzMDg1NTE5NTIzODZlMTA1YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGJlZjhhZTYyOWRhYWRhMGZjZTFlZDUyZGU2ODMxNzg4ODM1ODEzZmIzY2E0ZDVhZjdlYzdjZDk4ODRhN2E3MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWM5YThlNjQyMWM0MzE1NWQ4YWQ0ZDJjOTUwN2Q1YWU5N2Q1MDUzY2M5ZjE0ZWJkMDAxNzE3M2E5MzY1N2NiYiJ9"
+        },
+        {
+          "resource": "repo://app/pages/account/orders/aftersales-submit-payload.test.js#L1-L25",
+          "version": "repo-lines-v1:sha256:69cfbca22ccc3812ba9f36d772ebc91cba3d5e35bd2a6b590a04f3cd3d3932ba:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiYmU2YWFhZjIxN2ZmMmIwNmViMjdjMTkwYjY5NzQ2ZTY5M2U1ZjhkNTVmODY1MzA4NTUxOTUyMzg2ZTEwNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdmZjMxZTI0MWFlODZjMWY3ZTU0ZmY5MTI1MWNkMDZhZmEwNjk5Mjc5OGM2NTFmZWIzMjI3N2FkYjYwNDQ0M2MifQ"
+        },
+        {
+          "resource": "repo://app/pages/checkout/checkout-payment.behavior.test.js#L1-L9",
+          "version": "repo-lines-v1:sha256:c8f2732cbf9b057898ecc29768ce03e0bd3b51064a62093c6eba3ed097c2f576:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2JiZTZhYWFmMjE3ZmYyYjA2ZWIyN2MxOTBiNjk3NDZlNjkzZTVmOGQ1NWY4NjUzMDg1NTE5NTIzODZlMTA1YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmFmYmEwNTI3YzM5NTNjNGI2ZTBlNWI1NzM5YmE4MzYxMmY4MDUzYmNkYzk0NjY3MzAxOTNjZDFkNTkwYjQwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjE1MjA5ZDg4MTAyNWU1NTRmNTQ2OWFmZjU2NDQwOGMwNDg2MDE1MDVlYzBhZDhkODcyZDJkMGM5ZTIxYzU5NyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_55c8a47ccddd4590ae7c904a47d5b050",
+      "statement": "Playwright is configured with `chromium` using Desktop Chrome and `Mobile Chrome` using Pixel 5; Firefox, WebKit, and Mobile Safari are commented out. Its base URL is `BASE_URL` or `http://localhost:3000`, and its web server runs `npm run dev` at port 3000 with existing-server reuse.",
+      "evidence": [
+        {
+          "resource": "repo://playwright.config.ts#L19-L27",
+          "version": "repo-lines-v1:sha256:9cf2afae865a127004cc349dd62958857000663547c91d55776c535821daf00f:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGE0MGU3OTI0NGI0MzFiZTkwNDAwZGFlOTNiZjMwNGFkODljZWU1ZjY2MmQzYzU0ZTk0YWQ1YjdmNWU2OTE0NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDVjY2NlMDY2MjdlMDA4YWViZTE1OGFjOGQwNDQ1YTI1YzNiYTYxZGNmMWJlMDFmMjcxMDQwYmEwMDQ5ZTYzNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmI1NzU4ZTIyNWJiY2Q4OWI3NGI0MzlkZTQ1MmMwODJhNjk5MWZiYjFhN2E3ZjNiNzgxNjhkZmZlMWQ1MDgxZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjE0NzY2NTM1YWJjMTE0YzMzNmZiMzcwMWI5ZTJmOTNlZjFiZjhkZGUzOThlMDgyMjQyYWY3MGY0ODVkMjliMSJ9"
+        },
+        {
+          "resource": "repo://playwright.config.ts#L30-L63",
+          "version": "repo-lines-v1:sha256:a648232f64ac5f8aad33352e58527350efe024f4cd566b864574513a48737539:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjYzEwYTA5ZGQ5ODFiYTc5YzZmNjdlOGU5NDAzMWU0YjQ1N2YxMTE3ZjcxZjQ2YjE5YTI3YjNjZWMyZjhhZjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkNWNkMmZiNGYzZGY4ODQ1MTUyNTViMzk1MjNmMmY4YjU0NzJiZWVhOWY1NjZmZmNhMjA0ZGI4MDI1NjEwNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkNTM5ODQ5OTU0YjU0NGE0ZDI2ZTk4ZTJjNjY4NjIwMDBmYTY0M2Q4NDUxZGFjZjE3YmM5YmM1YWQwNzEzZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7fd45653eb01496e80372585fa07b9ac",
+      "statement": "Playwright behavior changes under CI: `test.only` is forbidden, failures retry twice, workers are limited to one, the HTML reporter is used, and traces are collected on the first retry.",
+      "evidence": [
+        {
+          "resource": "repo://playwright.config.ts#L23-L27",
+          "version": "repo-lines-v1:sha256:063c2ba940b05461d1a6bd866e522c2951f142ebf72bb04842a2cda5c9a379e0:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNmODc5ZTMyOWE0YWEyMzY0YTM2Nzk2MzJhNDUyOGJiNDAxYWMyMWFlYTU3MmM4OTdkZTU3MTI0YmE1MTQyYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDVjY2NlMDY2MjdlMDA4YWViZTE1OGFjOGQwNDQ1YTI1YzNiYTYxZGNmMWJlMDFmMjcxMDQwYmEwMDQ5ZTYzNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTM3YzJkMDM3M2I2YWY1ZjA5NWNmNGQ1MTk1MzAzNTZkYWE0NmI0MGEzYTVhNGQxMGI0NmFhNTI5M2M2NzM4ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjE0NzY2NTM1YWJjMTE0YzMzNmZiMzcwMWI5ZTJmOTNlZjFiZjhkZGUzOThlMDgyMjQyYWY3MGY0ODVkMjliMSJ9"
+        },
+        {
+          "resource": "repo://playwright.config.ts#L9-L17",
+          "version": "repo-lines-v1:sha256:6e38a6da3d2579410e9a692a00b70e64ba833718072f04a7dbfce81dd1127d54:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzhiZjIzMGIzODUxNjRmZTE3ZjdmOTZmNzQ1ZDFhZDRkOTY1ODQwZmU0OGZhYjJhMGFmY2QxMGIzMDZlZGFiMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTlhNjhjMDE2YzFiMDFkZDI0YzQyZGFjMjg0MjM2ODYwNDU3ZjY3Y2Q0ZDljY2JhYmFkZGNkNWUwYzc5Y2M0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDZlMjU1YmQzODUyYzFiM2M2ZTk3M2U2MTIyM2FhZmZmY2IyZWNkZjhiMzFjM2I0MTU5YjQ4ODdjOTUxNjRiOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjJkODc3ZjBhZGYxY2I2MzA0ZTU2MzcwMGRjMWZjZmQ5ZmI3MmM2ZmExZjhiNTM0MTJmMTFiMTExZTVlNjMzZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_7b1febe92c3e4652bdc3dbf47011d72c",
+      "statement": "The cart end-to-end artifact is a Markdown acceptance inventory rather than executable Playwright coverage, and it enumerates core, boundary, state, calculation, and multi-device cart scenarios with P0/P1/P2 priorities.",
+      "evidence": [
+        {
+          "resource": "repo://e2e-test/test-cart.md#L1-L17",
+          "version": "repo-lines-v1:sha256:815cca0690d1ce485064ad3290f886fc8af9c8245918b1d07afa85fe642eddb5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjZDllY2QzNTE3NDYzNzlkNTA2MTJlNjUwYjE5NDRhZTIxMjg5YTcyZTRmODg1NDBmOTM1MGU2YWU4NTAxYzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY4Yjk5ZjRmOTZiZmRlMWRiNDY0MzkzZTY3ZjE3MGIzYWYwZDNhNWE1ZTZjMjRiNzNkMzI1NDBjMDc4YWMxNjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZlMDRiYzE0ZTRmOTdhZGM3NjljNTY4Mjk2ODAyMGNmN2NlZGM1YmI3NWE1MzljY2ZkMDg1Y2FmNjNhZDJlYWUifQ"
+        },
+        {
+          "resource": "repo://e2e-test/test-cart.md#L102-L140",
+          "version": "repo-lines-v1:sha256:88e956478ee776dae3f2db2589b65ede25978caa60ace640d269474f77c2c140:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyMTNmZjMyZTEwYTFjMjQ5MTk3MGVmZDdhNzNmNTZiYzA1ZWMyM2VlNzliMWYzNDIyYjdhNDhmN2E3YzNmNGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkyZWZkZDVmNzAxMDVhZDg5NjQ2YTNhZmQyMWFhZWVmY2U4NWQxZTczYzlmYTQ4YmExOGVjZGMzOWNhNTk1YjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjZDAxYzQxMTJmODQ3MmI0MmIyZjVhM2Y0MWRmMWY4N2I2Y2NlNWRkZTIxMjVhYTdkNWRkMGY3Yzg5YjgxZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://e2e-test/test-cart.md#L52-L69",
+          "version": "repo-lines-v1:sha256:d67504658674288082b975c3d4ec968ce8f016bc404163555c928cdf910ea778:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyYjJiYWM0YmNhZGJkNzU4ZDA2MjFiNTBjZDg4Yzg3MmFlZGVkNTM2ZWRmMzkyMTA1Mjg4YzI0Mjk5YmVmZTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3ZmFkNjgzZThjZjg3ZGE5ZmYzMjM2YmE5ZDJlZThiYzAzYTJiMWYzMjllMjNhZWE1NmNiN2VmZTJiN2I5ZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4M2Q0ZTE4OGRmZjI5NmZkYmQ3YTRjMDZiNmM4OWU0NmY1NTkzMTc4YmUyZWQ3ZjQyMTM1ZmYyMGFmZjc5ZmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2NzNlYzM4OTY4MDZkNTgzNDFlY2E2NDQxMmVlNWVjYjYyY2RmOGVkYTRjMzRhYzliNmNlNGU2Y2RmZWMxOTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b471aacc4c014064986376918865da4a",
+      "statement": "AI assistant utility tests protect configuration and integration contracts for explicit enablement values, URL fallback and normalization, mobile detection, distributor-id precedence, the `ECSHOPX_AUTH` payload, iframe query parameters, popup behavior, and explicit `postMessage` target origin.",
+      "evidence": [
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.spec.ts#L105-L194",
+          "version": "repo-lines-v1:sha256:fc0793908c2cb7e3f7da81af1621fa3bb93090d38f07984fe04688fc0fefa570:eyJzZWxlY3RlZExpbmVDb3VudCI6OTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiNTQ0YjI1ZTBjODRiZGE4M2RkYTdjMDBjNTI2YTgwNThkMGY1ZDYwMjQ1YjQ4YjViMWZkM2JhMDViMDAzMWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE5NWMzNDRmMDg3MzdiNWE3MmZhYzFmOWU2ZTg1MjM2MWMxYTRjN2YxYTZlYTRmOWQ3ZDE0NDI2MGE2ZjM4YjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.spec.ts#L16-L31",
+          "version": "repo-lines-v1:sha256:be19712d0c1f3ed7ef3161ead3b567551e782c182f0c7aef6d5a14584da6203e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkNzRkNzM5ZjA1M2NjNzg2YjIxY2VjZjkwN2UxMjkzNDk1MTI2MzU4NmRmMGJlOTllMzJiODUxYmI1YTM2ZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU0YWYyYzIwYzViMmY2ZDE5MmMxYjlkODhmMDliOWE4NzBjNTQ3OTIwMGViNWVmNDRhMGZjOGIwMWU5M2Y4ZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3ZTZhOTA5MDFhZmY1MzhiM2M0NGQyMzZiOGJmYzE1YjY3YjI0NmNhMTk5OGUzODJjYjA5YjY3ODNiZDI4MzEifQ"
+        },
+        {
+          "resource": "repo://app/utils/aiAssistantEmbed.spec.ts#L33-L103",
+          "version": "repo-lines-v1:sha256:695572e2c5b7635eac53792ea496287da94a52fc6ca214ab56ec4423a2d9f87e:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhMzk4ZGVhNDIxMTRkMDViNTE0MTRmN2Y2ODQ3MjJjOGY2YjdjOGIwOGI2YzI1OTQ4N2Q0ZTdkMjk1OWRmNTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMwMDE3OTljYjIwNDkyYjc2NTAzMzlmZjM2MjBmYTgzNDNiZDU4ZTA5ODk2ZDkyN2E0MWNjMzcyYjAwY2IxOWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlOWQxNjI3MTVhOGY1YzNlZTEyYzgyODM4M2E5ZGI1ODQ4M2RhMzg3YzNkMTNlMjZhZTk0ZTc0OTM5NzUwNmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_de069359ccc04cb4b2ff9ec808f9d03e",
+      "statement": "The repository's validation environment assumes Node `22.23.4` and pnpm `10.13.0`, while Vitest aliases `#imports` to `vitest.nuxt-imports.mock.ts`; representative tests stub Nuxt globals, browser globals, timers, and HTTP clients at the integration boundary.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/usePayment.spec.ts#L18-L32",
+          "version": "repo-lines-v1:sha256:3f9c8a2934b80716e82573d8f6e84b5c42c3b55cc71429be1e982f6a0a032004:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0ZmYzNWE0OWU5MDM4ZWMzNTY5Njg3OTU5NGVhYjA1NmRlMjQ0YmVkNTEzY2U3NGUyOWFhMWJkYzU5NGIyYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAzYTQzMDEzZGZjMjE0ZmRmNDg4YWY5N2Y2YzYwYWU3MmI2MWU2OTE2NDVmMzMxMjgyYzZiN2U5ZGFjOGNlNDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVhMjkwNzg1N2M5ODAxMDI2YWNmNWVhYTQyOWFjMTc4ZWZmNDJmZjhhNWFjMjA5NDE5NWQ1NjU3MjI1MmE5NjMifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/PaymentApiClient.spec.ts#L7-L10",
+          "version": "repo-lines-v1:sha256:a158ff01b5e75f4649ee1868de27db7bf4f655b3e6480560f0cee5eb00bf99ca:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDM1MmY2ZDhlZDJjMjQzZjFjNGFjMGZkODc3YmY0MmY0OTM3ZDQ3NmFiZmQxYWUzYzg4YTM4MmRiMDU2MWRiOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzI2OTExOTYyNzYwOWU2OWVkODc4YzY4YjRkZmI4ZmM1NDU5NTAzNDQwNmQwNzIwMmQ2ZWIxZWU2YzNkNzc2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzkxNjk2NDkzMjQ3NGE0MWNjODIyY2YwM2Q5NmRhN2Q0OGViOWRmOGM4YzgwODEwOWJiMmZkMTRlNmNiYmViZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWM2ZWNlYzM3NGMwYWNjNjYyMmJhYTZlMmI4YjBjODYwNzIwOTdkYmEyYWM5ZDIzMjA2OGQyZTIxMDM1M2I3YyJ9"
+        },
+        {
+          "resource": "repo://package.json#L6-L9",
+          "version": "repo-lines-v1:sha256:a15c8d4e029d5cefbf9ef8b0dae33bb730a786dce5ea1e6dab60a63e1742eb8d:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTJmNmQ4MzYyYmY1ZWYwMGNlOGM5MDI1N2MwNTdkMmE4YmViNzUxNTU0NTZlYmQxZTE3NjVlN2E1ZDQyMTFiMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjAwNzE1YTczYTBiYmExYjM0ODVhYzAwNzkwMGYyZmVkOTI1YWYyYzM1Yzg0YjFlMDRmNmJiMmNmMGU3ODczOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGE2MmQ4YjYwZDVmYjVkYjg5ZGQwNjA2OTk1MGMzZGY5Y2YzNGEyMDZmZTRkYTllMGRjZmRkOTg3OTgxYWZhZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWZlNTBiMTU2M2M0YzNlOTNhZTQ1NGEwMzRjNWY0NGYwMmRjYjNjMTQxZmFiNWJlYzlhNGVhMTFmODgxOGVhMSJ9"
+        },
+        {
+          "resource": "repo://vitest.config.ts#L3-L8",
+          "version": "repo-lines-v1:sha256:9bb47a956778d5fa1da99e8fac30413837f66b313e5c883ccf3d335283c79ece:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjJjZWNiMTQ0YTQ2ZjVkY2YxMmE2MTY5ZmNlZWQ3Njk1ZTgyOTRiMDkwZGU3NmYzNjYxY2RkMDI0OTMwMDE0NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGQ1Y2QyZmI0ZjNkZjg4NDUxNTI1NWIzOTUyM2YyZjhiNTQ3MmJlZWE5ZjU2NmZmY2EyMDRkYjgwMjU2MTA0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTI3N2U3ZTc5YWViNjExNzE3MDNkMmYxODAzY2ZkZTA1Njc3ZGNlNTZmY2Q0OTg0NzE2MDk2Mzk5ODU0Y2Y5OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTZmZWVhZTBiODlkNzVmMjdiMjAxN2JhMDM4ZTRkN2NhMGM0NTllZTc2NjRiMGFhZDk4MzdhNTkwOTUyMGRjNCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}

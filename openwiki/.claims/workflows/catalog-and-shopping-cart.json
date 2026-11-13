@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:2a3e556065ed1e42268c24c44b130b9ad6484380be5fee217fbbedf9ef412c6b",
+  "claims": [
+    {
+      "id": "claim_d3654a09f72a48658d65f4a758f91bad",
+      "statement": "Catalog list and product-detail requests preserve route and business context at the API boundary: collection `shopid` is used as a distributor only in B2C, BBC deliberately omits distributor context, and product purchase resolution prioritizes route `shopid` over the product distributor before applying the B2C default-store or BBC no-fallback rule.",
+      "evidence": [
+        {
+          "resource": "repo://app/pages/collections/%5Bid%5D.vue#L461-L489",
+          "version": "repo-lines-v1:sha256:0090c0ad8645719a5f95a6c35075fee5f824050500beba79dee94f87d4ce5e96:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2MzJhOTRlNDhiOTYyYzBlOWFlOGRkZmQxOWJiZTQ0NWU3MzFkYjRjMDUwMWEwMmYxMDQ0ZWFlMjkxNWUwMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhNzE4NzQwYjAwNDVjMjEwMjliYmZhYmYzNzcxOTZiNjE0ZTliODIyYmEwOTY2MzJhMDY2YTY3NjdhNTQ5MTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk4MDE4NDkzMjM1ZjMzYzQzMGIzYjRmZjg5YmViMWZhZDZkMzc4YWU1YmI0YTZlNzMxYmE3ODM0MWI0MjNmM2EifQ"
+        },
+        {
+          "resource": "repo://app/pages/products/%5Bid%5D.vue#L785-L849",
+          "version": "repo-lines-v1:sha256:c792d11e5eb972315e82eb28ae1074a68617dc36a0b7223e148a947b831a8d10:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkYzQ0NmVmZGZkZDViOTE2M2M4YzAzMjZkNDFjZTIwNGQ1YTk4MTI4MGUzODQ2ZTgzN2I5NzkzN2YxMzE0OGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIyYjJmYzVlY2Q2NDliMTViMDZjYzIyMTMwNzI2MDM5ZmM5NmIxNDY4ZmI2MDI1NjUwMWI2OGNiYzUzNzY3NTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkN2U2YmRlNGYwYmJmNzdmNWNmZDNkYjhiNDJkYmRhMmU5NGE5MjM1NTM5YTRlOTRlNWJmY2U5OTY3MGY5NWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE0MWY3ZjEwYzk2MGZkMTUzYWFkYjgxMGIzMmZhNDFlOGFhODUwOTk0NDcxZmVlYmRiMjk5MTcyNWI1M2Y3YzAifQ"
+        },
+        {
+          "resource": "repo://app/utils/resolveDistributorId.ts#L20-L38",
+          "version": "repo-lines-v1:sha256:2a3ae0b36a143efb8930fc28fd0eaa59b0c2e4696ee2c15219b24ffedbadd101:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVlYjY4ZGM0MGU4ZDY2MzhhOWQ0NWM1YzgxNTQ0MDQwMWY0ODcxYmQzZjI4YTVjMzJlYTIyNjE5ZWQxOWQ1M2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bec3adcc839d420786accc2ee8729acf",
+      "statement": "The shop home route uses the route distributor ID and query `q` to fetch template configuration and the first product page in parallel, with an SSR cache key that includes the distributor ID when present; query keyword changes trigger a refetch.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useHomeData.ts#L11-L51",
+          "version": "repo-lines-v1:sha256:b98aaaed9dd40e293c59aa05ed1b9fd5f7d26d4f262b557a3b07d5305e1f13e4:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhMWZjNzRhMmQzMDgyOTA1M2RmNDNkOGU2NTY3MWM0Y2ZjMmVjYzgxM2QwYmMzZGUwMDAyMjZkZTg1YjJkMWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3YWI0YjE1ZjZkNGYzM2FlNWJlODkxYTVjNDRhMDQxNzBmNTk1NjA0MjlmMTkzNTE0ZDQwM2E3ZjNmNjViZTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1ZGFhZDk0YWJlNGViOWM1NzU5MGZlOThkOGZmZjQ3NjQ3Yzk5MjQxOGM0ZDVlOTIyZTlhMDcyMjBkYTJmMTEifQ"
+        },
+        {
+          "resource": "repo://app/pages/shop/%5Bid%5D.vue#L157-L172",
+          "version": "repo-lines-v1:sha256:cbcfba4ed3da35dc6f1bdd2de32c8c1c20443fae25e878061e39b53cf1d49271:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxODUzZDE4Nzk3M2ZjYmE2OWY3MjZjYTM0NWRjYTIzZGE4MjNhMzg0N2UyNWQ1NTQxMDc1YjdiM2JhZDVkZGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk0NDFlNmY4ODU3NjVmM2MwZmEzYzI1NDEwZDViNDg3OTg0OTEzNDQ3MGUwZmExNzA3MDUxMWZjMWZhODRhYzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiNDhlYTAxNGRmNzZkNGVkOGNlODIxMWVlMThkYzRkNTcyYmQ4NmRmNGE1OTc1YTRhNjU1ODQ5ZDllNzY3ODcifQ"
+        },
+        {
+          "resource": "repo://app/pages/shop/%5Bid%5D.vue#L82-L96",
+          "version": "repo-lines-v1:sha256:f60933f07524359656a975490b18ff5efb6cdf372c998932756238230c366f62:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmNDMzNTYxNDJhMWEyMzRiMWEwMzE5ZmIyNzYzYmU3ZWQxMDhmYjgxYWM5YzNlNmQyNDQ5NmY5MmVhYjk2YWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2MDkzNGJjNjlkNjlmNzNmODc0MzhhYTFjODRlMzI5YjdjNGEzZTA2MTQwMjNmOGI2ZWZjZTQ3OGJjNmE0M2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4YzA5OThmZmIyYmY3MDBlMTVkMmE5Mzg4MGY2MjhmNDVhNDAxMmU3ZmI1OWQwNjRmOGYyZmJjYWZkM2VkZGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY2NzE3NWFjM2UwZmIwYTY1N2E2YTc5NWRjOThlZTgzOWUzNTIwNzhlYjZhNThmMjM1MWMzMDBlZTg0YjViNDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_baa49cfba9b4464dbb237125c4ee004f",
+      "statement": "ItemApiClient and CartApiClient are lazy, network-only boundaries: item requests omit non-positive distributor IDs, while cart-list requests use `skipDistributorId` because the cart aggregates across stores.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/CartApiClient.ts#L24-L53",
+          "version": "repo-lines-v1:sha256:9096c8bbca1550c5c40aa59dc0c6dabb317eea374bc814d14f911605792479ac:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkOTdiYzRjNmJjM2UxYzkxZTkzZDUzYWE4ZTUwNzU5ZjdiN2Q5YjFmYWEwMzU2M2U1NmU3NTYwM2Y2MGUyZTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzM2NiMDBhYmZlZGMyYzBjOWU4ZTNlMWQyZGJmNmQ2MDUxYjAyZDM3MTJjZWE4MzZiZGM1ZjA1MGIzNDIwZWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/ItemApiClient.ts#L30-L45",
+          "version": "repo-lines-v1:sha256:b974d04e425880f522c5ee875b95587843b24b45487a538cc579ffbdc846f942:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwOTFiMjM4NDM2ODZlMjg4ZWY5NzFmZDk4OTkyNWZiMjE5OGM5ZjFiMGQzYzQ0ODQ3ZjEyODc0MTEzM2JmZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3MzVkMzU2YTJiMTdjYzdkNGI2MDRkNDY1ZWYyMzE2ZjQ4MmY3YWNmYzQzYjA4NWE0N2RkYTNhN2IxNWVhNzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM4ODYxN2VlZmQwZDQ4ODhkYmM0NDk3ODc1MTVhZjc3YWQ0ZTdiMGI3MWIzMjMxMjEwYzI1ZWY5NDgzNmY0MGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/http/clients/ItemApiClient.ts#L58-L103",
+          "version": "repo-lines-v1:sha256:365740e81e7420e0e0fb6c7ef421a62e85b2ff7e3c6f6fb0262929b021d96706:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1MzExNWQ2ZTJjNmExZTcxOGNjNzU5N2VmODkxMTcyNTFlN2ZiNTVhYWI3NzBmMDY4ZTRjZGI4MDYyZDgwOGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMzOWU4ZTIzZmViYjYwZTBmZWUwY2RiNzI3Nzg0M2Y5MzYzNDdhODEyN2QxODY4MDJhYTM5YzI2OGZiMTRkNGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_85afe56e3d4d49dca191819725063b02",
+      "statement": "ProductTransformer normalizes product names, images, numeric prices, and default fields; `toModelList` drops products missing an ID, name, or valid price, while useProduct replaces list state for a fresh load and appends transformed items for pagination.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useProduct.ts#L128-L162",
+          "version": "repo-lines-v1:sha256:b80d830ae701e313a51ebc9766c248b990d35733cc71e89afcc182792b0c79cc:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0MmU2MGQ5MDQ5ZWIxOWFlMTU3MTAyYWIyZmY3M2MxODI3YjJjYTYyZmZiYTFlMTJiMmFmODM5ZGU2MjNiNjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE2NDgwMDIzMDZjMjQzNDk2NWYzN2FmNGQwYTk3NzdlODY2YzAwZWJmNTFmMmQyYTU2NDJjMzk2MWJhYTM2OTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjExZjcyMjI3YmJjNDg4ZjYxNDAzZTE5OGEwZTc4ZmQ3YWZhYzk1MzA1OGRhNTZlMzc0NGIyMjFkZjA1YjY1ZTYifQ"
+        },
+        {
+          "resource": "repo://app/composables/useProduct.ts#L77-L120",
+          "version": "repo-lines-v1:sha256:c673d8030593805024a565392470f947f21143a9d2a097807eddfd098ee75bf3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxOWRlZGRjY2M0YmI2YzkxMWRkMmNlMjUzNzQ5NjJiNDg0MTExNTM4MTlhN2JiODE1MmQ3ZmQ0NGMyNDI5ZTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE2NDgwMDIzMDZjMjQzNDk2NWYzN2FmNGQwYTk3NzdlODY2YzAwZWJmNTFmMmQyYTU2NDJjMzk2MWJhYTM2OTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYwMjk2NGRmNWI1NWE2ZTNhNTg3NmQ0MTM5Y2NkZjU4NWY4YzIyOTVhY2I4MWQyZmY5YTJhNjg0OTE0ODE3NWYifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/productTransformer.ts#L132-L165",
+          "version": "repo-lines-v1:sha256:cecdff2f5988e652a913cb848cf3ed4ca7a5ed12b5095b83fa00628d65560fab:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/productTransformer.ts#L37-L81",
+          "version": "repo-lines-v1:sha256:1964900035787901a6876a03c40353bb9a75915d2c89a193377582ff1a56a557:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MTFjMTg0MGZlMGIwYmQxMmQxNjM2ZGE2NGZiZTZlYjM1NjM2N2RkMDcwMzYzMTYwYjZjN2U2N2U4MjZkN2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE3OWI4Zjc4YTVjN2Q1MmFhNWUxYWZmY2JlOWY2MTliNjdjNmY1MzhkNjE3ZjY2ODk0ZjkzMDZlMWJjMjc2MTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyYTQ0MGYwZGUyNjNlODY0NDZiNDA0NTczYmFmMGE5ODBjYjAwZjQ1YzdhNzA2MjlhNTM5OGI2YTc0NGU5YmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_50009f2c3bc74486a0327242a3e9e428",
+      "statement": "Cart loading consumes `valid_cart` and `invalid_cart` group responses separately, enriches each row with group store metadata, transforms valid and invalid rows independently, preserves valid-group order as store metadata, and updates backend totals from the first valid group.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/transformers/cartTransformer.ts#L152-L185",
+          "version": "repo-lines-v1:sha256:4be3fdae34a57594f716acadf05b0f0cb3e45305fd14ba7ba241c18e74d78b60:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhiZjM5YTg3MjM2NzBlYjBhMWFmYmExMzZhMTkwYTM3MjczNzZjMmJmZDAxMWYwZmVhMjEzNTc1NWI0ZjhkNjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/stores/cart.ts#L147-L187",
+          "version": "repo-lines-v1:sha256:e155fac3f9bff18caa4b4494e631cc0f23d7727779cf462ae2accb2f0b23ede5:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5YTdlNjUwNDc0YWVmNGU5Zjg1MDI0MGY5MzgzMzkwNzNiMWRjOTQxNTg2OTI0NmM5YWM5NmQ3ODdkZDY0ZDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFhNzZiMTY5MTk2MTYyN2Y0YTY2YTk4YzY2ODBkMDYwY2M5OGVkYjQwNDVhYmI1MmJjMjdjM2E3ODk1MmQ0ZDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyNDg5MDk1OTc4NDQ1NDRhMjUzMmIyMTNjNDE3ZGYyNzcxYWZiZjI3OGRlYzI5NDAwOTFkYjFlNTY0NjU5NWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1582a139dd5c4025b9bdf8ccdf0d2158",
+      "statement": "CartTransformer converts API cent prices into major-unit MoneyValueObjects, resolves effective price in the order activity, package, member, then sale price, and constructs quantity with a minimum of one and a maximum equal to reported stock.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/transformers/cartTransformer.ts#L38-L66",
+          "version": "repo-lines-v1:sha256:8edd11946e4035c550e4db1bb3fa0a31aa4760307dbbee167a68eee8248e4136:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkNjhiNjNkNjliZDFkOTAzOWQwOTJhZDA2MDk1ZTdmZTBkOTZkZDVmMWNmY2ViYmJiZjZlYTY4ZjJhYjM0ODciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhNjc4OWNlYmFlNTllMzI0NjIxYjY4ZTA5Njc2YWE3Yjk3MTVlNjYzNjM5ZmQzMzIwYWI3OTU0YWZmZmNhZTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRlMWZjZmI3MjYwOGU3ZDU2NjIzNjIyY2NlY2JhN2Y1N2NjYzllYTU0NzU5MjlkMTI4YjAwMTUyOWM1MjI5YzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1ZmUzMzFlYzRjMzJlMWMxZWI3MDVkYWY2Yjc0Yzc1ZDg1OTAzOTQ3YjBhZTkwMzNlMjQ4YmE0YTk3ZWE2MDIifQ"
+        },
+        {
+          "resource": "repo://app/utils/cartItemPrice.ts#L15-L54",
+          "version": "repo-lines-v1:sha256:c8ec3419d5b42f01bb60c488931f6baeb12b90dfc4d5cee715fb64b0b44190e3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5ZWNkM2NmZjNkOTYzYTI2YjJiMjc3OWZmM2JkZmUzZjIyYjI3ZmY5YmMwZmIzY2NiYTQ0MWYwMzkxZGMwMjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4MTU2MGRhMTMwMzBjNWMzMzdhOWU1NmUyYjE3NjgwY2JiYWVmMjQzYjUyYmI3Nzg2MzM5OWRkYmRkNDA2NmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwNmJiNDUxM2E1M2U4MjgxZmVmOThkNDZlMjBkYTFlMDFlMWY3YjAyZjg1ZDE5NDhjM2Q1OTRmZWJiNGJlNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0d751c052c4f4f0fa19e34e839e13846",
+      "statement": "The cart model distinguishes valid and invalid rows; purchasability requires positive stock and quantity no greater than stock, checkout requires selected purchasable rows, and BBC checkout additionally rejects selections spanning multiple stores while B2C permits multi-store selection.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCart.ts#L147-L217",
+          "version": "repo-lines-v1:sha256:13d8ea27217a874a606c24dc83341b02a6fdc8db56ef4239ea290fcec2e7a16a:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI3ZWY2OWZkNjRlMjMyODcwNmU3MzEyMzgxNjAyODE4NDgzMzA0MGU1ZjgwZmYxN2Y1MTg1ZTI5OTg2ZmM5ZGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgyODRiY2IyNGI5ZGE1Nzk5ZWUyZjQ5Y2YyM2NiZjQ1NGQ4MTU5Njg2YWJhZDQ5ODU4YmU3NTc0NWMxMDY0N2IifQ"
+        },
+        {
+          "resource": "repo://app/composables/useCart.ts#L549-L565",
+          "version": "repo-lines-v1:sha256:2387e43a07cdf697ecedc3c0ea2275abd1d1a7e7b66d721bb0691d781c118dee:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2OTM0MmU1ZmM1OWIyYTJkYmIxOWFkYzc0ODAwODdmMzJlM2U4ZmY2NzUzYTI0YjI5NzdjM2M0MzVmOWNiZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg4NWU5ODZjNGZkNDczMDFmNzQ1MzcyMmI3YjkzZjZmOTU2OTc3MTE5MGY5ZWQxYTBhZWJjMzRkMDRhMWYwYmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1ZGFhZDk0YWJlNGViOWM1NzU5MGZlOThkOGZmZjQ3NjQ3Yzk5MjQxOGM0ZDVlOTIyZTlhMDcyMjBkYTJmMTEifQ"
+        },
+        {
+          "resource": "repo://app/pages/cart/index.vue#L109-L123",
+          "version": "repo-lines-v1:sha256:e05acfe57efec8dc48f64874d9c648b72c5266a3e7f9c0e99c7b342e66a00547:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4OTY0NDdkMGNlYzg4NDA2ZmNmMjAyZDJjZjM2NjIwZDM4ODZkNzYxZmQyMDQyNWEyZjBiZDM4YTA2MjQ0OGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlMDA2Mzk5NzZmYTc2MzFhNWRiZDI3ZTNlNGNjMjI3YmI0YzM3MWM3NTVlNjVlNzlkNDlkZDMwMGVkOGY0M2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg0N2RlY2Y2ODQ4YjA0NTY3MTQ0YWNmZmM4MjQxM2YwMGJlMmU1ZmM2ODhjNTYxODg3OWQ4Y2MxNmE0Yzc1YzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzMzE5N2ZmY2Q1ZmZmNDEyMzk1N2U5ZjE4OTgxOWY1NjJkMDYyZjI4ZmQyNTljNjEyYmNjNmRhYzgyYjU4MzQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9e81438ce6d640188e3c244ac1893232",
+      "statement": "Cart store grouping resolves IDs from distributor/shop/store fields and nested metadata, enriches missing row fields from group data, omits empty groups, and retains unmatched rows in an `orphan` group; absent group metadata yields a single `default` group.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCart.ts#L296-L338",
+          "version": "repo-lines-v1:sha256:7d7a98dac09daa4d9e53aaf78a0a65c62cf539dd196662fd37ec207f41f4e434:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjYTUyYjRiNzc3MDExYmIxY2ExNzRmMWM1YmVlOGIwZjAwOTZiZjMyYWE1NWNmODFlMTU5MmI2MTA5OWFlMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhZjNjYzVhZDQwM2Q4ZGNlZjA0YjhlMmFjZTUyN2ViZjJiNTZhMTNlODBiNTg4ODdlMjY1OWU4YjA3ZGY2MWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/infrastructure/transformers/cartTransformer.ts#L96-L150",
+          "version": "repo-lines-v1:sha256:61c87ded5d4371f1ab3aa915ca1de0d9417271ea4ecf0dda1de3e4d920bb287e:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4ZDRlZjE2MTViZDRkYmFlMTdmMDQzMzg3OTI3MDZlZWJiM2RkYjE1Yzk0NDg3NzgxMzBlODUyYThlZGRhMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjODliOTgwMmFkNmNkYmMyMmMwNThiMTk3NzBmNDNkY2Y4NmU3NGY5MGJjYzE4ODJhZmYxODdlMzA5ZDI0MTgifQ"
+        },
+        {
+          "resource": "repo://app/pages/cart/cart-store-groups.source.test.js#L23-L40",
+          "version": "repo-lines-v1:sha256:284bd544652eece308d3e8b8eadced97f82c0eb2f3da46e6c10318164f4bfd88:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlZTM1YjIxYWE1YWM4NzI4NTdmNzUzMjVlYzlmMDFlNmI0NGNhNTA0ZDIzMjcwOTdhZmRhODIwMjY4ZDg0MGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/pages/cart/index.vue#L70-L107",
+          "version": "repo-lines-v1:sha256:a7f81fc0746b2c0252edf9a67a0817608454adedbe66d356cf36fec562db3e91:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkODlhZjYxYmQyZjYzNzVjMTMyMTE2N2M2Yjc4MmY2NzA5OGViMTYyYjdlM2MyYmNjZTlmZDZmZTNhNzNjMzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjZGZjZjBiNGUxZjExZDY1Nzk2ZWQ4NTU1MDg2OTNmNmIyYjU4YzA1MDI1NzNlYzZkODgwMGQ2MDI1ZTJkNDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5YmQ0Yjg1NDFlYTE5ODYyYjY5N2U1ZDMzMzZhYjJiZWYzMjRmZjkyMDA1ZGFkNTg5MGY4NzE3MTBjY2YwYzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk2MmQ5ZjUxNGE0NTk1MWZiZDkwNjI3NTE5MzkwMGEzYjdlM2RmOTlmNzQ0OGEwNWM1NTFjNDcwM2Y3NjdmZGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_410668c85b8a4f45b8b6bdb8f57e060d",
+      "statement": "The browser cart cache supports both a legacy array and the current object format containing items, invalidItems, and storeGroups; cached money and quantity objects are explicitly rehydrated after JSON parsing, cache errors fall back to empty initial state, and authoritative page mount loading still occurs because cache hydration does not mark the cart initialized.",
+      "evidence": [
+        {
+          "resource": "repo://app/pages/cart/index.vue#L264-L288",
+          "version": "repo-lines-v1:sha256:c1c80b892b497750720e443d526772284ff69c20995460ea5507b8d84df158c2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiYWNiNGYyMzY3Y2VjOGQxMDY2ZDM5ODk5NWRmNGJiMzdkM2M4NmQ0M2FlMDliYWUyYmQ2YjNhMjMxZjZjYzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRjNzQyOGJhNmNjMzEyOTVhMGQzNzllOTViNTQ3M2U4NWNiZTZjNmMzNDQxZDc5ZmIwNmU3YjUzODQ5YzMxMTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgxZDhhMjRhOWE4Yjg4ZDQwMDYwNDFkNjFlNWQwOTgwOWIzMTk0M2MzZjIwYzdlZDQxNmNmZDAzNDdiOWQzMTMifQ"
+        },
+        {
+          "resource": "repo://app/stores/cart.ts#L133-L195",
+          "version": "repo-lines-v1:sha256:a6100f7efe12ec298396e5cb2b3cb75f0928ef9c294bf66b6cb5069ef1a457f4:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlZmIzMDc5ZTQzYzE1NGRjYzM3MGQwYmYyZjI2ZTk5ZTRhZTZkZjA4Mjg4NjU5YmI5MzNkODFjMjlhYTA5YzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0ZjgxYTFjMWE1N2EzNjdmZDcwMzBkZGE3ZGIzNzMxYTMwMGE1ZjkwMDJlNmZkZTQ5MjJjNDg1NzllMTY4ZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyOGY3NDdiZTI3ZjkxNDA3NmE4NWI3MGUzNjVhY2RjZGZmMWVjZWVjZTcwMGRiMDQwNjZiY2NlZjM4MzE5YmMifQ"
+        },
+        {
+          "resource": "repo://app/stores/cart.ts#L24-L119",
+          "version": "repo-lines-v1:sha256:1067fd9b55b6475b88a088d6afa2d0cb34ef2dca4b37bf250010f3bf503505ca:eyJzZWxlY3RlZExpbmVDb3VudCI6OTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkzYzJmMzA5NTU1OTkyZDZiMDhjNTQ5YjlhNGFhMTI5NTA3Mjc5NTQyODIwMDEwN2U0ZjA4MDAzYzVmMTQ2YzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkNWNkMmZiNGYzZGY4ODQ1MTUyNTViMzk1MjNmMmY4YjU0NzJiZWVhOWY1NjZmZmNhMjA0ZGI4MDI1NjEwNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViNWIyNGM1Njc2NGQ0MWI1Mzg4ZmY2MTk0ODA3NTExNTg3MWUzNjEwNjU1ZmYxNjViMjRiYjRhNWE3ODk3ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBhMWE1MDUzMzg0NDJlYjNlNzE4M2MyODgyZjUwYzI2MDk1Y2VmYThjNTAxNjZlODhlMTVhNzBhMjM0ODlmNjEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6f9cb769967c43e0b29d8a921574b40e",
+      "statement": "Summary-only cart loads update server totals without replacing rows or synchronizing the cache, whereas complete loads synchronize items, invalid items, and store groups to `cart_cache`; local reset clears state and removes that cache.",
+      "evidence": [
+        {
+          "resource": "repo://app/stores/cart.ts#L139-L195",
+          "version": "repo-lines-v1:sha256:b9004325b5b5e020f5463ba51b7e06b920de1e53fb94b5e24a1fe3f142b56cfe:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzYjVjYzAwY2NhZDRlMmQ3MDZiZjg0MDhhNDE1ZmE3NWViYjZmYTZiMzc1NTVjYWEwODQ0NjQ1YWNmZjZhMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhlZjg1NmU4ZDY1NmE5ODQ2NTg3NzE2NWRlZTQ0OTU3Mzc0MDU4NDI3ZmI5MjIyMTgzYjAxMDhiZGY2NWFmM2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyOGY3NDdiZTI3ZjkxNDA3NmE4NWI3MGUzNjVhY2RjZGZmMWVjZWVjZTcwMGRiMDQwNjZiY2NlZjM4MzE5YmMifQ"
+        },
+        {
+          "resource": "repo://app/stores/cart.ts#L420-L449",
+          "version": "repo-lines-v1:sha256:58f3273fba4438861b3f9e8f69df86bf935103c99131f3e1a5755f698a8b875c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxMGUyMGNlMmU4MDZhNjJkNThkMzU3OGZjMDRiYjFjMzI1MmUxZWIwNzdiNGQ1ODJjYTA0YzAyMTY1ZmE0MDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliNjJmNjBkODU5MGE1NzljZjQ2ZjhkNjczNzhjNGM1NzJiOTYyY2VjY2RiOTBjN2E1ZjdiNDJiOTYwNzgyYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3MWZhOTJjNTJmYzA4Y2UwZDMyM2VhNmI4ODk4YzcyMWJhNzg4ODQ5ZWJiYzg2MjljYTE3M2ViYmU0MTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxMGVhZmExNzZiZTRjMDVmOGVjY2ZlZjY3MTkzYjM3NTQwMzZkZjc0MGRkMTQ1YzkyZTk1ODI3YmE4ODY2YWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cfb2ce4e705149269af8bc25c457dcff",
+      "statement": "Cart removal is optimistic for both valid and invalid rows: the store saves the source list and index, removes immediately, calls the delete endpoint, reloads fully on success, restores the row at its original index on failure, and always clears per-item action loading.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/CartApiClient.ts#L95-L113",
+          "version": "repo-lines-v1:sha256:d070f79b888a0ebd36a316057c8ebcedd89fca84b5d7ab2ca26648ccd04fc2eb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMjk5OGI5OGRhMTcwZmMxNmM2NWI0ODQ2YWY4OThjMWI4MWJkMmMxMzMzZDA1ODI1MzhiNGYwYTU1MWI4YzYifQ"
+        },
+        {
+          "resource": "repo://app/stores/cart.ts#L220-L261",
+          "version": "repo-lines-v1:sha256:95915245fd55256bd13d67e9d4025d6fb9f43674b9926c58b63dfcea05bdf666:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2JiYzY1NDY5ZGIxY2EyODQyZWZkOTdkZjdlZTJjZTZjYzE1NzE0ODJkMDFhMThiNzkwYTEwYzdjNTEwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3MWZhOTJjNTJmYzA4Y2UwZDMyM2VhNmI4ODk4YzcyMWJhNzg4ODQ5ZWJiYzg2MjljYTE3M2ViYmU0MTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzODJiMzFiOWQ1NzUxZjQ2ZTRjYTkxYjA5YTUwMDM0ZjJlYTljOTkyMmI0NmQxZjEwNDg0ZGJkMzk0ZjE1ZmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0edca89d331746df8c82e6e75315d4a3",
+      "statement": "Cart quantity updates are optimistic but bounded by the existing QuantityValueObject limits; successful API updates refresh only summary data, failures restore the old quantity with the same bounds, and per-item loading is cleared in all cases.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/CartApiClient.ts#L78-L93",
+          "version": "repo-lines-v1:sha256:6d9eb5fa713aa91d6f9c0d86ebd6cb9f587175e288058642e4cd50f70dbbe848:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyZTI2ZDU0MDU1NzI1M2Q5ZmRjZWE3ZWQ1MDdiMDg1N2M1OTY2NDg0YTZlNDQ4OGI0ZWY4NWYyMjUwZGVmZDAifQ"
+        },
+        {
+          "resource": "repo://app/stores/cart.ts#L263-L297",
+          "version": "repo-lines-v1:sha256:b37d04f2732121f104cfa7b26aa22b83bf191c03ca2a96de12a28ed2f84b5c40:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2JiYzY1NDY5ZGIxY2EyODQyZWZkOTdkZjdlZTJjZTZjYzE1NzE0ODJkMDFhMThiNzkwYTEwYzdjNTEwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3MWZhOTJjNTJmYzA4Y2UwZDMyM2VhNmI4ODk4YzcyMWJhNzg4ODQ5ZWJiYzg2MjljYTE3M2ViYmU0MTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzYzhmNWJiYzFkOWUxMWY1NmJjYmZjMDRlMDI5MGE1NTkzMzFjNWJhMThlNDE5ZGQ5YjJkYzMzMjlhYzc0NzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4c1ea07d36e649e5908864d1def201ce",
+      "statement": "Selection mutations optimistically update local state and cache, synchronize through single or batch check-status APIs, refresh summary data on success, and restore the previous selection state and cache on failure; toggle-all applies only to purchasable items.",
+      "evidence": [
+        {
+          "resource": "repo://app/infrastructure/http/clients/CartApiClient.ts#L146-L181",
+          "version": "repo-lines-v1:sha256:85c699349bacb3d027d73652736ad2cdc6f1a2fb174199b7fe246b83ff144045:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NzVlOTRhOTA0YWM0OWIzMTU0ZDQ2NzJhNjZlODYyOWI4NmRhYzc0ZTNlMjkzN2JlNjkyN2FlM2RhMTFjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNzlmNjZkZTFhMGY2NmIwZWU2MzVhNDc5OTI2MTJhMzZkMjA2YWEyMzcxODY0M2E4ZTFjMDQxYzM5YTNkZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTI5M2ZkODA1NGI2ZTQ3MjQ4MzczZjM5ZjRkZDc3ODAwMTA1ZWI3NTgzNDg2ODcyNTQyODVjZDEyODJiNzgifQ"
+        },
+        {
+          "resource": "repo://app/stores/cart.ts#L299-L381",
+          "version": "repo-lines-v1:sha256:e40fcd749508daf65975e05476949907bebee99abc52b98e320f8400ccf7ac63:eyJzZWxlY3RlZExpbmVDb3VudCI6ODMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2JiYzY1NDY5ZGIxY2EyODQyZWZkOTdkZjdlZTJjZTZjYzE1NzE0ODJkMDFhMThiNzkwYTEwYzdjNTEwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3MWZhOTJjNTJmYzA4Y2UwZDMyM2VhNmI4ODk4YzcyMWJhNzg4ODQ5ZWJiYzg2MjljYTE3M2ViYmU0MTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVlMTFjYTBjMjE5N2M3ZWM5ZTk4ODA5MDljZTczMjkxMjQ2OGY2ZjJjZWQzMDBhMWViMDMwMDhhZGE4YTQ1YzkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e7d306909a24419dbc3eeae062558d46",
+      "statement": "Fast buy uses `cart_type: 'fastbuy'` and carries a positive resolved purchase distributor as checkout `shopid`, while ordinary add-to-cart uses `cart_type: 'cart'`; both operations flow through useCart before cart synchronization.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useCart.ts#L403-L441",
+          "version": "repo-lines-v1:sha256:c64155fd0881c50e46054fb004ec3bb0a7545300d035657285779caa2738e4d5:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE0MjQ2MGJkNTJlZWMyODhhNGFmYTg3ZTRkNjk0ZTI3MGU4M2ZkOGZiMGQyZjVlYmQ0ZDBjNWEwZjMxYzNjODAifQ"
+        },
+        {
+          "resource": "repo://app/pages/products/%5Bid%5D.vue#L789-L821",
+          "version": "repo-lines-v1:sha256:3edff623d846bb4bd300b337b5d194e0dace544895f028bdbc156e6d7fb0f224:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBmMzg3ZDU0Y2M1NmJiNmQxNTUzZTkwMTM5NTdlZmFiMGZhN2VjYzQ5NGY5NWFlNjQ1Zjk4NGRkYjE2MjY0YjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg3YmJkNzU4ODRkMDAzOWVjNTc2MTk2Njg2YzYzZTQ5YTliYTZhYWIwNDI0MjU0ZjVhYTFkMTMyZGYwMGE1ZDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM1YWU5YzIxMzc2MmJmZTVhMzJmYmNjNDM2NjBiMTk5MWIyOWZiZGYxMzAyMTU1NDBiY2JjMTQwZGE2Y2FiYjMifQ"
+        },
+        {
+          "resource": "repo://app/pages/products/%5Bid%5D.vue#L823-L864",
+          "version": "repo-lines-v1:sha256:90d172756006dcaf5085b4102b74a994d3453c6537ccd67a31a392389fb60c94:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhN2FjMmQ5ZmQ0YjUzNmMxMTc2ZDc2ZWE5ZjRjODA3ZjA5M2VhNmVjODA2MGFjMmQyOTViZjdjYjg4OWQ2ZTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2MjY3OTM1ZmM2MzM0NjVkODQ4YjQwYTRlZDY5NjdlN2I3YTMyM2Y4MWNkNTNjMTEwYWUyMTAyOTY4N2FhMTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU3OGI1NzNhNWNmNzJkYWM3NjUxNjA4OGRkZDllYTNmZTg2NWM3YzAyYTYyOGQwY2JjMzdjNzBkY2VlMDQ5ZmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5c60a2ae8e3142f9b6ec911dc91c04f6",
+      "statement": "Focused source and unit tests protect distributor context on collection requests, fast-buy shop propagation, cart store-group rendering/enrichment, and cent parsing/effective-price/member-price rules.",
+      "evidence": [
+        {
+          "resource": "repo://app/pages/cart/cart-store-groups.source.test.js#L23-L40",
+          "version": "repo-lines-v1:sha256:284bd544652eece308d3e8b8eadced97f82c0eb2f3da46e6c10318164f4bfd88:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlZTM1YjIxYWE1YWM4NzI4NTdmNzUzMjVlYzlmMDFlNmI0NGNhNTA0ZDIzMjcwOTdhZmRhODIwMjY4ZDg0MGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmE2MzgwNzFjNzY4MjAwMWRiZjRkMmIwYWU3Y2ZhNzFiMDk3MmU3ZjU0YTU1ZDIwOTlmNjIwOWY4NDAzOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/pages/collections/plp-distributor-id.source.test.js#L11-L16",
+          "version": "repo-lines-v1:sha256:1e19004e833b7840296e7cf4a1c9ac007759c7a9c06e0a97038c73ffc13c12ed:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGJkMmRiOWEwZjA2NzU5MzYwMzRiMzc1YzVjZDAyNGM2MmYxNGI0ZTIyZmMwZjQzM2RkMWNkMzM2MWIxNjBkYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODU4MGI3NjUxOGRhZTk3OWZhZWJkMDIzNjdhMjkyOTJhNTBkOTc2MDkyMjUxYTM4YTZjZTMwODgwYmE0MjgyNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjMyYTYzODA3MWM3NjgyMDAxZGJmNGQyYjBhZTdjZmE3MWIwOTcyZTdmNTRhNTVkMjA5OWY2MjA5Zjg0MDM5YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://app/pages/products/pdp-fastbuy-shopid.source.test.js#L8-L13",
+          "version": "repo-lines-v1:sha256:367f3459d0e74d27df3efc954be38f0d840bd364493482d3d96f20f194e49972:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDRjZTMyNjg1MjllMDY3OTVlODI2MGZlZTFmYmIzNzEwZTU0YTcxNTc4YjhjMDIyOGUzNTNmZGMzNzM5YWQ3NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODU4MGI3NjUxOGRhZTk3OWZhZWJkMDIzNjdhMjkyOTJhNTBkOTc2MDkyMjUxYTM4YTZjZTMwODgwYmE0MjgyNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGI0ZTQxMTBjODFmNmIzOTI5NmYwMzljY2U0ZjM1NjM1YWQ4ZTk1ZWM1MTY1YmQ2MzExMDc2MWZmZjcxYWQyMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://app/utils/cartItemPrice.test.js#L10-L58",
+          "version": "repo-lines-v1:sha256:b5a45595a0a399435f47d245607da63c66a7c57195ca51306b4e3aeaeaa10ce8:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmNjc5NGJjZDY3NjE2Y2Q5NjRmYjVjZjBiZTNhYzAyNDk2NDI3NTQ1NGIwZDA3MDFmNzFhM2YwYzkzY2VlNDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIwOWVkMWI5OTMxMzc5ODE1YjFjZjM0ZmQ2OTg5NmFhZjUwZDQzZTZlZDhlOGM2YzJmM2FkMzY1MDJjNDZmY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiYjE3MDI3NjQ0NDA0M2NlNGIwYjU2M2MwZjNmNDMwNzVmMjkzZGVjODYwNzc0Y2RjZDg2YTFhOTRhNDBmZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}

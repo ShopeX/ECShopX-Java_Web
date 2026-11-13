@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:77146ae8dc34f7a0aee6226c3ec6b05379a4609fa2e7060f6b9461cf9899dd91",
+  "claims": [
+    {
+      "id": "claim_76a8a24f714640b1808d738586ffd462",
+      "statement": "The repository is a Nuxt 4 application whose Nuxt source directory is `app/`, whose development server binds to `0.0.0.0:3000`, and whose design-mode root route is configured for client-only rendering.",
+      "evidence": [
+        {
+          "resource": "repo://nuxt.config.ts#L15-L23",
+          "version": "repo-lines-v1:sha256:3f46f2c0e301d5d9700469770d6bcedb0969ed1399de20e4fa7ab6e8f8d4aa45:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWM2NTcxMjU0N2E0ZTU2YWZmZWY5MTQwNTFiNGE3ODc2OTIwZGI2NDg3YjU5YTVhZDZlODgyNGFjZWI5NGZiOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGQ1Y2QyZmI0ZjNkZjg4NDUxNTI1NWIzOTUyM2YyZjhiNTQ3MmJlZWE5ZjU2NmZmY2EyMDRkYjgwMjU2MTA0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzg5ZTYyNzg2NzRmYjIzNGZkN2RhMThiYzJlOWExNTlhYTIyMzdhZDE0ZjdjNzViNDlhYzliNzFhOGU3ZmMyMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGFjMDhhYjY2MjkyMTQxZGMxYzE4NTE4OGVlNTViOTc3YWUzNzUzNzdiNjM0MzljN2JiNWI5MzAzODc5NmIwNCJ9"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L45-L50",
+          "version": "repo-lines-v1:sha256:05833fbd95851140c4312661f1b3842e1367cebf3d7a264cd09f9c081687f3f7:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTU2ZjUwOTAwMjJlNzMwZTIzY2ZiMjk0MzUwYTI5YjE3NjU4MjQ5MDA3OGU5OGU5ZThkOGUzMzIyNWY5NTcwNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGJiZjY0MTE4ZmNmY2ExMDQwZDg1OTUzNTY4MzgzOWM5YTQwMzFiMWI3YjViYjM5NWZmNTI1ZDE1NjJlMzBkNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzRmODFhMWMxYTU3YTM2N2ZkNzAzMGRkYTdkYjM3MzFhMzAwYTVmOTAwMmU2ZmRlNDkyMmM0ODU3OWUxNjhkOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDUxMjcyOWZiYWNjMGYwNjliYjVmODdhYjNlNGM5MGQ0ZDRiZjJmNzQ5ZGI4YjhhNjI3MzEyODJlZTAxOWRhNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c8f7137fb0aa4a1eab31cd160d9c888f",
+      "statement": "A clean install is pinned to Node `22.23.4` and pnpm `10.13.0`, and the supported dependency installation uses the committed lockfile with `pnpm install --frozen-lockfile`.",
+      "evidence": [
+        {
+          "resource": "repo://.nvmrc#L1-L1",
+          "version": "repo-lines-v1:sha256:0c4bf84f9bedd485b2c4eac05f59e35addc86ce7dbf0d90435528e04384c6314:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGM0YmY4NGY5YmVkZDQ4NWIyYzRlYWMwNWY1OWUzNWFkZGM4NmNlN2RiZjBkOTA0MzU1MjhlMDQzODRjNjMxNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGM0YmY4NGY5YmVkZDQ4NWIyYzRlYWMwNWY1OWUzNWFkZGM4NmNlN2RiZjBkOTA0MzU1MjhlMDQzODRjNjMxNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://Dockerfile#L1-L11",
+          "version": "repo-lines-v1:sha256:2ab6665d55446525fccf1d3e6a3dd20b4c1f492124f7435595932a628a5ae18c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5YWIyN2FmMGM5ZjFkYjRjMGY4MDlmMGJlMDdlZDQ4MTVmMmE0MGZlODQ3ZDkyYzdhOWE5OWFkMjRlNDkxZjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2NGQ5YTljNmFiNTE1YzYxOGY1OTQyMzgyMTMwZWJlYTZjZTYzOWQ4MDJmNDQzMDRlMjBjMDgyNDEwYWNjYzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyYjMzYmUwNzZhZmFlMDBmMzUwN2E1OTg3MmZlMDRhYTIxZTQ0ODIzM2QwYjhlYmQ0N2ZjNzc3ZWZmMjUxMjUifQ"
+        },
+        {
+          "resource": "repo://docs/dev/02-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md#L3-L12",
+          "version": "repo-lines-v1:sha256:e65c46ce9d2476dacfdc2a0ba39e741fb19229a0e641b3f331745e291b2cb26b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0ZjliZmQ5OTg4NGZhZmQyZTM3Y2VjYjhiMzMzZTVjYmFhZDE3NDNhMWU1Y2Q3NjBmMTQzZjgzYzRjZWJhOTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ1YTcyNTg4MjljN2IzYzU4NDc5ODM1YmQyMjg2MDhlZDk3MGY3OGVlMDY0NWRkZjY0OTBlNGEwOWY5YTY4ODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFlZDU0NDFkYzkwNDY3NjVlZjI3NjI2NTFlZTczZWQzMzE4MWQ1MzMwZWQ1MGJmODA3N2Y4ODMxZTJjMzViNGEifQ"
+        },
+        {
+          "resource": "repo://package.json#L5-L10",
+          "version": "repo-lines-v1:sha256:5563ce94efd29cc107ef14eaa9f21d5813854e0f23059c7c5e71e8acd9c61540:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjU2ZDgzMDkwYzZmYjkzNDYzYWQ0ZjJmODVmOGNhNTU3NmY3ZTg1ZTEyMWQ5NThhNTM3MThlMjFkOWY3NmU2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGQ1Y2QyZmI0ZjNkZjg4NDUxNTI1NWIzOTUyM2YyZjhiNTQ3MmJlZWE5ZjU2NmZmY2EyMDRkYjgwMjU2MTA0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjA4YWY3NjA2ZmMxYzgyMzA0OGM5MjQ3MmJjOWU5YWYwZjRiYzZhMzhiOTUzOTA3OTVlNTQ4ZmYxOTYyZTdlYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDQyZTllZjcwYmE1ZTAyZjY3NGM0NDAyYjI4ODk1MTBkMjRiNzg3ODY0NzA5YTY3ZjY5ZTU1YzNiYjU3Mjc0MCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ab2ad0fb7d2c419796fb845efb9a52ff",
+      "statement": "The application defaults its public API base to `/api`, exposes selected `NUXT_PUBLIC_*` configuration through `runtimeConfig.public`, and keeps an internal server-side API base separate through `NUXT_INTERNAL_API_BASE` or `NUXT_API_BASE`.",
+      "evidence": [
+        {
+          "resource": "repo://.env.example#L9-L15",
+          "version": "repo-lines-v1:sha256:a62e2990532de6b5ce9971e2e073ee9f3225853ab8e7c504566b4ea0be57ce6c:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWQ4M2QzYWIxY2M4Y2VhNDc0NGM2YmY2NjFlYmU2ODhiMDY4OGMyMWZmYjhkMmYyODA3Y2ZiYWI3NTYzMzFjMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTBkMWI5YjZiYWQ5YTdiYzMwYjFlNmVkMzcxNTg5Yjg3NzlkMTIzYTM2MDgwNzZjNWNlYTg2OTFkMjdmNDBhMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmRlOWNhNTZiZWFlMmM3ZTIwYmI1ZTVmZjllNTA1Yjg4MTkyMGJkYmVjZjlkODYwYjdlNmRmNmU4YjNkYzM1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGU0NmU4ODg3MGY4MWFjZWQ4YjY2MTg0MGYwYjk4MWIyZmQxMTJhMDA5NjI5MDkyNjBhNmQ1MjVjMzdhZjA4OCJ9"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L123-L143",
+          "version": "repo-lines-v1:sha256:4135007739546110ae3538a0e85505a3fcd62f7a0fd2577b9b8b5299ae5c7ff8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwOTc3MmJkZTI2ZGFjMjhkNDI0ZjNiN2U4OGQyMWFmNTBkZThlMzEwYThiZDA4Y2E2ZDEzM2FmM2ViYzUwNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2ZDJjZjBjZTdjOGQ5MGIxODAzYjgzNmQ1MWJjZjhmOTQxMjU4NzI2MWY0ZGY1ODQ5NGVjMDQ5N2M2YWNlN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYzQ3ZmUwYmNhOGM0Zjg0NDdiZWU2YTVkOWY0MjEwODkwZTVjNDBiNjA0Yzk4NjhiMjc2NDUyNjg1Yzk2MjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0e4adf97495a4d58b4975125ae18bd1f",
+      "statement": "Public environment values are part of the build/deployment contract: the Docker builder passes declared `NUXT_*` values into `pnpm build`, and the generated client/server artifact must be rebuilt when those build inputs change.",
+      "evidence": [
+        {
+          "resource": "repo://Dockerfile#L17-L63",
+          "version": "repo-lines-v1:sha256:145698c9e2ac3de3946bba9a8a4f5b4d0b21daa40039ea76716ef13df3babf49:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZWU1MzMyNTA4YzMxOTJhNjNlN2YzMjllMThhNTg2YzdhNDM3OTQ2NTE1NDM1OTA3ZTY0Zjg2NmJjOGE2YWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyOWY5MTdjODQ3OWE5ZGQ2ZDg3MWQwZTRlM2UxN2U2ZTMxNTU4OTUwZDFmMzRkY2M1MTBkZjAxYjljMjczZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhODJmOWRjN2UxNzRmMjA0NDM2YzNkZmFjNWRlZmI4NTAyNmM3MTY4NWFmMzc2OTU2ZWNlZGFlZjkyODg4MDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJmZjgyOGQyYzdjMGM3ZWJlNWRmMjA3ZGI0NjEwMTlkMjc0NTAzMzEwM2I0OWRhZDM3MGI0ZWRmYmI2NDM1ZWQifQ"
+        },
+        {
+          "resource": "repo://README.md#L23-L39",
+          "version": "repo-lines-v1:sha256:42b86282a3e73cb75cf1eb8a734c2944caa33f9cdb33132d3a5793768664281a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1MGU4ZDQyOGZkODY2MjM4NmNhYjlmOWY5MWM3MTNkMzZmMzhiMjIxMjkyMDU0Nzc3MmU3MGEzNDc0YjIzODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkOWE3NjcwZjAxOTRmNTJkZGQwNWQ1ZjUwM2ExNTAzMjFkYWQwNmE2OWRmZmQ3MjQwODQzODdhYmFmZWE3N2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVjNjU4NTkzNzI4YWRkYzNmMzI1NGNiNGMxMTUyOThmN2VhOWZjMDBiNDY2MTBkNjRiMDMzMGM4YmRhNzQ2NjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4bec756a37b1485dbcb339c50026f666",
+      "statement": "The configured unit/source-test entrypoint is `pnpm test`, which runs Vitest over `app/**/*.spec.ts` and `app/**/*.source.test.js`; linting is a separate `pnpm lint` script.",
+      "evidence": [
+        {
+          "resource": "repo://package.json#L11-L23",
+          "version": "repo-lines-v1:sha256:fbb2fb3e53d7610e5f4dc682f0371ace0bd645df5fb28453dfacd655709677ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0ODMzZDU5NDljMDNhNDBjYTk1MjQ5MTYxMGE2NjU5NjQ0YjNhYTQ2NjM2MmY3OTkwMjBkYmYxOTgxNTQ3ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczYjM4NjE0YWZhYjRkNjViYWYwN2FjMjhkMWQ1MzFiNWQyODZlYzQ3ZDU5MjNiNzY4YWFjYjI2YjUzMWEwZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1NzE2OWZhZjViZmM0N2NjYWIwMzg3ZTE0NjllNThhN2ZjYjU1Y2U4ODU4ODI0YjgzZGE0OWM0MTExNTQxMDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyMjNkZDZiOGI5NzE3MjZkMTFjZTgwYWMzZTliNDk0NTMzYzI4ZTljODgwODVjM2I5YWY5MzcyN2U3MjY1MGMifQ"
+        },
+        {
+          "resource": "repo://vitest.config.ts#L1-L11",
+          "version": "repo-lines-v1:sha256:7ba9296f2835eb7138dfde90940b5cf4478b3d2fbea90a196ff94c9eda7b75bd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzNDYxYzY0YTBkNGFmMGRiOWRmMGVlZjVkNWIzMWZmMTA5NWVkYzMwNWY4Njk1Nzg5MjZhZDlkMjliYWYwNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkNWNkMmZiNGYzZGY4ODQ1MTUyNTViMzk1MjNmMmY4YjU0NzJiZWVhOWY1NjZmZmNhMjA0ZGI4MDI1NjEwNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c274c7c5f5234cc492c7736aee8dedd1",
+      "statement": "Playwright is configured for Chromium and Mobile Chrome with a default base URL of `http://localhost:3000` and a dev-server hook, but Playwright is not exposed as a package script and the configured test directory is not `e2e-test/`.",
+      "evidence": [
+        {
+          "resource": "repo://package.json#L11-L23",
+          "version": "repo-lines-v1:sha256:fbb2fb3e53d7610e5f4dc682f0371ace0bd645df5fb28453dfacd655709677ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0ODMzZDU5NDljMDNhNDBjYTk1MjQ5MTYxMGE2NjU5NjQ0YjNhYTQ2NjM2MmY3OTkwMjBkYmYxOTgxNTQ3ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczYjM4NjE0YWZhYjRkNjViYWYwN2FjMjhkMWQ1MzFiNWQyODZlYzQ3ZDU5MjNiNzY4YWFjYjI2YjUzMWEwZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1NzE2OWZhZjViZmM0N2NjYWIwMzg3ZTE0NjllNThhN2ZjYjU1Y2U4ODU4ODI0YjgzZGE0OWM0MTExNTQxMDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyMjNkZDZiOGI5NzE3MjZkMTFjZTgwYWMzZTliNDk0NTMzYzI4ZTljODgwODVjM2I5YWY5MzcyN2U3MjY1MGMifQ"
+        },
+        {
+          "resource": "repo://playwright.config.ts#L30-L63",
+          "version": "repo-lines-v1:sha256:a648232f64ac5f8aad33352e58527350efe024f4cd566b864574513a48737539:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjYzEwYTA5ZGQ5ODFiYTc5YzZmNjdlOGU5NDAzMWU0YjQ1N2YxMTE3ZjcxZjQ2YjE5YTI3YjNjZWMyZjhhZjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkNWNkMmZiNGYzZGY4ODQ1MTUyNTViMzk1MjNmMmY4YjU0NzJiZWVhOWY1NjZmZmNhMjA0ZGI4MDI1NjEwNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkNTM5ODQ5OTU0YjU0NGE0ZDI2ZTk4ZTJjNjY4NjIwMDBmYTY0M2Q4NDUxZGFjZjE3YmM5YmM1YWQwNzEzZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://playwright.config.ts#L6-L21",
+          "version": "repo-lines-v1:sha256:0dd2fffdd0a4344298b451d0889fe0182f48edeeae97c1474a5e2f0abe5d51da:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyY2VjYjE0NGE0NmY1ZGNmMTJhNjE2OWZjZWVkNzY5NWU4Mjk0YjA5MGRlNzZmMzY2MWNkZDAyNDkzMDAxNDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0NDM0MDNmODMzZTE5MmJkNjBkN2YyNzExZDU5MTU4NTY4MjQ1MTc1MjQyYjRmYjAzYjMxNDlmNGQ5OTkwOTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwY2U0MDVmZWY4OWQ4YjQwNjI4OTE2MmE1OWM0YmI2OTdlZTA4OWE2NGEyYWYyMjcyNzliNzMxZDUwMTUzMjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdiYzI2ZjIzNTA4ZGFjMDJmZjFiZTQ1Mjg5ZjI1MzdlMDVjY2U1NTY2OGQyYjBlMmMwZDExZjY0YzNhMGE2YWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0a482d30f84240dbbf13e0fbf69c7e5a",
+      "statement": "The production runtime is the Nitro entrypoint `.output/server/index.mjs` listening on port 3000; Docker starts it directly, while PM2 runs the same entrypoint in cluster mode behind an expected reverse proxy.",
+      "evidence": [
+        {
+          "resource": "repo://Dockerfile#L65-L118",
+          "version": "repo-lines-v1:sha256:3499d9bd3f4ed9fa4dab9e4520fdc20e88748837a88a320e40aa7a16fa767aa0:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0NzdlY2JhNmM5M2ZkOGVlMTAyYzdkMmEzYWU5ZGU5MTMyOWRiZTY0M2E1NDIwYmQwMmE5M2UwNDIzNWY3ZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViMDgwNjMyZmYwYmNjMWYzMmU3ZjRlOGI4MmRlNWFlNmIyNGEwZDAzYTg4YTViMTdlOTJjOGE3MjMzNmU2NzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjMzliMTY5ODIyOTNjMjY0ZDBmNjhmOTY2NjIzMjgzMzI1M2E0NmQzOWE1NWZhNzRmN2NlNzZmZjIyNzQ0YWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://ecosystem.config.cjs#L1-L15",
+          "version": "repo-lines-v1:sha256:9671f01a334a89bffce8cff62111f9449eeb787cd39027a5aceff73e6e1a0668:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4ZTYxZmRmMjAyOGEzOTQxMGYwNTFmOTdiZTBkYjU4MGMzZWZiYWJmNWE3ZjI3Yjc2ZDQ4N2U1ZDA5OWZiMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcxNjRiNjFmZTVkNjdhM2RjNzI4YjM3YjRiMGVjNzgwZWQxMDBkYmU4ZDBkOWU5Njc1ZmYzNTYzOWQ1OGZlOWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_18c99fa3fba241f5ae608f6757626e5d",
+      "statement": "The repository's main change boundaries are represented by Nuxt configuration/package scripts, app architecture and shared models, catalog/cart, authentication, checkout/payment, account/aftersales, template/decoration rendering, HTTP/backend integration, admin/AI integrations, deployment configuration, and Vitest/Playwright validation.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useAuth.ts#L1-L20",
+          "version": "repo-lines-v1:sha256:0dbfd533070a4eb101f5499ac792f6e39f1da9df6ed09435378e60180c101159:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNiZTc0MDcxNjMxNjAwYjRhOTk4ODk1M2E2ODM0YWJkZmI0YTdmZTlmOWQ3ZjU1YWQ1Y2NkM2Y1NTYwNzBjMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyM2NiNGMxM2Q2Nzc1OWQ1NGY3NjcxZDQ0MDM0OTcyZDA5MDNhMzlkMDhhZmFlNzNiYjk4MWViOWFiMGRjZjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIwMjg4NzNhZmRkNDZmY2M3NmQxY2E5ZjlmMWZkMmQ4NTgyZDg0M2JlOTMwNzlhZWJmNGQxYTA1ZDE1NGRmZWMifQ"
+        },
+        {
+          "resource": "repo://app/composables/useCart.ts#L1-L20",
+          "version": "repo-lines-v1:sha256:cb952dc280a1f1d2a404028dfb0dff2c6ea4c0c84998b74cfd4252e26d1ab58f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkOTU0MmNhOTQzNTc2NTE2ZmU1NDcxNzAyNzY1NmFhMjc1ZWQ5MmY4YTUxYzE3NGMwNDI5OTY5YmI5YTc1ZGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRiZmQ4ZjNkM2I1MmQ2NWFmNzBkOTliOGM4ZTAyM2QzMzQ5MDI4NjEzMjVjNjU1ZDVkODRmNWZlNzkzNTU3NDkifQ"
+        },
+        {
+          "resource": "repo://app/composables/useCheckout.ts#L1-L20",
+          "version": "repo-lines-v1:sha256:4f734d65ae199f97f31b605f34bfaa39e32badc6cdf00c0022f70d823c446942:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjNTFjOGY3ZTViYzVjOWFhN2QwNWM4YzIyMTIxMTlmOTgwNzU5ZTFjMjEwNDU3ZDk0Yjk0ZTg1NWZjZTI2ODgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1NTliZDFlYzIzMmMyOWYxODUyNTU0MGIwZTgxYjFjZTBmZTBmNDljNjNlNDA0MTg2ZTVjNDcwNGM2MGExMzkifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L49-L57",
+          "version": "repo-lines-v1:sha256:175dc0123c2fad8b63b2a3b260ce6b4e3bdd1208291b1db6513450a421797475:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODkwYzVhOTE1OGVhNWU5YTI0N2NhZjJjMmYwMzVhMWRjOTY1ZDIzOTQ5NWIwZjRjNTljMDk5NTNiMjliZjgxOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGQ1Y2QyZmI0ZjNkZjg4NDUxNTI1NWIzOTUyM2YyZjhiNTQ3MmJlZWE5ZjU2NmZmY2EyMDRkYjgwMjU2MTA0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDY0MWZlZWIwZDE2YTVjZDEyNTg0MjljZDU3ZDEzOThkZGZjMjZhMTcyODRmZTM3YTk5YzEyZjViMDViZDYyMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTU1MzUwN2VjYWE0ODA2YjRkOThkNzNhYzkyMDhkOTljYzJkOGJiYjAzMjNkYTljYmJhZWJlZmYxNzA1ZjdlMiJ9"
+        },
+        {
+          "resource": "repo://package.json#L11-L23",
+          "version": "repo-lines-v1:sha256:fbb2fb3e53d7610e5f4dc682f0371ace0bd645df5fb28453dfacd655709677ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0ODMzZDU5NDljMDNhNDBjYTk1MjQ5MTYxMGE2NjU5NjQ0YjNhYTQ2NjM2MmY3OTkwMjBkYmYxOTgxNTQ3ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczYjM4NjE0YWZhYjRkNjViYWYwN2FjMjhkMWQ1MzFiNWQyODZlYzQ3ZDU5MjNiNzY4YWFjYjI2YjUzMWEwZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1NzE2OWZhZjViZmM0N2NjYWIwMzg3ZTE0NjllNThhN2ZjYjU1Y2U4ODU4ODI0YjgzZGE0OWM0MTExNTQxMDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyMjNkZDZiOGI5NzE3MjZkMTFjZTgwYWMzZTliNDk0NTMzYzI4ZTljODgwODVjM2I5YWY5MzcyN2U3MjY1MGMifQ"
+        },
+        {
+          "resource": "repo://playwright.config.ts#L30-L63",
+          "version": "repo-lines-v1:sha256:a648232f64ac5f8aad33352e58527350efe024f4cd566b864574513a48737539:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjYzEwYTA5ZGQ5ODFiYTc5YzZmNjdlOGU5NDAzMWU0YjQ1N2YxMTE3ZjcxZjQ2YjE5YTI3YjNjZWMyZjhhZjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkNWNkMmZiNGYzZGY4ODQ1MTUyNTViMzk1MjNmMmY4YjU0NzJiZWVhOWY1NjZmZmNhMjA0ZGI4MDI1NjEwNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkNTM5ODQ5OTU0YjU0NGE0ZDI2ZTk4ZTJjNjY4NjIwMDBmYTY0M2Q4NDUxZGFjZjE3YmM5YmM1YWQwNzEzZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://vitest.config.ts#L9-L11",
+          "version": "repo-lines-v1:sha256:e6feeae0b89d75f27b2017ba038e4d7ca0c459ee7664b0aad9837a5909520dc4:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTkzNmRmN2E1YTNhYWYxODBjZmZkMWQ2NWM2NDZlZjZhZWEzNTJjYzI3Nzc0Njg2MTk5Y2Q4ZmIzZTg5OWM3YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGQ1Y2QyZmI0ZjNkZjg4NDUxNTI1NWIzOTUyM2YyZjhiNTQ3MmJlZWE5ZjU2NmZmY2EyMDRkYjgwMjU2MTA0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODVkOWRhODBlZWI4OGVjZGJiNmNhOWRiMjRlMjg4ZThhNGEzZjE4YzA2NjM1YWM2N2FiNDQ5ZTIyMWM2MWU4OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODU4MGI3NjUxOGRhZTk3OWZhZWJkMDIzNjdhMjkyOTJhNTBkOTc2MDkyMjUxYTM4YTZjZTMwODgwYmE0MjgyNSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}
