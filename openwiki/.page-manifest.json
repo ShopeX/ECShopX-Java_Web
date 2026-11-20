@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/decoration-and-template-rendering.md": {
+      "pageVersion": "sha256:5adf4c1e273270337c30168093fbd3ee2e94cf0d7557b84d83a0b0c455daae55",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/architecture/system-overview.md": {
+      "pageVersion": "sha256:1a28303a312d243ed1acb7347bd21496d73839f37daff0483e75c3c24fcdca57",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/concepts/runtime-domains.md": {
+      "pageVersion": "sha256:599e06c16d6f528b823bbeab132d1ad200740aba6a3930d34701c920fa854fd3",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/integrations/admin-preview-and-ai.md": {
+      "pageVersion": "sha256:ffd3428685cf73a3be2362471793781a531b25d25a0b99f57c57cedb07a8eacb",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/integrations/http-and-backend-contract.md": {
+      "pageVersion": "sha256:b9642f0d7b093fef7a23f6b798711abdee6bec7b8a27e462d520ec8ca90737d9",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/operations/configuration-and-deployment.md": {
+      "pageVersion": "sha256:149668587980666b19c0c0d2d63fe0854bf9dae4ce7c2a19c086ec24380a0e07",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:77146ae8dc34f7a0aee6226c3ec6b05379a4609fa2e7060f6b9461cf9899dd91",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/testing/validation-guide.md": {
+      "pageVersion": "sha256:09cb9901e7092591f440aff5dc6a1e4d2d246a97e8608466393291de550e2674",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/workflows/account-orders-and-aftersales.md": {
+      "pageVersion": "sha256:7abac8b0baf7848f345e55977193bc23e2817fdf8ca5f39e95506a8515e9fbb7",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/workflows/authentication-and-session.md": {
+      "pageVersion": "sha256:82bbb9c6f96cba611feae2b8a17785c0d2d2967f045c46711c92a914211e3bf3",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/workflows/catalog-and-shopping-cart.md": {
+      "pageVersion": "sha256:2a3e556065ed1e42268c24c44b130b9ad6484380be5fee217fbbedf9ef412c6b",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    },
+    "/openwiki/workflows/checkout-and-payment.md": {
+      "pageVersion": "sha256:b05161c6f3e17eea11c5f83b0708106388a3fa9e83b72069747f413f842ef014",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "5cd655de-2900-48d3-a05b-15a165da998b",
+      "gitHead": "0d6c079e38990927525344da5ad23d66c4142934",
+      "sourceFingerprint": "sha256:75d8995a2e68b5ed0191ab34c9d35691eb20c4021a22e78ceec4eb0f98dedbe4"
+    }
+  }
+}

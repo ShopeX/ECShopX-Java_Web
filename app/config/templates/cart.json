@@ -1,0 +1,35 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "cart-items",
+      "title": "购物车商品列表",
+      "settings": {
+        "layout": "vertical"
+      },
+      "blocks": {
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "layout": "vertical"
+          },
+          "name": "底部栏"
+        }
+      },
+      "block_order": ["footer"]
+    },
+    "featured-product": {
+      "type": "featured-product",
+      "title": "推荐商品",
+      "description": "推荐商品",
+      "items": [
+        {
+          "id": 1,
+          "name": "商品1",
+          "price": 100,
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "order": ["cart-items", "featured-product"]
+}

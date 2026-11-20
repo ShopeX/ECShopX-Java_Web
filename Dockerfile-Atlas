@@ -1,0 +1,9 @@
+FROM reg.ishopex.cn/paiops-lang-base/nodejs-alpine:22.23.4
+
+COPY .output /app
+
+WORKDIR /app
+
+EXPOSE 3000
+
+CMD ["node", "server/index.mjs"]

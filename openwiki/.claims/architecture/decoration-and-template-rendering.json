@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:5adf4c1e273270337c30168093fbd3ee2e94cf0d7557b84d83a0b0c455daae55",
+  "claims": [
+    {
+      "id": "claim_560ea976d6b844b48b8e8ddb1d9ae704",
+      "statement": "The legacy TemplateEngine path fetches a named template through templateApiClient with SSR-enabled useAsyncData, treats API failures as null, and accepts a template only when it has sections and a non-empty order array; invalid or missing API data falls back to a local business-mode template, otherwise the engine exposes an error or empty state.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useTemplate.ts#L124-L193",
+          "version": "repo-lines-v1:sha256:eedd1b4c0a51cbb3aee20e47fe7233b1503e6b1ae75e5ef5cdef68cff19d9183:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViMDYyYTkyMjQ1NGVhM2YwZjFhNjg4NjY1ZjhhYTE5MWM5YzJlMjRiM2U4Zjc3MmIyYjBiZWNhOTgyNWUxYTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjYzVlZWI2MDkxN2I3ZjMyNGE2ZTYxYjg5ZWZkNDFmOTE4MDYwYjFlNGJmOGM5ZGFkZjE2ZTY2ZmVkNWViZmEifQ"
+        },
+        {
+          "resource": "repo://app/composables/useTemplate.ts#L88-L121",
+          "version": "repo-lines-v1:sha256:46a1036e44f55d22c353f6731bb9cb7c550c797476413583407b1b68ccb15551:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjllZTk1NjdmZjI0MGZlYzNiODdlOTgxNmMwZTI5NzkyNTJjZGEzNWViOTczMmQ3MjI3MDc3ZWZhMzZiZDg2Y2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE3OWVhYzVjNzQ3Mzc0YWZkZDNjNmFjN2M5ZmNiZTcxZDU1YTQzODY4MWFkMTg0MWZhOGEwMDIzYTY2YjJlYzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3OTI5ZTkxZTBmOTljM2U4MjVkZTY5YjQzNWZiNjQ4NGQxYjBhMWRmMmY0NjU2MWFiZjFhMjlmMDQxODhiODgifQ"
+        },
+        {
+          "resource": "repo://app/templateEngines/TemplateEngine.vue#L1-L25",
+          "version": "repo-lines-v1:sha256:8cdc38e7bcfd6668d888195ef14179f825822a6688cff3ac2b2ddb79e781cb49:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMTRhMDdiNmQwNWQ3NmFiZmEwM2VkZTE5MjZjMWUyZTc0NzI3MzEyNzlkODU4OGU4YzYzYzU2ODliNTAwNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlZTRiOTVkZDI0MWY1Y2QzYmMwMGEwMDY3NTgyYmYyMzc0OTU5YjdiZGJiYWY4NjYzNzk2NjRhMmU1NzhkYzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyMTIzMmYzNTA1MzUyODE1MmQ3ZmNiMWI1NDFiOWNjNzA2ZjA1Yzg1MTExMjk0MDMwZWI3MzlhNTU4NjhjZDEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8c14ea49eb40465f853e1d90275b45db",
+      "statement": "Legacy local template selection normalizes the public business mode to bbc or b2c, maps historical b2b to bbc, defaults an unset mode to b2c, and dynamically loads app/templateEngines/templates/{mode}/{name}.ts.",
+      "evidence": [
+        {
+          "resource": "repo://app/composables/useTemplate.ts#L20-L57",
+          "version": "repo-lines-v1:sha256:330ee75d6847dd05232ca7f0ad3a8a717af0a9f4c7f18f3239c2517ee7f37da7:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczYzQ3YzEwMWFjMWZkNDE4NjhlNTYzMWRhYmU2ZmQ1NzU0OTUwNTI1ODBhZTEzYjM5MDQzYjY2YzdkMDViYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAxYjAzMDcwZGM2OWY4OGRmZjNjNDM4ZDg5NjE2ZDNhNmFlYTI5YTk4OGEyYTM1ZDc4NTg0YzU1NThhYzQxODgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg4ODQxN2M5ZTM0NjRjNWE5Y2IwMDhlMjFkODk5NzU2MWRlNTE5ODhkY2Q1MGJmNzY2NTg1ZGU4MWE5MGExYWMifQ"
+        },
+        {
+          "resource": "repo://app/composables/useTemplate.ts#L5-L13",
+          "version": "repo-lines-v1:sha256:c0db370ba7de816789cdbf5651466c4bea21cb853a3ecb753e5be18cacf2a806:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWFmMjJjZjA3MzI1OTJjMjQ3MTQxY2JlNjFlZmExMTAxMjYxMmY1YTMxMjJiOWFmOWJiYWY1MmY1NzI0ZDE5NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDM5ZmQ2YThmYzgzODNiZDczNDExZGRlNWRkOTBkMTdhMjM4ZWQ1ODRkYzkwN2I2YTVlN2JiNWFhNWZlZjcxNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDgzNDk2MTc4OWU1NmVmOGZiOGIyMTYyYTYzNjEwMWI1YjAxYmVkZmNmZmY5ZGNkNDZkZmIzY2UzNGIxZWNhNyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_1475e08ad3254e2d863107a6255c1b9f",
+      "statement": "TemplateEngine renders configured section keys in template.order; an exact parent named slot takes precedence over component resolution, while unslotted sections resolve by section.type from the auto-discovered sections/*.vue module map and missing sections or component types are logged and skipped.",
+      "evidence": [
+        {
+          "resource": "repo://app/templateEngines/TemplateEngine.vue#L1-L18",
+          "version": "repo-lines-v1:sha256:266410ade842ea2d430a97366b287fd8c3c39a7114f69d288acb03fec5f37098:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMTRhMDdiNmQwNWQ3NmFiZmEwM2VkZTE5MjZjMWUyZTc0NzI3MzEyNzlkODU4OGU4YzYzYzU2ODliNTAwNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4NDYzNDM5ZGE4ZTE3N2EyM2U5N2FhMGJjMDIxNTAwYTliYzE5M2EyZmQxNWE2NWNmNWY4OTI4YjlhMGY3ZTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcyNjc1MjJkYTY4ZWJkZmFhMzBiMDlmOWJkZjQ2NmJiMzkwODNmZTc0MGEzNDQyZmNiNmU3NWViZWE1Y2JlYjIifQ"
+        },
+        {
+          "resource": "repo://app/templateEngines/TemplateEngine.vue#L56-L109",
+          "version": "repo-lines-v1:sha256:5ab79296c7a4b074d47c40ebb5a7732e151df8520b58f4aa87afbd030c3e4023:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1MTQ3OGE3ZGU4N2IyM2MzMzg3YWNjZmQ1MjcxY2M0OGJlOTQ1ZDVlZTFhZDJjNjA4OWRmYzNlODEyYjc5YmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiNWNlNGUwMjFiNDA4OGQ3NWJjNmYwYTU3ZjgzOTliYjcwNGE5MjFhMjUyNjcxMDY3NzUxMTAyMmJjMGRkMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhNmMxZGJjYWRiYzU1NGFkZDYzMDFmZWY4ODI4OWNiZDcyMDA5ZGFiYmY2MDE4ZmNiNmUyMzljNDYwOGM3MjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_298de2cf25554b748e96306e64b29a3c",
+      "statement": "The decoration DSL requires pageType, a string pageId, a sections object, and an order array; order controls rendering, and normalizeDecorationDSL canonicalizes block_order from either block_order or blockOrder, preferring a non-empty snake_case value.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/types/decoration.ts#L16-L31",
+          "version": "repo-lines-v1:sha256:abd310908dad0acbcc84457b8f77fe885134891627ace1d1c6938f49d1a8ad36:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI0ZGE1ZTk4ZWYwN2RjOWNlY2M3MGZkZmFmZTVjNGRlNmZjMzA4ZDE1ZWI4YjQ4ODhlYTkxMjI5ZGI4ZDgyMTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYzOGIzNjcxNGZhZjkyYTZlZTE4ZTIxZjA5ZWQ0ZTgzOGIxM2M2YTI0ODg0NGQ0OTgwOWRiYjYxOGYwN2QyMTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5NDhlNDM3NDU1ZGFmMTRjMTUzNDE0ZGY1YzY1MWZkOGYxNmE0ZGZmYmM2ZjUwY2JlMmI0NDE2NThjNjViNjIifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/types/decoration.ts#L80-L128",
+          "version": "repo-lines-v1:sha256:65125f0ff39cfee20b9436da76f583ec9dbb11d0b43ace434875190968773133:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4ZDAyMTY2NzEzMTRmNzJkOWY3N2M3M2U2YzQxMDk3YmE1Y2IxMWFjYjNjNjI5ZTA1NTlmMmViYTJiZGZmYzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExMWRhMWUxYjI4NjMzZWFlZGViZThjYTE0NzkwNDIwOTdiNTFlYzJkNzI3MTgyOWRjNzQ0OTJhNDY1ZmU5MWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImViNTk4MGRiNTQ2Y2NlZWQxZTliYTE5MDRjNzJhMDQxNjRkN2UxYzU2ZjJiZjk4MDZlNTFhMjA1OGVhYjA1NWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_27fa9b16fcc3446c926afa1f14257dd1",
+      "statement": "Decoration page fetching uses GET /wxapp/pctemplate/getTemplateContent with skipAuth and skipDistributorId, scopes the async-data key and country_code by locale, sends page_id only for custom pages, and normalizes wrapped, JSON-string, array, and row-config response forms; invalid candidates become null.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationDslFetch.ts#L15-L77",
+          "version": "repo-lines-v1:sha256:b133c5d9fc0d0a124907fb9a16f7c00a7951e46ea70a42ff7d39b6d7e00490ad:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyNjllNzYyMTg1YzlhZTE2MWFkMjYxNmY3YWNkNDBhZTU5NmRiZGU3YzY2ZDljMTBjODA1NjlhZjRlYzU4ZGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwNGIyMzk1YjNjOTVmOTE5MWFkMDBiMDAxYzAxNWQ2MTQ4N2FkYmExNTc1MTBmZGIzNDYyNjI3YzcwMzU4ODMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM4NjMyNjZmYjY4OGVhNjIzODNhNTU5ZDQ1YWQ2MDg2YWY1YzQwNzBjZTYzODQ5YmVjZTYxMDg5ZGU3NDZmNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYyNGI0ZjEyMDAyM2RiMGYyODgwYWM2MmUzZDE5NzFiNGJjZTlhOGY0OTZlYzQ5MWE2N2EwNDQ4MTA2NGNiZWMifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationDslFetch.ts#L80-L120",
+          "version": "repo-lines-v1:sha256:98c80338c981dfa1c4a36823b043d03f17708804c7616a89ca7b83b3d357c720:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMzU4NGNlYjcyYzA4OWNmOTVjNWU5Mjc0MDNhZjNhM2ZlMDdmZTRhNDgyMzhkNjRmN2M2MmVjN2E0MmIzMTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFlMDBmZDdhMjUyNGVjODMyNzZlYWIyNDM4MjNhZGJlNzRkYzg1ODA4OThkNDEzNzk5NjYzZmJlNDYxOTcyNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ4MDAzMmZkZGViNzBmMTg0NjBlM2JiZGEyMDRmYjg3ZmVkMmU4ZTQ1N2FkZGFkOGFmZDc2NTA1NGY2NGRhODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        },
+        {
+          "resource": "repo://app/pages/index-decoration-integration.test.js#L81-L96",
+          "version": "repo-lines-v1:sha256:ec947ad27dd339143bc7ada663b538ec7e0e61a5a6241416133a167e2241b93e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwMDJjNjAyNDZiZGQxOThjYzJmNGJmYzM3M2ZiNDg2ZjA3OGYxODQyNTk4MjI4ZjAxZjgyN2ZjMTcyOGY2Y2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJkN2ZhNWZhOTJiMGQ1YTU0YjQyMjA1N2NjMWEwZTg2MTZhYmVjNWRlMjMwZWEzZDQ1NjBkNDQ3NzllZmI3OGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdkZWRjZGE3MGUwNGEwNDRlZmUzZDM1NjNkZTM1MTNkZTAzOGEyYjdjMTQ3NTdiNTg0MTcxN2Q1NDllMGFjYzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c5f2d6e6979f4fee9b9251fa0b0fbc83",
+      "statement": "Decoration preview route detection treats designMode=1 in route query, fullPath, or browser search as preview and additionally treats an iframe embed as preview; preview-route fetching returns null instead of calling the production DSL endpoint.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationDslFetch.ts#L80-L117",
+          "version": "repo-lines-v1:sha256:661bd45658c72b111cbe971e0b149b63e8c5501e7df35e0fd309a90a4670984e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMzU4NGNlYjcyYzA4OWNmOTVjNWU5Mjc0MDNhZjNhM2ZlMDdmZTRhNDgyMzhkNjRmN2M2MmVjN2E0MmIzMTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ4MDAzMmZkZGViNzBmMTg0NjBlM2JiZGEyMDRmYjg3ZmVkMmU4ZTQ1N2FkZGFkOGFmZDc2NTA1NGY2NGRhODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4YjEyZmVmMWE0OTRhYTk2Mzg5Njk1MjViZDE1MmJkODM5OGRhMWMwMjg5OGQzMDJmM2RjNWZmYjBkY2ZiYTQifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationRouteContext.ts#L4-L45",
+          "version": "repo-lines-v1:sha256:4c04c19dae61bc4d497b666ca8cd498bb9adeb853f2484d2374071b6f1ed0ca0:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyZTliZjI4YWJhNzhiOTk5NjA5ZDgyNjhkNTZiMDE1ODJkYjJlY2UxYWRiNjVkM2Y0NzU4MzhiYzE3ZjE0MDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUwYmIxNzVjMDcxZmQwNWQzM2M4Zjc0YTdhNTdmZWZlN2U4NDk4ZWI2YWUwZWU4YTI2NmVlZGJmMjg4NTk5YzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljODRkMWQ1YTg2MWE5Y2E0MjkzN2EyYjVmYmI3YmJmZjkxODc1MGMwZjY5MzBlNjk2NzVkMmU5YWNiNTEyYWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3OTI5ZTkxZTBmOTljM2U4MjVkZTY5YjQzNWZiNjQ4NGQxYjBhMWRmMmY0NjU2MWFiZjFhMjlmMDQxODhiODgifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationRouteContext.ts#L60-L81",
+          "version": "repo-lines-v1:sha256:f789580f02751ba0088ba40e113f36ba28838e2e6bf1c6e45e97bb11236354fc:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjZTBiYmIwYjgzNDQ2MTQ4Nzk5ODE5ZTE4NjA2M2IzZjU1MjZmM2JlN2UyOWNlMDg3OGE2OGQyMTNhMTJjOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmYTkwMWEzYzc1YWU1ZjgyMGNhZWQ2N2U0ZDQ5MThiY2Q5NDE4NDA0YWFmODZjZWQxNGY5NzA3MjAzMmFkZWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1248165b2e134000942b697a1cbf082b",
+      "statement": "The decoration registry is provided through the Nuxt app and maps section types such as announcement-bar, header, footer, carousel, main-carousel, image-hotspot, product-shelf, and product-tab-shelf to Vue components; DecorationRenderer iterates order, skips disabled sections, and resolves registry components unless an exact section-ID named slot replaces them.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationRenderer.vue#L1-L37",
+          "version": "repo-lines-v1:sha256:3fa163fbb302ce2b82f0ef6a4fde4db3cab82d6bf993dd7bda1a75811309fb55:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMTRhMDdiNmQwNWQ3NmFiZmEwM2VkZTE5MjZjMWUyZTc0NzI3MzEyNzlkODU4OGU4YzYzYzU2ODliNTAwNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiNDE2MzY3NmY2OWViOTE4NTRlNTgyODEyZTE5YTQ3MTE2ZTExNTgyNjBjNjI0YzFmNjJkNzQ0ZDAzOTg1M2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyMTIzMmYzNTA1MzUyODE1MmQ3ZmNiMWI1NDFiOWNjNzA2ZjA1Yzg1MTExMjk0MDMwZWI3MzlhNTU4NjhjZDEifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/components/decoration-core.test.js#L66-L96",
+          "version": "repo-lines-v1:sha256:b0a9099992782409acabf5ef3076a16534ad6aebf01e09009a423085d3582fa6:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0YTk5ZjUzZmJkZjQyZGZlYjdjYmNlOGI2NmJhMDBlODZmM2M5MDVjODlkYTU3ODNiYWRjZWQ5MjAzNTJiYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBhNWQ0NDI5Yzc4ZDI4Y2YxMTRjYTgxMjg0NjgwODczM2U3MjhhODNiZTRjMDI5NDRkYTc4MzY3NjJhNTZmZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1ZmVjZjkyMjkyODViOWZiZDk5OGE4NGViODE1ZmRhMDdiY2NkZDU4NzY1Yjk4YzM2OWZhNzc0NmQ0NTZkNDAifQ"
+        },
+        {
+          "resource": "repo://app/plugins/decoration-registry.ts#L1-L25",
+          "version": "repo-lines-v1:sha256:57c16c7e82425b807a5015a4578aaf5d936d0d6a5d25c194290904a4fc8b5f96:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmNWQxZDVjYmMxZWRmYjZlMmE1ZTUxYTg5N2Y2ZDY2NjkzMmEyYjJlMmZmMzQ0MTUxMGQ0ZTk1OWVlZDcxZWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_df748d413b534548b371122359578d8d",
+      "statement": "useHomeDecorationSplit selects SSR DSL outside preview and previewPageDsl before legacy previewDsl in preview, gives explicit header/footer preview DSL precedence over global and page DSL, and removes header, footer, and announcement-bar sections from the central page renderer to avoid duplicate layout rendering.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/composables/useHomeDecorationSplit.ts#L35-L107",
+          "version": "repo-lines-v1:sha256:19f910e02689119e7641ecc3d5ea0f04c5613fda785b301be194cf52e4b10e4a:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2ZWI5MDI4NTIwYWNjZWQ2ZGUzMDRiMWNjNjA3M2Y3NGI3OTliZDExMjE2MmZlOWViZDNhOTlhMGEwMzY2OWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5YmZiY2Y1NmIwZGI0ODM2OTYxMzU2OWJhMmNjNTI1NjQ2NDAyOTVkMGQ3N2RmMGY1YzU4ODJiNmRmZjRjMmEifQ"
+        },
+        {
+          "resource": "repo://app/pages/index.vue#L31-L65",
+          "version": "repo-lines-v1:sha256:eede39e25b1b01c9fbd9aec6079f9b2ecd31251b379a10a9ec4b20dd43205fc8:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmMDBhYmU0ODM5MjQwYWY5NDc2NThlMjQ5ZWJhZmY4M2RkYTUwNDRmODQ0YTlkMzI5NTRkMzEwM2IxNGUxZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3ZWUyZGE4NjM3NjkxZTc4NDMwNTBjYTlkMjBmZTk5NGQ3ZWU1NDdlOWI1ODExY2E4MzFmMTEwOTBhMzE5N2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0MWQwOTAwY2JmZDY5ODkxZGU2ZjFmZTRjZGFiMjNmZmNmOTJmNGZlMmYyYmY3NDA2MzIzMTg5NWQ5ZDM1NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdjNGU2MzMyOWQzNmE0MDliNmU4MDNjY2ZjZjMxMTYyNDk3YTcwYWEyNWI1MTJkZDk2MWRlZWM3MTQ0YThkY2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_112daa237f2c47c9adb16ee2eb4e60f3",
+      "statement": "Decoration preview state is shared per pageType and receives split page/header/footer/global DSL updates through origin-validated postMessage events; DecorationRenderer initializes the session only in the browser on preview mount, sends PREVIEW_READY with retries until PREVIEW_READY_ACK, and supports focus, highlight, rectangle, scroll, and section/block edit-request messages.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationRenderer.vue#L110-L184",
+          "version": "repo-lines-v1:sha256:68736443b6e1660fb9ea72142fce9c425a02a1ca498f00304c2302ee40878223:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyYTliZjk1ZGY3ZDFlNjI2ZGJlZjEzNGI2MTE5ZjRhN2E1ZTAyNzk4Nzk5MGJhMWQ3ZmRiNzdhMjJjYzllZjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkMTkyODdhMTAwMDI3MWU1MTQwMzNiMzZjZTkxYjI3MDNmODc4MDdhMzliMTkxZTQyMTgxZGI4ODI0YTZiZjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI4NjdjNmU2MWFiZjkyNWM5YjMzNjZjMmNmODY5OTQyODdkZTE1ZTlkYWFhYjJhNTc3NGIzYmI2MDY5NjBiMDgifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L184-L214",
+          "version": "repo-lines-v1:sha256:b434f9b4d15117fa052e5c52db5c90a816fff87f1482823ad44697dfaa2a7a8e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5ODRiOWZlOTM3NWVhMzFlMzBkZjM0YTE4ZGUzYTFmYzcyNzRlY2VjOTM4OTQ2MTk1NWZhMGM4MzgxYWYxN2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyYjQzYzE5MjYzNTBjNDQ4Y2JmYjA0Y2RlZmI5NTJmZTU3OGYxMDljYmE1MDhkMGU3NjI0NmFmNjEwYzExNjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk2MTgzYmE0MjYzNTZiZjJlNmFkNjIzMTIzMTg2ZjEyMTNhOGU5NTgxMjA2YzY0NGEyNmZlYWRlZDQwMWM3M2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg2YjdhZjg3ZjM1ZDVkMzU4ZWM0NmU0YjlmMGUyZTNiYzcxYjY3YTVhYzczZTA4ZmQ1YzgwMWJiZTM1ZmNhZGIifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L244-L352",
+          "version": "repo-lines-v1:sha256:aaa15d3e6c4a741a0a985cd5334a548c5bfb7767f8a7d36a3ee85a74f9bc46b8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4Zjk3YjU4MWY1OTE2MjZjZjBkOGFkMjNiZDMxYTFkOTBjOWJkNTNhMzgwMGRjZDU1ZjlhMjVjYmQ4MjU3NzQzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyN2U1Nzg4ZDVkOWQ3M2QyNGE4MWRiYzBhNWE3NGJmYTgyYzljM2IzYWY5OWU1MmFmNzk2ZTkwYjQ2OGE4YTNkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyNGIxYTdmNTNjOTAyNWIzYzA3YmU0MWM3Mjc3ZTMyOTZhY2IyMjQ4Y2E2ZDljZGQxZDBhNDAwM2ZkNjhkNDcyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkZjMyZDljZWIyYTRmYzg5NjE2MWYyZDQ5ODY0NGQ4ODAyYTVkYzM3ZGMzZGMxZGQ4NGIzNmRiYjVlMmFmOGE3In0"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L354-L470",
+          "version": "repo-lines-v1:sha256:7f0e3eb4dfed2fb8ff3932b125ab283f8d91121550eba72f87b90f9cd5d53fe0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyYTkyNzQwMzQxMWFhNDRkNWRmOWY0ODhmYjkxMGUzZmJhMzAwZGMxYTE1YjVkMWJjNzM5OTc3NjcxYTc4MTcyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyN2U1Nzg4ZDVkOWQ3M2QyNGE4MWRiYzBhNWE3NGJmYTgyYzljM2IzYWY5OWU1MmFmNzk2ZTkwYjQ2OGE4YTNkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5N2Q4NjMyZTU0ZTkyOThhYmI5NTg3MjdlMmQ1MTQwOGFiYWYxMzY2MDM1Mzc5MTAxNDBhYmY2NWIzMGFiNjEzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5ODg4M2ExMTVjMGU3OGYzMWE3NzExNWE0ZjU1N2IwYzcxZTQzYjZkYjdiNWM1YmNiZTJmZmQ5ZjNiYjQ2ZjcwIn0"
+        },
+        {
+          "resource": "repo://app/decoration-engine/composables/useDecorationPreview.ts#L472-L615",
+          "version": "repo-lines-v1:sha256:3751cb773e193ecc0b3c2c2bc2749c3de3290eacb9cee2bf9f3e737949a569c6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmYjE1MDVjOWJmMThjOTY5ZTdjYmQ2ZDg0ZjZiMTk5NmVkN2M4MGEyMWZkMjY5MjczNjNmMmY5Mzc1OWZmYjY5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiMjM1MjU4OWMzNGQzYzYwNjg1OTMxYjZlY2M0ZDUwOTkxYTdjNTZjOGZiYTI4OTQxMTQ2NTc2OTAyNzJjYWMzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjMWFmNzY0YTRkMGFmNGEyMzk4OTU1NDQxMjZjNDQzNTMxOWVmMjY4ODE1YmYxNzI3ZGUyMGRkZDcwN2Y0ZjQ4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2MGNiY2NkMTQ1NDU3YjE1MTk2MDMwNDlhZjUxOTc3YmI3ODRhNjhmN2VmZGQ4OTRlMzU2ODZkMzIyNGExYzQ4In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_b8c58c571ccf4606a6192d807c4ea6fb",
+      "statement": "Preview session identity must stay aligned across useDecorationPreview(pageType), DecorationRenderer previewSessionKey, and the page's page type; the page routes use home, custom, or product_list consistently, while custom pageId comes from route.params.id and reaches the decoration fetch.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationRenderer.vue#L72-L132",
+          "version": "repo-lines-v1:sha256:75613ee17eda0940c2c9a1545a3c64c8b6c4d43f312ff0f4f436fc4bf36e24bc:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFjYTZjYzY5ZDhhNjQ0YmY0MDFiMTExNjc2YTQ0NWI5NzJhNGRhMTljNmE1OTFkNGI0MzA5OGVlZGYwMDQ3ZDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY3YWE3ZWEwOGViMjM1ZjVjM2ZmYmI0ZDhjNDdkMWJhMTViZjYyMWUyYTkyZGUyMGUxMzk4NzljYTY0MGU2M2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmNWQ0OWFlNWEzNDk0ZDU5YmJkNTNkMzM1YWQ5NDY3MDhlMmFjNjkzZjVhZjM2NTI3YjJiZmMzZDZmZjIyNjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYyZjgyYjNlNTE3YzZlYWMyOGMyNTVlY2Q3YWIzYjYwNWYzYmI2NTQ0NTIwNGU0MmNmM2Q0ZjdiYTgxZmZiYWIifQ"
+        },
+        {
+          "resource": "repo://app/pages/collections/%5Bid%5D.vue#L201-L220",
+          "version": "repo-lines-v1:sha256:84dfc61e3cec4f893af84ee79ce476863a8f4cc0a456b0abe17396609524a474:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmNThiOTBkN2Q0Njk0MjIyNzcxZmIxYzM5Nzg1ZGQwMTYxOTY1NGFjNzc0OTg3M2RlNGY1NmUzYmE4YWQ5NmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ1OTFlMTU2YTAzYTBlZTVjMmM0YTRhZjUzMDZlODNjNjc3OGIxYjczMmM2Y2FjZTU3MzFjNmY5MzlkODVjY2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0ODNiZGE5MmY5ZTg5ZDUyZmU1M2RlYzQ2Y2YwZTQyNzBlZTdhZDcyMzMwYjBkZDI5YWM0YmRjOTA3YTY3NzAifQ"
+        },
+        {
+          "resource": "repo://app/pages/custom/%5Bid%5D.vue#L29-L46",
+          "version": "repo-lines-v1:sha256:3ac428084eaf0c149a974695819d5e1f385902c6f92841bcd714ec6baa8237b0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkZWFkZDYyMWViMTE3YjE0MWFiZDI2ODJhYTg3NTRiODFlMDcyNWJmZmE2YmViYmJiOTRmYjczMWYwNzVmY2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ1OTFlMTU2YTAzYTBlZTVjMmM0YTRhZjUzMDZlODNjNjc3OGIxYjczMmM2Y2FjZTU3MzFjNmY5MzlkODVjY2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0ODNiZGE5MmY5ZTg5ZDUyZmU1M2RlYzQ2Y2YwZTQyNzBlZTdhZDcyMzMwYjBkZDI5YWM0YmRjOTA3YTY3NzAifQ"
+        },
+        {
+          "resource": "repo://app/pages/index-decoration-integration.test.js#L48-L61",
+          "version": "repo-lines-v1:sha256:2d0cda8b4b7e79fbcca8d0c20a9b9cf843eb9f307b4e44ebb469e0db57b737fe:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk4YWVhM2NkMzY3MjRlMDZhNjVjZmZlMDM5ZDRiZmY0ZjI4YTc2N2RlMjdmMzcwZjdlOTY2Y2NhYzMwMDdkY2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEyMDc3ZWY5MjM0ZmZiYjc4YmViMGI5Yzg4ZjFhZTY2MDlmZWY5ODExZGZmNmMzOGY2MGM3Y2FiOTA3OTg5YTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ4MmFkZjk1M2ZmNmI3YWRkMDVjYzE1ZTM0Y2YzNTYzMmZmNWE2Y2YwNzI1ZWYyNzljYzdmNzY4ZmQwMzA3Y2IifQ"
+        },
+        {
+          "resource": "repo://app/pages/index.vue#L31-L48",
+          "version": "repo-lines-v1:sha256:37c285b71818118a90071c2afd938e5a7ec39f246155b3f2736816bfed5998e4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmMDBhYmU0ODM5MjQwYWY5NDc2NThlMjQ5ZWJhZmY4M2RkYTUwNDRmODQ0YTlkMzI5NTRkMzEwM2IxNGUxZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0MWQwOTAwY2JmZDY5ODkxZGU2ZjFmZTRjZGFiMjNmZmNmOTJmNGZlMmYyYmY3NDA2MzIzMTg5NWQ5ZDM1NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0ODNiZGE5MmY5ZTg5ZDUyZmU1M2RlYzQ2Y2YwZTQyNzBlZTdhZDcyMzMwYjBkZDI5YWM0YmRjOTA3YTY3NzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7f3d26db51a2401ca80e9224333c7f94",
+      "statement": "Decoration defaults are factory-created DSLs for home, header, and footer; the home page uses its default page DSL when the active page render has no sections, and layout defaults cover missing header/footer decoration.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/defaults/default-decoration-dsl.test.js#L27-L40",
+          "version": "repo-lines-v1:sha256:d7676eb44c294df405d2e50c75c5d9acf70b9e070ab9bb9ba18c8adeb4373724:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzYmJlN2MzMTI5MWQ1MGFiZjI1NGQ1ODkyMWNkZmVjYWE4MjJlYzA3NDQ4YTAzMzQzODE0NjJkNjJkODBiYjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyM2JjN2E0OTRhMTJlZjJjNTQ3ZGVhNWZkZjdlZTExNzM2MGY1NDQ1NGYzOTk1NWI5N2NhOTgwOWQzMzMwNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNiNjRkZDQ5YmJkYzc0YzVlZjYwZmU4Nzg2ZjBlMzE5MzY4Mjg2MTIzODdlMTJkYjI0OWI0YmRiOWY4MDZlNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/defaults/defaultDecorationDsl.ts#L154-L216",
+          "version": "repo-lines-v1:sha256:bca6f72460316b155629ea00d18e8d743992911987e33d677d304fd199dabc59:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxNzRkNWZkYzczODcyZDI0YmVhMGRiNGVmNjIxNzlhOTgxOWFhMGY5NWVjMjgxNWZjMDNiNTAyNTNmZjllZGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyYmU4YTc2NGMxYjM5ZGY2ZGNjMThjNDJkNzgwN2VhMzQ2ZGJiYzI2NTYzMDgwYjFmYjA4MzlhMjg1YmE0YjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRjZjk1ZjJhMmZmNDU0NDJlMTM1ZDA0ZjY2ZmIyNTRiYTcwMTBlZTMyYmU4YjNhY2EwMDI3M2UxNzdkMDlmMjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/defaults/defaultDecorationDsl.ts#L44-L72",
+          "version": "repo-lines-v1:sha256:b331839520018c163f1f9791796a2f98cbc74a8fc092221613a53f40711ecb1a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViY2E4YjU5YmI1YzIwMzNiNGM5NDk2Zjc3MzY4OTY5MzBlOTUzZGNhNmJkOTcxMWQ2MTJjNzEwNWFiZmVmNDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3NjcyODlhMWUzZDQ5ZGQzNzJlODZkNDZkM2FlOWYxMzA4OWFmNTM0ZGM4ZDI1ZmFhM2MxMWFmMTA5NTdiOWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY3MzQ0NWZiMzdmNDFhYjBiMjljZDBkMDI4OTgyOTI5ZjVlODU1YzFkMjc5NzEyNWFmMGUwMGZmMGYyMzdhOWQifQ"
+        },
+        {
+          "resource": "repo://app/pages/index.vue#L59-L65",
+          "version": "repo-lines-v1:sha256:2ebc9004743d4229f9b5e3dba2eea01f176db30fdc96907da83b9fff97389da4:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjA3ZmE3MjU5NzRiODc0MzBmYWJlMjE0N2VmY2Y0NWNiNDNlMjczYzZmNjExYmQ2NDVmZjExNzk0NGE1ZGQ3NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTdlZTJkYTg2Mzc2OTFlNzg0MzA1MGNhOWQyMGZlOTk0ZDdlZTU0N2U5YjU4MTFjYTgzMWYxMTA5MGEzMTk3YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjBhNjY3ZmRmMjVhMTM5YThkYWJiYTJkMTFkMmE2OGJmZTc1ZDhkMWQyZTA0N2E4ZjAzM2M0YTkwNDU1NTBlYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2M0ZTYzMzI5ZDM2YTQwOWI2ZTgwM2NjZmNmMzExNjI0OTdhNzBhYTI1YjUxMmRkOTYxZGVlYzcxNDRhOGRjYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a872cb51899d4e3b99b3c8485f0e2e32",
+      "statement": "DecorationSectionHost and DecorationBlockHost are transparent outside preview but add editor boundaries, hover and selection handling, geometry reporting, and block focus behavior in preview; renderer-level capture prevents preview links and form submissions from navigating the iframe.",
+      "evidence": [
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationBlockHost.vue#L128-L145",
+          "version": "repo-lines-v1:sha256:de343517755f188fb9f24ab909a321f27561f97dfd72fb43bfac1e026a8ae535:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMTRhMDdiNmQwNWQ3NmFiZmEwM2VkZTE5MjZjMWUyZTc0NzI3MzEyNzlkODU4OGU4YzYzYzU2ODliNTAwNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiNDE2MzY3NmY2OWViOTE4NTRlNTgyODEyZTE5YTQ3MTE2ZTExNTgyNjBjNjI0YzFmNjJkNzQ0ZDAzOTg1M2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5NWEzNmZhMGE5NmI3ZDdjZjNlMDE1ZDc0YzE3MDZjODAwY2JlM2Q2MGVkMzNmOWZkOGJjNjI3OGMyMTY3OTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1MjI4NDBlZDVlYzU4YTM2MmYyMGI3MWI4YWViNjc1ZDdlZmI5NzQzOWM5MGMzZjYxNTVhZmVjNjUyODU5NDMifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationBlockHost.vue#L17-L75",
+          "version": "repo-lines-v1:sha256:949d175dd2f9db1c01f1293ae12f12f2a187e9d158f11aba4f0797b15ccd9272:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0OTgxZjNhYzMzMjMwZmRiY2FlZGM5OGYzMjUzNDc1NTY4NjhhZGNkMDdmNzRmZmRiNDQ2ZTlmYzBlNTU2NjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkNzkzYzJkMzRiMTM3ZjFlMmI2YWQ1N2MwYTdmNWQ5YTE4M2FmNmU1ZmZlMDU1YzUzYWNkZDYwNzQ5OGM1YjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNjYjNlYjA4MmNiMTJlMzMwMzE4MmY4YzM0MGQ5MDY2Y2VmOTdkYWU3NmUzNTYzOTVhNzEzYmNhOWMwZTQwYjEifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationRenderer.vue#L141-L159",
+          "version": "repo-lines-v1:sha256:4196a45fefe4062f8a5cb71050d973b2d238363a6e6607f63e2312dcc44e6785:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxODZhM2YzMjM3YjU0ZWFlMDc5ZTI2YjkxMmI1Mzg3MmVlZTg2YzM1MDdlODliNGJjZmQzMTcyMWVhODY5MTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNkMThjMTdiNTAyYzlkMzk4NjVhZjRkMTc5ZTY4OWZjMjA0ZDM3ZDdhMDY2ZDljYTliOTIxY2VmNzQ0NzBjYTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY1MTM5NGU3N2MxYmI0YjZiNDA2NGFkZjJkOTY1NmJkNTFhZjNmMDUxMGRlYWY5MWQwYjNiNzBhYmI2ZWY0YTcifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationSectionHost.vue#L13-L81",
+          "version": "repo-lines-v1:sha256:291401f00b03bbc3c84d010f86a9f47aa30e1c264d12c223fcd8cd44efa7c9e2:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxYjI4N2JhOTYwY2U1ZDVjMzcyMTg2ZjFkNzAwMWZjYThiNjE0MmMwOGU3NjM4MmZjMTMyMjMyNjQ3NGIwMDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyMzUyNTg5YzM0ZDNjNjA2ODU5MzFiNmVjYzRkNTA5OTFhN2M1NmM4ZmJhMjg5NDExNDY1NzY5MDI3MmNhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlNTgwYWJkNDhmYjkyYjc2MDEyZmZjMDdkMDA1YjEwOWU2NzQwMzhmNzQ2MjU3NGZjNGNkZDAxNDZlZDAwNTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjMjFmZjI4YTczYmVmZDgyNDIzM2FmODllY2JlYWFlZmExMmQzOGMwYmEwN2VjZDNmOWUzNmZhNTIzY2RkODEifQ"
+        },
+        {
+          "resource": "repo://app/decoration-engine/components/DecorationSectionHost.vue#L132-L149",
+          "version": "repo-lines-v1:sha256:20d7514b2c02ba84218adb7c7dbc4c21c9e1ad31e4bb333c84e476c04b3f579d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMTRhMDdiNmQwNWQ3NmFiZmEwM2VkZTE5MjZjMWUyZTc0NzI3MzEyNzlkODU4OGU4YzYzYzU2ODliNTAwNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1MjI4NDBlZDVlYzU4YTM2MmYyMGI3MWI4YWViNjc1ZDdlZmI5NzQzOWM5MGMzZjYxNTVhZmVjNjUyODU5NDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5NWEzNmZhMGE5NmI3ZDdjZjNlMDE1ZDc0YzE3MDZjODAwY2JlM2Q2MGVkMzNmOWZkOGJjNjI3OGMyMTY3OTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}

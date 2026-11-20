@@ -1,0 +1,43 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.eol": "\n",
+  "prettier.enable": true,
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "i18n-mage.i18nFeatures.framework": "vue-i18n",
+  "i18n-mage.workspace.languagePath": "app/locales",
+  "i18n-mage.writeRules.indentType": "space",
+  "i18n-mage.writeRules.indentSize": 2,
+  "i18n-mage.writeRules.languageStructure": "flat",
+  "i18n-mage.general.displayLanguage": "zh-CN",
+  "i18n-mage.i18nFeatures.translationFunctionNames": ["$t"],
+  "i18n-mage.translationServices.autoTranslateMissingKey": true,
+  "i18n-mage.translationServices.referenceLanguage": "zh-CN",
+  "i18n-mage.translationServices.deepseekApiKey": "sk-2e7593c90f8d460bbd640be30ea76c58",
+  "i18n-mage.translationServices.translateApiPriority": ["google", "deepseek"],
+  "i18n-mage.translationHints.enable": true,
+  "i18n-mage.translationHints.italic": true,
+  "i18n-mage.writeRules.sortAfterFix": true,
+  "i18n-mage.analysis.ignoreCommentedCode": true,
+  "i18n-mage.translationServices.matchExistingKey": true,
+  "i18n-mage.workspace.projectPath": "",
+  "i18n-mage.analysis.onSave": true,
+  "i18n-mage.translationServices.langAliasCustomMappings": {
+    "zh-CN": ["zh"],
+    "zh-TW": ["zhtw"]
+  },
+  "i18n-ally.localesPaths": ["app/locales"],
+  "i18n-mage.translationServices.unmatchedLanguageAction": "switch",
+  "i18n-mage.workspace.ignoredUndefinedEntries": ["fastBuy"],
+  "i18n-mage.writeRules.keyPrefix": "auto-path",
+  "i18n-mage.writeRules.quoteStyleForKey": "double",
+  "i18n-mage.writeRules.quoteStyleForValue": "double",
+  "i18n-mage.writeRules.keyStyle": "camelCase"
+}

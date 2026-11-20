@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:149668587980666b19c0c0d2d63fe0854bf9dae4ce7c2a19c086ec24380a0e07",
+  "claims": [
+    {
+      "id": "claim_816ba4bbe9194041a9b297c125960061",
+      "statement": "Production runs the generated Nitro server from `.output/server/index.mjs`; the Docker runner exposes port 3000, binds `HOST=0.0.0.0`, and starts that entrypoint with Node.",
+      "evidence": [
+        {
+          "resource": "repo://Dockerfile#L65-L118",
+          "version": "repo-lines-v1:sha256:3499d9bd3f4ed9fa4dab9e4520fdc20e88748837a88a320e40aa7a16fa767aa0:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0NzdlY2JhNmM5M2ZkOGVlMTAyYzdkMmEzYWU5ZGU5MTMyOWRiZTY0M2E1NDIwYmQwMmE5M2UwNDIzNWY3ZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViMDgwNjMyZmYwYmNjMWYzMmU3ZjRlOGI4MmRlNWFlNmIyNGEwZDAzYTg4YTViMTdlOTJjOGE3MjMzNmU2NzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjMzliMTY5ODIyOTNjMjY0ZDBmNjhmOTY2NjIzMjgzMzI1M2E0NmQzOWE1NWZhNzRmN2NlNzZmZjIyNzQ0YWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://docs/dev/12-%E6%9E%84%E5%BB%BA%E4%B8%8E%E9%83%A8%E7%BD%B2.md#L3-L15",
+          "version": "repo-lines-v1:sha256:7044e1fd50f36ecaaff28b071dab0d1ae5b7d40892e7d390bbdafa9b417dfe27:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1OGYzMDIwY2E3MWE1MjBiMmIyNjVkNGMzNjAxMTk1Y2UwYzJlMTliYjc2NzI3YmY1MTEyZjdjZTZmZjc3YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwZjM5NjdhMTliMDgwM2MxM2ZiYjM5MTU2OGNiMTEyNDhkZTcwN2RlMWZhZjVmNjExMGRjMDA1YTQ4MDY1OTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk4ZWE0NjJiNTg3NTc2YjU1OWYxYWE0OTRiNDNlMmYwNTlkZGJmMTYyMjRlZWY1NjQ2M2U2ZTY5ZDMwZDE1MWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE5MmQ4NGQzOTY4ZmZhMDNjZjg0ZTc5OWQwOWU4YjY1YjhkYjNjZmFhYzI1NGQ3Y2UwODMxZDI4MzZmMDRlMmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_048f8a6fcc374f7a825278eda1d87952",
+      "statement": "`NUXT_PUBLIC_*` values are exposed through Nuxt public runtime configuration and are embedded during the build path: the Docker builder receives them as `ARG` values, exports them before `pnpm build`, and the application uses them for browser-visible API and feature configuration. Changing them requires rebuilding the generated output or image.",
+      "evidence": [
+        {
+          "resource": "repo://.env.example#L35-L39",
+          "version": "repo-lines-v1:sha256:b5b030fd50d69a41e47b219ec0de07b4942d379f360b951303e9f963372bdfbf:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDRkOWUxNWQ1YzZiY2FhYzVmNzZkZGFiMTZlZDkwMDI2NjhlY2QwMGY2MzIyOTRlMjIzNzUzNmM4MmViYzAwYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmRmYWY4ZDMxZTdkZTA2ODgyZDU2OTYwNjVlOWQzNGI0MzNkODFiZWRiYzFmY2I4MmMxNjc1NTA4OGNiZTYyOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDI1Y2I5ZTUzN2E4ZThhNjg3Yzg1ZTY1Mzg3Y2JkMTFlYjAxZWEwYjVkYzllMDA0ZTk3ODk2NGU5ZGUxOTQxNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://Dockerfile#L17-L63",
+          "version": "repo-lines-v1:sha256:145698c9e2ac3de3946bba9a8a4f5b4d0b21daa40039ea76716ef13df3babf49:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZWU1MzMyNTA4YzMxOTJhNjNlN2YzMjllMThhNTg2YzdhNDM3OTQ2NTE1NDM1OTA3ZTY0Zjg2NmJjOGE2YWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyOWY5MTdjODQ3OWE5ZGQ2ZDg3MWQwZTRlM2UxN2U2ZTMxNTU4OTUwZDFmMzRkY2M1MTBkZjAxYjljMjczZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhODJmOWRjN2UxNzRmMjA0NDM2YzNkZmFjNWRlZmI4NTAyNmM3MTY4NWFmMzc2OTU2ZWNlZGFlZjkyODg4MDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJmZjgyOGQyYzdjMGM3ZWJlNWRmMjA3ZGI0NjEwMTlkMjc0NTAzMzEwM2I0OWRhZDM3MGI0ZWRmYmI2NDM1ZWQifQ"
+        },
+        {
+          "resource": "repo://README.md#L23-L39",
+          "version": "repo-lines-v1:sha256:42b86282a3e73cb75cf1eb8a734c2944caa33f9cdb33132d3a5793768664281a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1MGU4ZDQyOGZkODY2MjM4NmNhYjlmOWY5MWM3MTNkMzZmMzhiMjIxMjkyMDU0Nzc3MmU3MGEzNDc0YjIzODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkOWE3NjcwZjAxOTRmNTJkZGQwNWQ1ZjUwM2ExNTAzMjFkYWQwNmE2OWRmZmQ3MjQwODQzODdhYmFmZWE3N2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVjNjU4NTkzNzI4YWRkYzNmMzI1NGNiNGMxMTUyOThmN2VhOWZjMDBiNDY2MTBkNjRiMDMzMGM4YmRhNzQ2NjQifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L123-L143",
+          "version": "repo-lines-v1:sha256:4135007739546110ae3538a0e85505a3fcd62f7a0fd2577b9b8b5299ae5c7ff8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwOTc3MmJkZTI2ZGFjMjhkNDI0ZjNiN2U4OGQyMWFmNTBkZThlMzEwYThiZDA4Y2E2ZDEzM2FmM2ViYzUwNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2ZDJjZjBjZTdjOGQ5MGIxODAzYjgzNmQ1MWJjZjhmOTQxMjU4NzI2MWY0ZGY1ODQ5NGVjMDQ5N2M2YWNlN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYzQ3ZmUwYmNhOGM0Zjg0NDdiZWU2YTVkOWY0MjEwODkwZTVjNDBiNjA0Yzk4NjhiMjc2NDUyNjg1Yzk2MjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8a9ce540baae496db6d85fcb221b8ac1",
+      "statement": "The application separates server-side SSR API routing from browser API routing: `apiBaseInternal` is derived from `NUXT_INTERNAL_API_BASE`, then `NUXT_API_BASE`, while the HTTP plugin selects that internal base only on the server and uses the public API base for browser requests; the public base defaults to `/api`.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L250-L259",
+          "version": "repo-lines-v1:sha256:a595d22a6520a9990e8f68012df0c07bdcba0bb740694ff06681850dee780014:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0MDg3ZDM0MGE1NzVjNmJmZDUxZDBmZmY4MTA1YzY3ZTcxYTQzZTE4YThkODJhOTlkOWMzNTJiNThiYjgxODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyOTEwNzNiYTUzZDhlNzUzNzg2OGE2OWZmNmUyZTZmNTM3ZGVmYmQwZTcxZDJkYzhjMDM1ZWQyZjIwNWFmMTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0YjlhMGIxNmI5OTEwYmFhNWQwYTRkY2FmZjhhNjBjNDI5NjMzYmYyYWUzY2JhY2M4MjAyOTA3NTgwZDEwY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjczYmJhZDhjNmY5MTAzZGU2NmYyOWZmYTUwODliMDIxNjJiZWYwMmI3Njg5NzM1ZTlhOWJmZGE3YTA3M2RiYjAifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L123-L132",
+          "version": "repo-lines-v1:sha256:eb313c8898066535ee8f12d631656c8a04927c4586b857e410a0d15f9903735a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwOTc3MmJkZTI2ZGFjMjhkNDI0ZjNiN2U4OGQyMWFmNTBkZThlMzEwYThiZDA4Y2E2ZDEzM2FmM2ViYzUwNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhNmY1NDYyNGY2MGJhODFhMWU2M2IzZmI3NjQ0M2I0MTE3NGY4YTFhMzQ2MjQyYTUxMDBjZDZiNjJlYTIyYWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2ZDJjZjBjZTdjOGQ5MGIxODAzYjgzNmQ1MWJjZjhmOTQxMjU4NzI2MWY0ZGY1ODQ5NGVjMDQ5N2M2YWNlN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjliMDA3NGQyZjM2MTJjODE4NDJlYTM3OGFmMDcyNmNjMmI1ZmEzMjMwNzRiMTY1ODczOGM1MTg3NDg0MzA2MTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_80e5b853e5bb4c38910556f29cecafa4",
+      "statement": "The Dockerfiles copy only the built `.output` directory into the runner stage and do not declare the internal API variables as Docker build arguments, so server-only API configuration must be supplied through the runtime process environment or deployment system rather than public build arguments.",
+      "evidence": [
+        {
+          "resource": "repo://Dockerfile#L17-L63",
+          "version": "repo-lines-v1:sha256:145698c9e2ac3de3946bba9a8a4f5b4d0b21daa40039ea76716ef13df3babf49:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZWU1MzMyNTA4YzMxOTJhNjNlN2YzMjllMThhNTg2YzdhNDM3OTQ2NTE1NDM1OTA3ZTY0Zjg2NmJjOGE2YWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyOWY5MTdjODQ3OWE5ZGQ2ZDg3MWQwZTRlM2UxN2U2ZTMxNTU4OTUwZDFmMzRkY2M1MTBkZjAxYjljMjczZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhODJmOWRjN2UxNzRmMjA0NDM2YzNkZmFjNWRlZmI4NTAyNmM3MTY4NWFmMzc2OTU2ZWNlZGFlZjkyODg4MDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJmZjgyOGQyYzdjMGM3ZWJlNWRmMjA3ZGI0NjEwMTlkMjc0NTAzMzEwM2I0OWRhZDM3MGI0ZWRmYmI2NDM1ZWQifQ"
+        },
+        {
+          "resource": "repo://Dockerfile#L65-L114",
+          "version": "repo-lines-v1:sha256:e203bfbfe5389d90664772d1f93c343d6580bee1e5f787be6b950f1073ebdee9:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0NzdlY2JhNmM5M2ZkOGVlMTAyYzdkMmEzYWU5ZGU5MTMyOWRiZTY0M2E1NDIwYmQwMmE5M2UwNDIzNWY3ZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1Y2U5MzA1Y2MwZGU3OGU1ZDMwNThjOGQ5NzhkNTBkM2ZjMGFjZWQ4Y2ZmYTEwYTE1NTFlMThkNGI5YjcwNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjMzliMTY5ODIyOTNjMjY0ZDBmNjhmOTY2NjIzMjgzMzI1M2E0NmQzOWE1NWZhNzRmN2NlNzZmZjIyNzQ0YWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMzNGU0ZTc3MmY1ODJhNDNlNGExMmU5OGQ4NjU3NTkwYzE3ODkzMjUxYTZjOWVlZmFlOGM4Yjk0ODVhMDQwMWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d79f6600695549df8155e3ecba474a8d",
+      "statement": "The PM2 configuration runs the Nitro entrypoint in cluster mode with the maximum number of instances, automatic restart, port 3000, and `NITRO_HOST=127.0.0.1`, assuming a local reverse proxy such as Nginx.",
+      "evidence": [
+        {
+          "resource": "repo://docs/dev/12-%E6%9E%84%E5%BB%BA%E4%B8%8E%E9%83%A8%E7%BD%B2.md#L17-L34",
+          "version": "repo-lines-v1:sha256:494da7eb2eb6cdb846f57e3bde7ade7000f5a068b24999b3055c8281d628599b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmNDYxNTRiYzlhZDM1OTQwN2ExZmQzM2RhZGM4ZTMwMTJkYThjYmIzZDk0NjhiMjU1YmQ2ODNkN2I5ZjUwNzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiOGZhZTdmYzU5OWRkMDJmMjg0ZDU5Y2JmZWM4Mzc3NzY1NzVhYjRjMTQ4ZTljNWJjZGE5NTM0YTdjYTYxOGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjllZGZhNTIyNzZlYjAwYTMxZmNiNmExYjgwYWQ1ZmE4YTM0ZGE5ZDk3YTRjZTllZTQwZjdhOTIwMTA5ZTYyMzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFhZDYxMTNlNTQ4OGY0Mjg3ODBkNTAwMGMxZGRmODllMDJjNWExOTQxOWVkZDc4NDRiMGVjNDEzNWY1M2E4MmUifQ"
+        },
+        {
+          "resource": "repo://ecosystem.config.cjs#L1-L15",
+          "version": "repo-lines-v1:sha256:9671f01a334a89bffce8cff62111f9449eeb787cd39027a5aceff73e6e1a0668:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4ZTYxZmRmMjAyOGEzOTQxMGYwNTFmOTdiZTBkYjU4MGMzZWZiYWJmNWE3ZjI3Yjc2ZDQ4N2U1ZDA5OWZiMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcxNjRiNjFmZTVkNjdhM2RjNzI4YjM3YjRiMGVjNzgwZWQxMDBkYmU4ZDBkOWU5Njc1ZmYzNTYzOWQ1OGZlOWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8ee147f27929411bb3f9d6d62dd05289",
+      "statement": "The shared HTTP client defaults to a 10-second timeout, retries status codes 408, 429, 500, 502, 503, and 504 three times with a one-second delay, logs request and response URLs, and selects form encoding for ordinary non-GET bodies unless `useJson` is enabled.",
+      "evidence": [
+        {
+          "resource": "repo://app/plugins/http.ts#L257-L314",
+          "version": "repo-lines-v1:sha256:1b423b4324b60574cfc798eaa92dca3ca9c9455dcfc11d55d583bfc499bfeb8d:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjMjI3YWE3ZjQ1ZDMyNDQ3NWYzMTJjNWQ1OGYwMTQ0ZDRlMmRhOWY1NTI1MGFiYjJjMzYzN2Y3OTA5NTJiZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjOTdiYzgzNDM2MDRlOWQ1MGI4NTNkYzVmYjE3OWM0ODdiOTkyOTY4ZTY2NmFlNmVhMjE5NDMxMzhjODg0NDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEwYjBlN2QwNjY0Zjc3NGQ1NTRhZGRlMmY2YTM1ZjA2NDdhZWYyMDNhYzc5N2UwZjFhNGNlMzRhMWQ5N2VlZmQifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L376-L425",
+          "version": "repo-lines-v1:sha256:6860c7f3d7991ab783c30701b98ed7e1f4921d10106e940692da5e1262e5bf0a:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyYmYzMDA0YWNjNGMwYjRlOGQ4ZDU4ZjQ1NmUxNDRjMmU2ODk5NDRkY2E1Mzg2MjhiOTU2NTdhZDg0MjI1YTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2Zjg2ZDgxNTFiNTRkMmNiYjliZTBiYzJhNmE4Y2JjMmNiYWVkYTk5ODRiZjkzOTMwYmZjZmNiN2U3MWU0ZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM2OGYxZDRkZmMxMzE1YzRmYWY0NzdiMTEyOTUzYTg4ZTJjMjIxOTZkNGJiNjVmZDFkYzViNDFmYjQzYjAzY2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b3a8fa0e39ec413698f4f80aad8871a2",
+      "statement": "Business mode defaults to `b2c`; the application normalizes the legacy `b2b` value to `bbc`, and distributor resolution falls back to a default store in B2C mode but does not do so in BBC mode.",
+      "evidence": [
+        {
+          "resource": "repo://app/pages/build/business-mode-bbc-regression.test.js#L26-L35",
+          "version": "repo-lines-v1:sha256:29b872d8127d725b55e3017a6ca5aa6079ea54eefa455e57a570884e28bd3812:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMTg1NGI4MDQyMDI1MjE5NjFlYzVhYWNjOTdmOTc0NTNkYTBmYjVkZTMwMGQ0ZTgwMGI0YzBkMjljYWQ4MjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzOGIzZTcyYTUyOTc2NWU3MzMzNjg5Y2IzOWI2MTdhYjc2ZThlYWYxNDhhN2JiNGJjNWM4NTQ1MGJkZDBkNjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM0YzgzOWQ5NDM2YjhjZDA5ODliOTcxYWE5YWYwODc2ZDczOTgzN2MwMDJkODkzMTZlMWIyODRjMjU1NjY1MDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/plugins/http.ts#L28-L37",
+          "version": "repo-lines-v1:sha256:742b3c8be26f13cb35e44d1ba05fcaf84e0770c814460ae0cb4bfc6da627f2ca:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2JiYzY1NDY5ZGIxY2EyODQyZWZkOTdkZjdlZTJjZTZjYzE1NzE0ODJkMDFhMThiNzkwYTEwYzdjNTEwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhMzY2ZmY4ZDZmYTdjMGVjNjg5M2UwMTkwNzQ0ZTZlMzcxMjE0YWI3MWNmYjAwMjE2YzFiYzAzYmY5MTllY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmMjViOGIwMjVlY2JjZTJiNjFmOWVhNjdhODMzODMzYmIzNmVlMWFiMDdkNDAyNzUwOGI5Y2VjYzQ0MzlhNmIifQ"
+        },
+        {
+          "resource": "repo://app/utils/resolveDistributorId.spec.ts#L12-L61",
+          "version": "repo-lines-v1:sha256:38bf4ec08e52cd4e828430ae953480b71d2cba68ba0634d6c153a3ea6e5fcabb:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiZDAyMjFmMjMxOGQxMjAyNGU1YWRkOGRiMTExNzk5MzlmODI4NWUxMDcwMzAyMzZjMTRlZWFhZGMzMTkwOGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5NDJiNWE5ZGFjOTVlZjg4OWI2MmE4ZDNiZjY5ODdmMjNhZGM5ZDA1MGY1NDVmYjIzNTgzN2MwODVkZWZmNzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://nuxt.config.ts#L130-L137",
+          "version": "repo-lines-v1:sha256:6e1fa3564bad3097e018e047ec2ca1a7e4c241ed4dd1681f00adfb3a1ed41975:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDQ3ODkzODMzN2ViYzdmYjg1ZjFmNjhkODdjNGY3MDk1MjE0YTc5OWExMTM0YzVmNDJmMDVhNmY0MGRjM2M1NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOWIxODc2ZTQ0ODIxNzhmNWE1NTI2MTk3MTU2MDlhZDZiN2ZlNjAxOWU1NGEzNTFiMzc0YTQ0YTM1ZTMxZjliYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGY3MGIxZWQ3Y2U1ZjE5ZjQxZTI3MTMzMGZiNzNhMjhmYmVhY2ZjM2E2YjNkODM3YTAxZGM0NzIyY2Y0MDMyMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjNhYzFiNDU3MWE2NjJjMGVhZjU5ZjMzZGM5ZjRjMDgzODI1ZDZlMjYxOTNiNzgzNzcxNGJlNDMyN2Y3NTYwOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_659a68bc7d904e33aaff553e1e35c822",
+      "statement": "The OpenWiki GitHub Actions workflow is documentation automation: it runs OpenWiki on a schedule or manual dispatch, validates Mermaid through installed dependencies, and creates a pull request containing the `openwiki` tree; it does not build or start the Nuxt application.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/openwiki-update.yml#L1-L57",
+          "version": "repo-lines-v1:sha256:1467172a339367f540a1a50ab160c810146a33f5b2e89c7199ea43bd493ba8c7:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2MDI3ODdhZjZkY2MwODM0ZGUxMjFjYmIxY2I5NWY5NDU5YjcyMWVhYjAzNDlmMTA1MDFiOTk2YzFjNzdmZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0Nzc5NmQzMTczMmZiY2U4OTk4YTJmN2U3YjFiYjk3NTVjMjNlNTg1MDMyMGI5MDkzN2Q4MmMzZmQwZTYyYTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3ace26d6447c451a9f3416d8807591d3",
+      "statement": "The repository's focused build and configuration tests protect environment diagnostics, business-mode alignment, locale bundling from the `app` source directory, and explicit country-code request behavior; the distributor tests cover B2C fallback and BBC non-fallback behavior.",
+      "evidence": [
+        {
+          "resource": "repo://app/pages/build/business-mode-bbc-regression.test.js#L1-L35",
+          "version": "repo-lines-v1:sha256:576594631e9da3943ca55251cc80112b8bf05fabd6ecba9587c536ae11a4d29d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiYmU2YWFhZjIxN2ZmMmIwNmViMjdjMTkwYjY5NzQ2ZTY5M2U1ZjhkNTVmODY1MzA4NTUxOTUyMzg2ZTEwNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzOGIzZTcyYTUyOTc2NWU3MzMzNjg5Y2IzOWI2MTdhYjc2ZThlYWYxNDhhN2JiNGJjNWM4NTQ1MGJkZDBkNjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUifQ"
+        },
+        {
+          "resource": "repo://app/pages/build/locale-config-build-regression.test.js#L1-L36",
+          "version": "repo-lines-v1:sha256:9e1646ee712ba0aeff6faa6b935ca7a37c2c601b4149b49e55fcbb8234c94fd8:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiYmU2YWFhZjIxN2ZmMmIwNmViMjdjMTkwYjY5NzQ2ZTY5M2U1ZjhkNTVmODY1MzA4NTUxOTUyMzg2ZTEwNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/pages/build/nuxt-config-env-log.test.js#L1-L14",
+          "version": "repo-lines-v1:sha256:399938764bb095dd536126fb598020a3bc182029d97290eb6727e1392cd2178f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiYmU2YWFhZjIxN2ZmMmIwNmViMjdjMTkwYjY5NzQ2ZTY5M2U1ZjhkNTVmODY1MzA4NTUxOTUyMzg2ZTEwNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://app/utils/resolveDistributorId.spec.ts#L12-L61",
+          "version": "repo-lines-v1:sha256:38bf4ec08e52cd4e828430ae953480b71d2cba68ba0634d6c153a3ea6e5fcabb:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiZDAyMjFmMjMxOGQxMjAyNGU1YWRkOGRiMTExNzk5MzlmODI4NWUxMDcwMzAyMzZjMTRlZWFhZGMzMTkwOGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODBiNzY1MThkYWU5NzlmYWViZDAyMzY3YTI5MjkyYTUwZDk3NjA5MjI1MWEzOGE2Y2UzMDg4MGJhNDI4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5NDJiNWE5ZGFjOTVlZjg4OWI2MmE4ZDNiZjY5ODdmMjNhZGM5ZDA1MGY1NDVmYjIzNTgzN2MwODVkZWZmNzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-22T10:58:09.084Z"
+  }
+}
